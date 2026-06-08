@@ -2355,26 +2355,98 @@ function limitText(value, maxLength = 8000) {
   return `${text.slice(0, Math.floor(maxLength * 0.55))}\n\n[...中间内容已压缩，避免请求过大...]\n\n${text.slice(-Math.floor(maxLength * 0.45))}`
 }
 
+function parseJsonObjectCandidate(candidate) {
+  if (typeof candidate !== 'string' || !candidate.trim()) {
+    return null
+  }
+
+  try {
+    const parsed = JSON.parse(candidate.trim())
+    return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : null
+  } catch {
+    return null
+  }
+}
+
+function collectFencedJsonCandidates(text) {
+  if (typeof text !== 'string') {
+    return []
+  }
+
+  const candidates = []
+  const fencePattern = /```(?:json)?\s*([\s\S]*?)```/giu
+  let match = fencePattern.exec(text)
+
+  while (match) {
+    if (match[1]?.trim()) {
+      candidates.push(match[1].trim())
+    }
+    match = fencePattern.exec(text)
+  }
+
+  return candidates
+}
+
+function findBalancedJsonObjects(text) {
+  const source = typeof text === 'string' ? text : ''
+  const candidates = []
+  let start = -1
+  let depth = 0
+  let inString = false
+  let escapeNext = false
+
+  for (let index = 0; index < source.length; index += 1) {
+    const char = source[index]
+
+    if (inString) {
+      if (escapeNext) {
+        escapeNext = false
+        continue
+      }
+      if (char === '\\') {
+        escapeNext = true
+        continue
+      }
+      if (char === '"') {
+        inString = false
+      }
+      continue
+    }
+
+    if (char === '"') {
+      inString = true
+      continue
+    }
+
+    if (char === '{') {
+      if (depth === 0) {
+        start = index
+      }
+      depth += 1
+      continue
+    }
+
+    if (char === '}' && depth > 0) {
+      depth -= 1
+      if (depth === 0 && start >= 0) {
+        candidates.push(source.slice(start, index + 1))
+        start = -1
+      }
+    }
+  }
+
+  return candidates
+}
+
 function extractJsonObject(textOutput) {
-  const trimmed = textOutput.trim()
+  const parsed = tryExtractJsonObject(textOutput)
 
-  if (trimmed.startsWith('{') && trimmed.endsWith('}')) {
-    return JSON.parse(trimmed)
+  if (parsed) {
+    return parsed
   }
 
-  const fenced = trimmed.match(/```(?:json)?\s*([\s\S]*?)```/i)
-  if (fenced?.[1]) {
-    return JSON.parse(fenced[1].trim())
-  }
-
-  const start = trimmed.indexOf('{')
-  const end = trimmed.lastIndexOf('}')
-
-  if (start >= 0 && end > start) {
-    return JSON.parse(trimmed.slice(start, end + 1))
-  }
-
-  throw new Error('\u0041\u0049 \u672a\u8fd4\u56de\u53ef\u89e3\u6790\u7684\u9879\u76ee\u5305')
+  const preview = typeof textOutput === 'string' ? textOutput.trim().slice(0, 240) : ''
+  throw new Error(`\u0041\u0049 \u672a\u8fd4\u56de\u53ef\u89e3\u6790\u7684\u9879\u76ee\u5305\u3002\u8fd4\u56de\u7247\u6bb5\uff1a${preview || '\u7a7a'}`)
 }
 
 function extractJsonArray(textOutput) {
@@ -2894,6 +2966,71 @@ function buildProjectPackageSectionPrompt({ context, section, known }) {
   ].join('\n')
 }
 
+function fallbackProjectPackageSection(section, known = {}) {
+  const title = valueOrFallback(known.title, '')
+  const platform = valueOrFallback(known.platform, '')
+  const genre = valueOrFallback(known.genre, '\u5f85\u5b9a')
+
+  switch (section) {
+    case 'base':
+      return {
+        title,
+        platform,
+        genre,
+        stage: 'idea',
+        targetWordsPerChapter: platform ? formatPlatformWordRule(platform) : '\u6309\u5e73\u53f0\u89c4\u5219\u6267\u884c',
+        updateStrategy: '\u5148\u6253\u78e8\u9ec4\u91d1\u524d\u4e09\u7ae0\uff0c\u518d\u6309\u8282\u594f\u7a33\u5b9a\u66f4\u65b0\u3002',
+        sellingPoint: '\u56f4\u7ed5\u6838\u5fc3\u8111\u6d1e\u5efa\u7acb\u6e05\u6670\u5356\u70b9\uff0c\u540e\u7eed\u5728\u9879\u76ee\u8bbe\u5b9a\u4e2d\u7ee7\u7eed\u8865\u5168\u3002',
+        synopsis: '\u7acb\u9879\u95ee\u7b54\u5df2\u4fdd\u7559\uff0c\u9879\u76ee\u5305\u6682\u65f6\u4f7f\u7528\u57fa\u7840\u7248\u7ed3\u6784\uff0c\u53ef\u5728\u4e66\u7c4d\u521b\u5efa\u540e\u7ee7\u7eed\u4fee\u8ba2\u3002',
+      }
+    case 'rules':
+      return {
+        coreSetting: '# \u6838\u5fc3\u8bbe\u5b9a\n\n## \u57fa\u7840\u8bbe\u5b9a\n\n\u6839\u636e\u7acb\u9879\u95ee\u7b54\u8865\u5168\u4e3b\u89d2\u3001\u91d1\u624b\u6307\u3001\u4e16\u754c\u89c4\u5219\u548c\u4e3b\u8981\u77db\u76fe\u3002',
+        genreRules: '# \u9898\u6750\u89c4\u5219\n\n- \u6bcf\u7ae0\u68c0\u67e5\u9898\u6750\u4fe1\u53f7\u662f\u5426\u8db3\u591f\u3002\n- \u9632\u6b62\u4e3b\u7ebf\u6ed1\u5411\u548c\u9898\u6750\u4e0d\u5339\u914d\u7684\u5199\u6cd5\u3002',
+        platformFit: '# \u5e73\u53f0\u9002\u914d\n\n\u6309\u76ee\u6807\u5e73\u53f0\u7684\u9605\u8bfb\u8282\u594f\u5b89\u6392\u7ae0\u8282\u5bc6\u5ea6\u548c\u8ffd\u8bfb\u94a9\u5b50\u3002',
+      }
+    case 'outline':
+      return {
+        overallOutline: '# \u603b\u7eb2\n\n## \u5168\u4e66\u4e3b\u7ebf\n\n\u56f4\u7ed5\u4e3b\u89d2\u76ee\u6807\u3001\u9636\u6bb5\u963b\u529b\u548c\u8fde\u7eed\u5347\u7ea7\u5c55\u5f00\u3002\n\n## \u9636\u6bb5\u89c4\u5212\n\n1. \u5f00\u573a\u5efa\u7acb\u94a9\u5b50\u3002\n2. \u5c55\u793a\u89c4\u5219\u548c\u91d1\u624b\u6307\u3002\n3. \u5f62\u6210\u7b2c\u4e00\u4e2a\u5c0f\u95ed\u73af\u3002',
+        goldenFirstThree: '# \u9ec4\u91d1\u524d\u4e09\u7ae0\n\n## \u7b2c001\u7ae0\n\n\u5f00\u573a\u94a9\u5b50\u548c\u4e3b\u89d2\u5904\u5883\u3002\n\n## \u7b2c002\u7ae0\n\n\u89c4\u5219\u5c55\u793a\u548c\u884c\u52a8\u63a8\u8fdb\u3002\n\n## \u7b2c003\u7ae0\n\n\u5c0f\u95ed\u73af\u3001\u7b2c\u4e00\u6b21\u723d\u70b9\u548c\u8ffd\u8bfb\u94a9\u5b50\u3002',
+      }
+    case 'characters':
+      return {
+        mainCharacter: '# \u4e3b\u89d2\u5361\n\n## \u6838\u5fc3\u8eab\u4efd\n\n\u5f85\u8865\u5168\u3002\n\n## \u884c\u52a8\u903b\u8f91\n\n\u4ee5\u660e\u786e\u76ee\u6807\u63a8\u52a8\u5267\u60c5\u3002',
+        supportingCharacters: '# \u914d\u89d2\u5361\n\n\u6309\u201c\u4e0e\u4e3b\u7ebf\u7684\u529f\u80fd\u5173\u7cfb\u201d\u8865\u5168\u3002',
+        minorCharacters: '# \u9f99\u5957\u8bb0\u5f55\n\n\u8bb0\u5f55\u51fa\u573a\u4eba\u7269\u3001\u529f\u80fd\u548c\u5df2\u77e5\u4fe1\u606f\u3002',
+      }
+    case 'tracking':
+      return {
+        tracking: '# \u8ffd\u8e2a\u8868\n\n## \u4eba\u7269\n\n- \u5f85\u8865\u5168\n\n## \u4f0f\u7b14\n\n- \u5f85\u8865\u5168\n\n## \u8bbe\u5b9a\u53d8\u66f4\n\n- \u5f85\u8865\u5168',
+      }
+    default:
+      return {}
+  }
+}
+
+async function repairProjectPackageSectionJson({ section, content, known, signal }) {
+  const repairPrompt = [
+    '\u4f60\u662f JSON \u4fee\u590d\u5668\u3002\u4e0b\u9762\u662f\u5199\u4f5c\u8f6f\u4ef6\u9879\u76ee\u5305\u5206\u6bb5\u7684 AI \u8f93\u51fa\uff0c\u5b83\u6ca1\u6709\u88ab\u7a0b\u5e8f\u89e3\u6790\u3002',
+    '\u8bf7\u628a\u539f\u6587\u63d0\u53d6\u6216\u6539\u5199\u6210\u4e00\u4e2a\u5408\u6cd5 JSON object\u3002',
+    '\u53ea\u8f93\u51fa JSON\uff0c\u4e0d\u8981 Markdown\uff0c\u4e0d\u8981\u89e3\u91ca\uff0c\u4e0d\u8981\u4ee3\u7801\u5757\u3002',
+    `\u672c\u6b21\u5206\u6bb5\uff1a${section}`,
+    '# \u5df2\u6709\u5206\u6bb5',
+    JSON.stringify(known ?? {}, null, 2),
+    '# \u539f\u59cb\u8f93\u51fa',
+    limitText(content, 12000),
+  ].join('\n')
+
+  const repaired = await callOpenAiText({
+    input: repairPrompt,
+    temperature: 0,
+    maxOutputTokens: 1600,
+    signal,
+  })
+
+  return extractJsonObject(repaired)
+}
+
 async function generateProjectPackageSection({ context, section, known, signal }) {
   const outputLimits = {
     base: aiOutputLimits.projectPackageBase,
@@ -2909,7 +3046,18 @@ async function generateProjectPackageSection({ context, section, known, signal }
     signal,
   })
 
-  return extractJsonObject(content)
+  try {
+    return extractJsonObject(content)
+  } catch (parseError) {
+    console.warn(`Project package section ${section} returned invalid JSON; trying repair.`, parseError)
+  }
+
+  try {
+    return await repairProjectPackageSectionJson({ section, content, known, signal })
+  } catch (repairError) {
+    console.warn(`Project package section ${section} repair failed; using fallback.`, repairError)
+    return fallbackProjectPackageSection(section, known)
+  }
 }
 
 async function generatePlanningQuestion(input) {
@@ -4393,19 +4541,22 @@ function tryExtractJsonObject(text) {
   }
 
   const trimmed = text.trim()
-  const fenced = trimmed.match(/```(?:json)?\s*([\s\S]*?)```/iu)
-  const source = fenced?.[1]?.trim() || trimmed
-  const start = source.indexOf('{')
-  const end = source.lastIndexOf('}')
-  if (start === -1 || end === -1 || end <= start) {
-    return null
+  const candidates = [trimmed]
+
+  for (const fenced of collectFencedJsonCandidates(trimmed)) {
+    candidates.push(fenced, ...findBalancedJsonObjects(fenced))
   }
 
-  try {
-    return JSON.parse(source.slice(start, end + 1))
-  } catch {
-    return null
+  candidates.push(...findBalancedJsonObjects(trimmed))
+
+  for (let index = candidates.length - 1; index >= 0; index -= 1) {
+    const parsed = parseJsonObjectCandidate(candidates[index])
+    if (parsed) {
+      return parsed
+    }
   }
+
+  return null
 }
 
 function mergePlainObject(base, patch) {

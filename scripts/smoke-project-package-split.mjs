@@ -11,6 +11,9 @@ const checks = [
   ['project package section generator exists', main.includes('async function generateProjectPackageSection')],
   ['project package generation iterates sections', main.includes("const sections = ['base', 'rules', 'outline', 'characters', 'tracking']")],
   ['project package merges parts instead of one giant response', main.includes('Object.assign(packageParts, part)')],
+  ['project package extracts balanced JSON objects', main.includes('function findBalancedJsonObjects')],
+  ['project package retries invalid JSON through repair prompt', main.includes('async function repairProjectPackageSectionJson')],
+  ['project package falls back instead of throwing parse error', main.includes('fallbackProjectPackageSection(section, known)')],
 ]
 
 const failures = checks.filter(([, passed]) => !passed)
