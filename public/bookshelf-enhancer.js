@@ -968,6 +968,34 @@ function bindAiProviderPresetDelegation() {
   document.addEventListener('click', handleAiProviderPresetEvent, true)
 }
 
+function focusAiSettingsControl(control) {
+  if (!control || control.disabled || control.readOnly) {
+    return
+  }
+  window.setTimeout(() => {
+    if (document.activeElement !== control) {
+      control.focus()
+    }
+  }, 0)
+}
+
+function handleAiSettingsControlFocus(event) {
+  const control = event.target?.closest?.('.ai-settings-panel input, .ai-settings-panel textarea, .ai-settings-panel select')
+  if (!control) {
+    return
+  }
+  focusAiSettingsControl(control)
+}
+
+function bindAiSettingsControlFocusGuard() {
+  if (window.__inkEngineAiSettingsControlFocusGuardBound) {
+    return
+  }
+  window.__inkEngineAiSettingsControlFocusGuardBound = true
+  document.addEventListener('pointerup', handleAiSettingsControlFocus, true)
+  document.addEventListener('click', handleAiSettingsControlFocus, true)
+}
+
 async function deleteAiProfileFromPanel(panel, profileId) {
   const api = window.writingWorkbench
   if (!api?.deleteAiProfile || !profileId) {
@@ -1235,5 +1263,6 @@ const observer = new MutationObserver(queueEnhanceDashboard)
 observer.observe(document.documentElement, { childList: true, subtree: true })
 bindGenreRailDelegation()
 bindAiProviderPresetDelegation()
+bindAiSettingsControlFocusGuard()
 attachAiProgressListener()
 queueEnhanceDashboard()

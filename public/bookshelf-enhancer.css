@@ -260,6 +260,14 @@ body {
   padding: 8px 9px;
 }
 
+.ai-settings-panel input:focus,
+.ai-settings-panel textarea:focus,
+.ai-settings-panel select:focus {
+  border-color: var(--shelf-accent);
+  box-shadow: 0 0 0 3px oklch(0.76 0.07 180 / 0.22);
+  outline: 2px solid transparent;
+}
+
 .genre-custom-form button {
   min-height: 34px;
 }

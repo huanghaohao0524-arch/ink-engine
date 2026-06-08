@@ -3,6 +3,7 @@ import fs from 'node:fs'
 const main = fs.readFileSync('electron/main.mjs', 'utf8')
 const app = fs.readFileSync('src/App.tsx', 'utf8')
 const enhancer = fs.readFileSync('public/bookshelf-enhancer.js', 'utf8')
+const enhancerStyles = fs.readFileSync('public/bookshelf-enhancer.css', 'utf8')
 const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'))
 
 const checks = [
@@ -17,6 +18,8 @@ const checks = [
   ['legacy runtime preset has inline pointer fallback', enhancer.includes('window.__inkEngineApplyAiPreset') && enhancer.includes('onpointerdown="return window.__inkEngineApplyAiPreset') && enhancer.includes("onclick=\"return window.__inkEngineApplyAiPreset")],
   ['legacy runtime defaults unconfigured settings to deepseek', enhancer.includes('function maybeAutoFillDeepSeekPreset') && enhancer.includes("status.textContent = '已默认填入 DeepSeek 地址和模型，请直接粘贴 API Key。'")],
   ['legacy runtime does not rebuild preset row while typing', !enhancer.includes("panel.querySelectorAll('.ai-provider-preset-row')).forEach((row) => row.remove())") && enhancer.includes("let presetRow = panel.querySelector('.ai-provider-preset-row')")],
+  ['legacy runtime keeps AI settings controls focusable by click', enhancer.includes('function bindAiSettingsControlFocusGuard') && enhancer.includes("document.addEventListener('pointerup', handleAiSettingsControlFocus, true)") && enhancer.includes("'.ai-settings-panel input, .ai-settings-panel textarea, .ai-settings-panel select'")],
+  ['legacy runtime shows AI settings input focus visibly', enhancerStyles.includes('.ai-settings-panel input:focus') && enhancerStyles.includes('box-shadow: 0 0 0 3px')],
   ['legacy runtime preset uses React-compatible input events', enhancer.includes('setReactInputValue(inputs.baseUrl') && enhancer.includes("new Event('input', { bubbles: true })")],
   ['AI settings inputs use stable updater', app.includes('function updateAiForm') && app.includes('onChange={(event) => updateAiForm({ apiKey: event.target.value })}') && app.includes('onChange={(event) => updateAiForm({ baseUrl: event.target.value })}')],
   ['AI settings submit disabled state is explicit', app.includes('isAiSettingsSubmitDisabled') && app.includes('disabled={isAiSettingsSubmitDisabled}')],
