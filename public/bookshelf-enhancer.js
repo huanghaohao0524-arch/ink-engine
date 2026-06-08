@@ -1063,7 +1063,7 @@ async function enhanceAiSettingsProfiles() {
       <small class="ai-profile-status">测试连接成功后会自动保存到这里。</small>
     `
 
-    panel.insertBefore(row, presetRow)
+    formGrid.insertAdjacentElement('afterend', row)
 
     const select = row.querySelector('select')
     const deleteButton = row.querySelector('.ai-profile-delete')
