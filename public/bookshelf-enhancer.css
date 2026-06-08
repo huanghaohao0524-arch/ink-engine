@@ -99,23 +99,15 @@ body {
 }
 
 .shelf-dashboard {
-  align-items: stretch;
   background:
-    linear-gradient(rgb(22 42 66 / 0.46) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(22 42 66 / 0.46) 1px, transparent 1px),
-    radial-gradient(circle at 92% 50%, rgb(55 191 211 / 0.16), transparent 15rem),
-    linear-gradient(135deg, #081321, #0b182a 62%, #101629);
-  background-size: 84px 84px, 84px 84px, auto, auto;
-  border: 1px solid #2e5e85;
+    linear-gradient(90deg, rgb(55 191 211 / 0.14), transparent 34%),
+    linear-gradient(135deg, #0b1828, #101b2d);
+  border: 1px solid #254867;
   border-radius: 8px;
-  box-shadow: var(--shelf-shadow), inset 0 1px 0 rgb(255 255 255 / 0.08);
-  display: grid;
-  gap: 0;
-  grid-template-columns: 78px minmax(0, 1fr);
-  isolation: isolate;
+  box-shadow: 0 18px 38px rgb(0 0 0 / 0.2), inset 0 1px 0 rgb(255 255 255 / 0.06);
   margin-bottom: 20px;
   overflow: hidden;
-  padding: 8px;
+  padding: 16px;
   position: relative;
 }
 
@@ -129,310 +121,191 @@ body {
   top: 0;
 }
 
-.cockpit-nav {
-  background: rgb(6 14 25 / 0.72);
-  border-right: 1px solid var(--shelf-line-soft);
-  display: grid;
-  gap: 6px;
-  grid-auto-rows: min-content;
-  padding: 10px 8px;
-}
-
-.cockpit-nav strong {
-  color: #d9f6ff;
-  font-size: 12px;
-  line-height: 1.2;
-  margin-bottom: 4px;
-  text-align: center;
-}
-
-.cockpit-nav span {
-  align-items: center;
-  border: 1px solid transparent;
-  border-radius: 7px;
-  color: var(--shelf-muted);
-  display: grid;
-  font-size: 12px;
-  font-weight: 820;
-  gap: 4px;
-  justify-items: center;
-  min-height: 46px;
-  padding: 6px 4px;
-}
-
-.cockpit-nav span.active {
-  background: rgb(55 191 211 / 0.13);
-  border-color: rgb(55 191 211 / 0.46);
-  color: #d9fbff;
-}
-
-.cockpit-nav i,
-.cockpit-modules i {
-  border: 1px solid currentColor;
-  border-radius: 4px;
-  display: block;
-  height: 13px;
-  position: relative;
-  width: 13px;
-}
-
-.cockpit-nav i::after,
-.cockpit-modules i::after {
-  background: currentColor;
-  border-radius: 999px;
-  content: "";
-  height: 3px;
-  left: 4px;
-  position: absolute;
-  top: 4px;
-  width: 3px;
-}
-
-.cockpit-main {
-  display: grid;
-  gap: 12px;
-  min-width: 0;
-  padding: 10px;
-}
-
-.cockpit-titlebar {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  min-height: 24px;
-}
-
-.cockpit-titlebar span,
-.cockpit-overview span,
-.cockpit-assistant span,
-.cockpit-modules > span {
-  color: var(--shelf-muted);
-  font-size: 12px;
-  font-weight: 860;
-}
-
-.cockpit-titlebar div {
-  display: flex;
-  gap: 6px;
-}
-
-.cockpit-titlebar i {
-  border: 1px solid var(--shelf-line);
-  border-radius: 3px;
-  display: block;
-  height: 9px;
-  width: 9px;
-}
-
-.cockpit-grid {
-  display: grid;
-  gap: 12px;
-  grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
-}
-
-.cockpit-overview,
-.cockpit-assistant,
-.cockpit-modules {
-  background: rgb(5 12 22 / 0.72);
-  border: 1px solid #254b6f;
-  border-radius: 8px;
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.05);
-}
-
-.cockpit-overview {
+.shelf-library-summary {
   align-items: center;
   display: grid;
   gap: 18px;
-  grid-template-columns: minmax(0, 1fr) 138px;
-  min-height: 176px;
-  padding: 18px;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
+  min-width: 0;
 }
 
-.cockpit-overview dl {
+.shelf-library-summary > div:first-child {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+}
+
+.shelf-library-summary span,
+.shelf-library-summary small {
+  color: var(--shelf-muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.shelf-library-summary > div:first-child > span {
+  color: #67d3e5;
+  font-weight: 860;
+}
+
+.shelf-library-summary strong {
+  color: var(--shelf-text);
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.shelf-library-stats {
   display: grid;
   gap: 10px;
-  margin: 14px 0 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.cockpit-overview dl div {
+.shelf-library-stats section {
+  background: rgb(5 12 22 / 0.56);
+  border: 1px solid var(--shelf-line-soft);
+  border-radius: 8px;
   display: grid;
-  gap: 8px;
-  grid-template-columns: 54px minmax(0, 1fr);
-}
-
-.cockpit-overview dt {
-  color: var(--shelf-muted);
-  font-size: 13px;
-  font-weight: 820;
-}
-
-.cockpit-overview dd {
-  color: var(--shelf-text);
-  font-size: 14px;
-  font-weight: 760;
-  margin: 0;
+  gap: 5px;
   min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.cockpit-progress {
-  align-items: center;
-  aspect-ratio: 1;
-  background: conic-gradient(var(--shelf-accent) var(--progress-angle), #14253a 0);
-  border-radius: 999px;
-  display: grid;
-  justify-items: center;
   padding: 12px;
-  position: relative;
 }
 
-.cockpit-progress i {
-  background: #081321;
-  border: 1px solid #1e476c;
-  border-radius: inherit;
-  inset: 13px;
-  position: absolute;
-}
-
-.cockpit-progress strong,
-.cockpit-progress span {
-  position: relative;
-  z-index: 1;
-}
-
-.cockpit-progress strong {
+.shelf-library-stats section strong {
   color: var(--shelf-text);
   font-family: Consolas, "Microsoft YaHei", monospace;
-  font-size: 30px;
-  line-height: 1;
+  font-size: 26px;
 }
 
-.cockpit-progress span {
-  color: #67d3e5;
-  font-size: 12px;
-  font-weight: 850;
+.editor-shell {
+  background:
+    radial-gradient(circle at 6% 18%, rgb(55 191 211 / 0.12), transparent 24rem),
+    linear-gradient(180deg, #081321, #07111d);
+  color: var(--shelf-text);
 }
 
-.cockpit-assistant {
-  min-height: 176px;
+.editor-shell .topbar,
+.editor-shell .workspace-strip {
+  border-color: var(--shelf-line-soft);
+}
+
+.editor-shell .topbar h1,
+.editor-shell .workspace-strip strong,
+.editor-shell h2,
+.editor-shell h3 {
+  color: var(--shelf-text);
+}
+
+.editor-shell .project-command-center {
+  background:
+    linear-gradient(rgb(22 42 66 / 0.36) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(22 42 66 / 0.36) 1px, transparent 1px),
+    radial-gradient(circle at 88% 56%, rgb(55 191 211 / 0.14), transparent 18rem),
+    linear-gradient(135deg, #081321, #0b182a 64%, #101629);
+  background-size: 78px 78px, 78px 78px, auto, auto;
+  border-color: #2e5e85;
+  box-shadow: var(--shelf-shadow), inset 0 1px 0 rgb(255 255 255 / 0.08);
+  gap: 14px;
   overflow: hidden;
-  padding: 18px;
   position: relative;
 }
 
-.cockpit-assistant strong {
-  color: var(--shelf-text);
-  display: block;
-  font-size: 18px;
-  margin-top: 4px;
-}
-
-.cockpit-assistant ul {
-  display: grid;
-  gap: 8px;
-  list-style: none;
-  margin: 14px 80px 0 0;
-  padding: 0;
-}
-
-.cockpit-assistant li {
-  color: #c7d7e7;
-  font-size: 13px;
-  line-height: 1.45;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.cockpit-assistant b {
-  border: 1px solid rgb(55 191 211 / 0.68);
-  border-radius: 999px;
-  bottom: 22px;
-  height: 58px;
-  position: absolute;
-  right: 22px;
-  width: 58px;
-}
-
-.cockpit-assistant b::before,
-.cockpit-assistant b::after {
-  background: rgb(55 191 211 / 0.44);
+.editor-shell .project-command-center::before {
+  background: linear-gradient(90deg, transparent, rgb(55 191 211 / 0.4), transparent);
   content: "";
+  height: 1px;
+  left: 0;
   position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.cockpit-assistant b::before {
-  height: 26px;
-  left: 27px;
-  top: 16px;
-  width: 1px;
-}
-
-.cockpit-assistant b::after {
-  border-radius: 999px;
-  height: 8px;
-  left: 24px;
-  top: 14px;
-  width: 8px;
-}
-
-.cockpit-modules {
-  display: grid;
-  gap: 12px;
-  padding: 16px;
-}
-
-.cockpit-modules > div {
-  display: grid;
-  gap: 12px;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-
-.cockpit-modules section {
-  align-content: center;
-  background: linear-gradient(180deg, #101f33, #0b1726);
-  border: 1px solid #28456b;
+.editor-cockpit-nav {
+  background: rgb(6 14 25 / 0.62);
+  border: 1px solid var(--shelf-line-soft);
   border-radius: 8px;
-  color: var(--shelf-accent);
   display: grid;
   gap: 8px;
-  justify-items: center;
-  min-height: 104px;
-  min-width: 0;
-  padding: 12px 8px;
-  text-align: center;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  padding: 8px;
 }
 
-.cockpit-modules section:nth-child(2n) {
-  color: #9d7bff;
-}
-
-.cockpit-modules strong {
-  color: var(--shelf-text);
-  font-size: 15px;
-  line-height: 1.2;
-}
-
-.cockpit-modules small {
+.editor-cockpit-nav button {
+  background: rgb(12 27 45 / 0.84);
+  border: 1px solid transparent;
   color: var(--shelf-muted);
-  font-size: 12px;
+  min-width: 0;
+  transition:
+    background 150ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 150ms cubic-bezier(0.16, 1, 0.3, 1),
+    color 150ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.cockpit-footer {
-  border-top: 1px solid var(--shelf-line-soft);
-  display: grid;
-  gap: 8px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  padding-top: 10px;
+.editor-cockpit-nav button:hover,
+.editor-cockpit-nav button:focus-visible {
+  background: rgb(55 191 211 / 0.13);
+  border-color: rgb(55 191 211 / 0.48);
+  color: #d9fbff;
 }
 
-.cockpit-footer span {
-  color: #c2d7e9;
-  font-size: 12px;
-  font-weight: 800;
-  text-align: center;
+.editor-cockpit-nav button:active {
+  transform: translateY(1px);
+}
+
+.editor-shell .project-command-center .section-title {
+  border-bottom: 1px solid var(--shelf-line-soft);
+  margin-bottom: 0;
+  padding-bottom: 12px;
+}
+
+.editor-shell .project-command-center p,
+.editor-shell .prep-panel p,
+.editor-shell .knowledge-lane p {
+  color: #a9bcd0;
+}
+
+.editor-shell .command-metric-grid div,
+.editor-shell .prep-panel,
+.editor-shell .knowledge-lane,
+.editor-shell .chapter-prep-card {
+  background: rgb(5 12 22 / 0.72);
+  border-color: #254b6f;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.05);
+}
+
+.editor-shell .command-metric-grid strong,
+.editor-shell .prep-check-item strong,
+.editor-shell .chapter-prep-card strong {
+  color: var(--shelf-text);
+}
+
+.editor-shell .command-metric-grid span,
+.editor-shell .command-metric-grid small,
+.editor-shell .prep-check-item span,
+.editor-shell .chapter-prep-card span {
+  color: var(--shelf-muted);
+}
+
+.editor-shell .prep-check-item,
+.editor-shell .prep-material-item {
+  background: #101f33;
+  border-color: #28456b;
+  color: var(--shelf-text);
+}
+
+.editor-shell .prep-check-item.ready,
+.editor-shell .prep-material-item.ready {
+  background: rgb(23 99 79 / 0.22);
+  border-color: rgb(114 216 137 / 0.36);
+}
+
+.editor-shell .prep-check-item.missing {
+  background: rgb(141 45 29 / 0.24);
+  border-color: rgb(240 154 120 / 0.4);
+}
+
+.editor-shell .prep-check-item.optional {
+  background: rgb(120 91 0 / 0.2);
+  border-color: rgb(222 197 111 / 0.36);
 }
 
 .bookshelf-layout {
@@ -1437,26 +1310,11 @@ body:has(.outline-cockpit-modal-backdrop:not([hidden])) .chapter-sidebar {
 }
 
 @media (max-width: 960px) {
-  .shelf-dashboard {
+  .shelf-library-summary {
     grid-template-columns: 1fr;
   }
 
-  .cockpit-nav {
-    display: flex;
-    overflow-x: auto;
-    padding-bottom: 8px;
-  }
-
-  .cockpit-nav strong,
-  .cockpit-nav span {
-    flex: 0 0 auto;
-  }
-
-  .cockpit-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cockpit-modules > div {
+  .editor-cockpit-nav {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
@@ -1500,8 +1358,8 @@ body:has(.outline-cockpit-modal-backdrop:not([hidden])) .chapter-sidebar {
     align-items: stretch;
   }
 
-  .cockpit-modules > div,
-  .cockpit-footer,
+  .editor-cockpit-nav,
+  .shelf-library-stats,
   .bookshelf-home .book-actions,
   .outline-cockpit-metrics {
     grid-template-columns: 1fr;
@@ -1511,27 +1369,8 @@ body:has(.outline-cockpit-modal-backdrop:not([hidden])) .chapter-sidebar {
     padding: 20px;
   }
 
-  .shelf-dashboard::after,
-  .cockpit-titlebar div,
-  .cockpit-assistant b {
+  .shelf-dashboard::after {
     display: none;
-  }
-
-  .cockpit-main {
-    padding: 8px;
-  }
-
-  .cockpit-overview {
-    grid-template-columns: 1fr;
-  }
-
-  .cockpit-progress {
-    justify-self: center;
-    width: min(148px, 100%);
-  }
-
-  .cockpit-assistant ul {
-    margin-right: 0;
   }
 
   .outline-target-row,

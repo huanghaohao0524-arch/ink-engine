@@ -4,16 +4,54 @@ const enhancer = fs.readFileSync('public/bookshelf-enhancer.js', 'utf8')
 const styles = fs.readFileSync('public/bookshelf-enhancer.css', 'utf8')
 
 const checks = [
-  ['cockpit shell exists', enhancer.includes('cockpit-nav') && enhancer.includes('cockpit-main') && enhancer.includes('墨引擎 · 写作工作台')],
-  ['dashboard overview uses real counts', enhancer.includes('<div><dt>作品</dt><dd>${visibleCount} / ${totalCount}</dd></div>') && enhancer.includes('<div><dt>题材</dt><dd>${genreCount}</dd></div>')],
+  [
+    'home dashboard is a library summary',
+    enhancer.includes('class="shelf-library-summary"')
+      && enhancer.includes('class="shelf-library-stats"')
+      && enhancer.includes('进入书籍后再处理项目包、大纲、章节写作和追踪'),
+  ],
+  [
+    'home dashboard uses real counts',
+    enhancer.includes('<section><span>全部作品</span><strong>${totalCount}</strong></section>')
+      && enhancer.includes('<section><span>当前显示</span><strong>${visibleCount}</strong></section>')
+      && enhancer.includes('<section><span>题材架</span><strong>${genreCount}</strong></section>'),
+  ],
   ['genre count remains derived', enhancer.includes('const genreCount = Math.max(genres.length - 2, 0)')],
-  ['module cockpit exists', enhancer.includes('const moduleCards = [') && enhancer.includes('cockpit-modules')],
-  ['assistant uses real book meta', enhancer.includes('const primaryMeta = visibleCards[0] ? getCardMeta(visibleCards[0]) : null') && enhancer.includes('assistantLines')],
-  ['progress is derived from visible books', enhancer.includes('const progress = totalCount ? Math.max(1, Math.round((visibleCount / totalCount) * 100)) : 0')],
-  ['dark cockpit styles exist', styles.includes('.cockpit-nav') && styles.includes('.cockpit-overview') && styles.includes('.cockpit-progress') && styles.includes('.cockpit-modules')],
+  [
+    'editor cockpit is scoped to opened books',
+    enhancer.includes("const shell = document.querySelector('.editor-shell')")
+      && enhancer.includes("nav.className = 'editor-cockpit-nav'")
+      && enhancer.includes('commandCenter.insertBefore(nav, commandCenter.firstChild)'),
+  ],
+  [
+    'editor cockpit buttons are wired to real actions',
+    enhancer.includes('data-target=".prep-overview"')
+      && enhancer.includes('data-target=".knowledge-board"')
+      && enhancer.includes('data-target=".chapter-prep-card"')
+      && enhancer.includes('data-action="outline"')
+      && enhancer.includes('data-action="write"')
+      && enhancer.includes('openOutlineCockpitFromCurrentEditor()')
+      && enhancer.includes("document.querySelector('.prep-overview .primary-button')?.click()"),
+  ],
+  [
+    'old fake home cockpit markup is gone',
+    !enhancer.includes('cockpit-main')
+      && !enhancer.includes('cockpit-modules')
+      && !enhancer.includes('const moduleCards = ['),
+  ],
+  [
+    'styles separate home shelf and editor cockpit',
+    styles.includes('.shelf-library-summary')
+      && styles.includes('.shelf-library-stats')
+      && styles.includes('.editor-shell .project-command-center')
+      && styles.includes('.editor-cockpit-nav'),
+  ],
   ['filter empty hidden rule exists', styles.includes('.bookshelf-filter-empty[hidden]') && styles.includes('display: none')],
   ['outline button stays before delete', enhancer.includes('actions.insertBefore(outlineButton, dangerButton || null)')],
-  ['mobile cockpit collapses', /@media \(max-width: 720px\)[\s\S]+\.cockpit-modules > div[\s\S]+grid-template-columns: 1fr/.test(styles)],
+  [
+    'mobile editor cockpit collapses',
+    /@media \(max-width: 720px\)[\s\S]+\.editor-cockpit-nav[\s\S]+grid-template-columns: 1fr/.test(styles),
+  ],
 ]
 
 const failures = checks.filter(([, ok]) => !ok).map(([name]) => name)

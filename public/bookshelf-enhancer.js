@@ -1162,98 +1162,71 @@ function ensureShell(booksSection, bookGrid) {
   return { dashboard, rail, empty }
 }
 
-function renderDashboard(dashboard, totalCount, visibleCount, activeGenre, genres, cards = []) {
+function renderDashboard(dashboard, totalCount, visibleCount, activeGenre, genres) {
   const active = genres.find((genre) => genre.id === activeGenre) || genres[0]
   const genreCount = Math.max(genres.length - 2, 0)
   const scopeText = activeGenre === 'all' ? '全部作品' : active.label
-  const visibleCards = cards.filter((card) => !card.hidden)
-  const primaryMeta = visibleCards[0] ? getCardMeta(visibleCards[0]) : null
-  const progress = totalCount ? Math.max(1, Math.round((visibleCount / totalCount) * 100)) : 0
-  const progressAngle = Math.round((progress / 100) * 360)
-  const navItems = ['概览', '立项', '大纲', '角色', '写作', '追踪', '资料库', '设置']
-  const moduleCards = [
-    ['立项问答', totalCount ? '可继续' : '待创建'],
-    ['项目包', primaryMeta ? '已生成' : '待生成'],
-    ['大纲', primaryMeta?.status || '待整理'],
-    ['角色卡', '资料区'],
-    ['章节写作', primaryMeta?.task ? '进行中' : '待开始'],
-    ['追踪表', primaryMeta?.risk ? '需关注' : '同步中'],
-  ]
-  const assistantLines = primaryMeta ? [
-    `${primaryMeta.title}`,
-    primaryMeta.task || '先进入作品，检查下一步写作任务。',
-    primaryMeta.risk || '暂无明显风险。',
-  ] : [
-    '先选择或创建一个作品。',
-    '项目包、大纲和章节候选会在这里串起来。',
-    '所有写入仍应先经过候选区确认。',
-  ]
   dashboard.innerHTML = `
-    <aside class="cockpit-nav" aria-label="模块导航预览">
-      <strong>墨引擎</strong>
-      ${navItems.map((item, index) => `
-        <span class="${index === 0 ? 'active' : ''}">
-          <i aria-hidden="true"></i>
-          ${item}
-        </span>
-      `).join('')}
-    </aside>
-    <section class="cockpit-main">
-      <div class="cockpit-titlebar">
-        <span>墨引擎 · 写作工作台</span>
-        <div aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="shelf-library-summary">
+      <div>
+        <span>书库概览</span>
+        <strong>${sanitize(scopeText)}</strong>
+        <small>${activeGenre === 'all' ? '这里负责选题材和打开作品；进入书籍后再处理项目包、大纲、章节写作和追踪。' : `当前只显示“${sanitize(active.label)}”题材下的作品。`}</small>
       </div>
-
-      <div class="cockpit-grid">
-        <article class="cockpit-overview">
-          <div>
-            <span>项目概览</span>
-            <dl>
-              <div><dt>当前</dt><dd>${sanitize(scopeText)}</dd></div>
-              <div><dt>作品</dt><dd>${visibleCount} / ${totalCount}</dd></div>
-              <div><dt>题材</dt><dd>${genreCount}</dd></div>
-              <div><dt>状态</dt><dd>${totalCount ? '创作中' : '待创建'}</dd></div>
-            </dl>
-          </div>
-          <div class="cockpit-progress" style="--progress-angle: ${progressAngle}deg">
-            <i></i>
-            <strong>${progress}%</strong>
-            <span>${activeGenre === 'all' ? '书库覆盖' : '筛选占比'}</span>
-          </div>
-        </article>
-
-        <article class="cockpit-assistant">
-          <div>
-            <span>智能助手</span>
-            <strong>${primaryMeta ? '下一步提醒' : '启动提示'}</strong>
-          </div>
-          <ul>
-            ${assistantLines.map((line) => `<li>${sanitize(line)}</li>`).join('')}
-          </ul>
-          <b aria-hidden="true"></b>
-        </article>
+      <div class="shelf-library-stats" aria-label="书库统计">
+        <section><span>全部作品</span><strong>${totalCount}</strong></section>
+        <section><span>当前显示</span><strong>${visibleCount}</strong></section>
+        <section><span>题材架</span><strong>${genreCount}</strong></section>
       </div>
-
-      <div class="cockpit-modules" aria-label="创作模块">
-        <span>创作模块</span>
-        <div>
-          ${moduleCards.map(([label, state]) => `
-            <section>
-              <i aria-hidden="true"></i>
-              <strong>${sanitize(label)}</strong>
-              <small>${sanitize(state)}</small>
-            </section>
-          `).join('')}
-        </div>
-      </div>
-      <div class="cockpit-footer">
-        <span>本地优先</span>
-        <span>候选区确认</span>
-        <span>项目记忆</span>
-        <span>追踪同步</span>
-      </div>
-    </section>
+    </div>
   `
+}
+
+function scrollToEditorSection(selector) {
+  const target = document.querySelector(selector)
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+}
+
+function enhanceEditorCommandCenter() {
+  const shell = document.querySelector('.editor-shell')
+  const commandCenter = shell?.querySelector('.project-command-center')
+  if (!shell || !commandCenter || commandCenter.dataset.editorCockpitEnhanced === 'true') {
+    return
+  }
+
+  commandCenter.dataset.editorCockpitEnhanced = 'true'
+  const nav = document.createElement('nav')
+  nav.className = 'editor-cockpit-nav'
+  nav.setAttribute('aria-label', '项目驾驶舱导航')
+  nav.innerHTML = `
+    <button type="button" data-target=".project-command-center">概览</button>
+    <button type="button" data-target=".prep-overview">立项</button>
+    <button type="button" data-target=".knowledge-board">资料库</button>
+    <button type="button" data-target=".chapter-prep-card">章节准备</button>
+    <button type="button" data-action="outline">细纲目录</button>
+    <button type="button" data-action="write">进入写作</button>
+  `
+  nav.addEventListener('click', (event) => {
+    const button = event.target?.closest?.('button')
+    if (!button) {
+      return
+    }
+    const action = button.dataset.action
+    if (action === 'outline') {
+      openOutlineCockpitFromCurrentEditor()
+      return
+    }
+    if (action === 'write') {
+      document.querySelector('.prep-overview .primary-button')?.click()
+      return
+    }
+    if (button.dataset.target) {
+      scrollToEditorSection(button.dataset.target)
+    }
+  })
+  commandCenter.insertBefore(nav, commandCenter.firstChild)
 }
 
 function renderRail(rail, genres, counts, activeGenre, render) {
@@ -1311,7 +1284,7 @@ function enhanceDashboard() {
     const visibleCount = filterCards(cards, currentActiveGenre)
     empty.hidden = cards.length === 0 || visibleCount > 0
 
-    renderDashboard(dashboard, cards.length, visibleCount, currentActiveGenre, genres, cards)
+    renderDashboard(dashboard, cards.length, visibleCount, currentActiveGenre, genres)
     renderRail(rail, genres, counts, currentActiveGenre, render)
   }
 
@@ -1352,6 +1325,7 @@ function queueEnhanceDashboard() {
     renderQueued = false
     enhanceDashboard()
     enhanceAiSettingsProfiles()
+    enhanceEditorCommandCenter()
     enhanceProjectOutlineCockpit()
     enhanceProjectUpdateCandidatePanel()
   })
