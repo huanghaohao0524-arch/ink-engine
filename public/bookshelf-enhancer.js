@@ -996,13 +996,17 @@ function bindAiSettingsControlFocusGuard() {
   document.addEventListener('click', handleAiSettingsControlFocus, true)
 }
 
+function removeAiProfileRows(panel) {
+  Array.from(panel.querySelectorAll('.ai-profile-row')).forEach((row) => row.remove())
+}
+
 async function deleteAiProfileFromPanel(panel, profileId) {
   const api = window.writingWorkbench
   if (!api?.deleteAiProfile || !profileId) {
     return
   }
   await api.deleteAiProfile(profileId)
-  panel.querySelector('.ai-profile-row')?.remove()
+  removeAiProfileRows(panel)
   enhanceAiSettingsProfiles()
 }
 
@@ -1036,59 +1040,74 @@ async function enhanceAiSettingsProfiles() {
       continue
     }
 
-    if (panel.querySelector('.ai-profile-row')) {
+    const existingProfileRows = Array.from(panel.querySelectorAll('.ai-profile-row'))
+    if (existingProfileRows.length) {
+      existingProfileRows.slice(1).forEach((row) => row.remove())
       continue
     }
 
-    let profiles = []
-    try {
-      profiles = await api.listAiProfiles()
-    } catch {
-      profiles = []
+    if (panel.dataset.aiProfileRendering === 'true') {
+      continue
     }
 
-    const row = document.createElement('div')
-    row.className = 'ai-profile-row'
-    row.innerHTML = `
-      <label>
-        <span>已保存连接</span>
-        <select>
-          <option value="">手动填写或保存新的连接</option>
-          ${profiles.map((profile) => `
-            <option value="${sanitize(profile.id)}">${sanitize(profile.label)} · ${sanitize(profile.model)}</option>
-          `).join('')}
-        </select>
-      </label>
-      <button type="button" class="secondary-button ai-profile-delete" ${profiles.length ? '' : 'disabled'}>删除</button>
-      <small class="ai-profile-status">测试连接成功后会自动保存到这里。</small>
-    `
-
-    formGrid.insertAdjacentElement('afterend', row)
-
-    const select = row.querySelector('select')
-    const deleteButton = row.querySelector('.ai-profile-delete')
-
-    select.addEventListener('change', async () => {
-      if (!select.value) {
-        return
-      }
+    panel.dataset.aiProfileRendering = 'true'
+    try {
+      let profiles = []
       try {
-        await applyAiProfileToPanel(panel, select.value)
-      } catch (error) {
-        row.querySelector('.ai-profile-status').textContent = error instanceof Error ? error.message : '切换失败'
+        profiles = await api.listAiProfiles()
+      } catch {
+        profiles = []
       }
-    })
 
-    deleteButton.addEventListener('click', async () => {
-      if (!select.value) {
-        return
+      if (panel.querySelector('.ai-profile-row')) {
+        continue
       }
-      try {
-        await deleteAiProfileFromPanel(panel, select.value)
-      } catch (error) {
-        row.querySelector('.ai-profile-status').textContent = error instanceof Error ? error.message : '删除失败'
-      }
-    })
+
+      const row = document.createElement('div')
+      row.className = 'ai-profile-row'
+      row.innerHTML = `
+        <label>
+          <span>已保存连接</span>
+          <select>
+            <option value="">手动填写或保存新的连接</option>
+            ${profiles.map((profile) => `
+              <option value="${sanitize(profile.id)}">${sanitize(profile.label)} · ${sanitize(profile.model)}</option>
+            `).join('')}
+          </select>
+        </label>
+        <button type="button" class="secondary-button ai-profile-delete" ${profiles.length ? '' : 'disabled'}>删除</button>
+        <small class="ai-profile-status">测试连接成功后会自动保存到这里。</small>
+      `
+
+      formGrid.insertAdjacentElement('afterend', row)
+
+      const select = row.querySelector('select')
+      const deleteButton = row.querySelector('.ai-profile-delete')
+
+      select.addEventListener('change', async () => {
+        if (!select.value) {
+          return
+        }
+        try {
+          await applyAiProfileToPanel(panel, select.value)
+        } catch (error) {
+          row.querySelector('.ai-profile-status').textContent = error instanceof Error ? error.message : '切换失败'
+        }
+      })
+
+      deleteButton.addEventListener('click', async () => {
+        if (!select.value) {
+          return
+        }
+        try {
+          await deleteAiProfileFromPanel(panel, select.value)
+        } catch (error) {
+          row.querySelector('.ai-profile-status').textContent = error instanceof Error ? error.message : '删除失败'
+        }
+      })
+    } finally {
+      panel.dataset.aiProfileRendering = ''
+    }
 
     const actionButtons = Array.from(panel.querySelectorAll('.panel-actions button'))
     actionButtons.forEach((button) => {
@@ -1098,7 +1117,7 @@ async function enhanceAiSettingsProfiles() {
       button.dataset.aiProfileRefreshBound = 'true'
       button.addEventListener('click', () => {
         window.setTimeout(() => {
-          panel.querySelector('.ai-profile-row')?.remove()
+          removeAiProfileRows(panel)
           enhanceAiSettingsProfiles()
         }, 1400)
       })

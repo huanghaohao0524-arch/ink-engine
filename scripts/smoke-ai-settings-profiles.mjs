@@ -35,8 +35,12 @@ for (const snippet of ['ai-profile-row', 'listAiProfiles', 'useAiProfile', 'dele
   }
 }
 
-if (!enhancer.includes("querySelectorAll('.ai-profile-row')") || !enhancer.includes('.forEach((row) => row.remove())')) {
-  throw new Error('AI settings profile enhancer must remove stale profile rows before rendering a fresh one')
+if (!enhancer.includes('panel.dataset.aiProfileRendering') || !enhancer.includes("existingProfileRows.slice(1).forEach((row) => row.remove())")) {
+  throw new Error('AI settings profile enhancer must guard against concurrent duplicate profile rows')
+}
+
+if (!enhancer.includes('function removeAiProfileRows') || !enhancer.includes("Array.from(panel.querySelectorAll('.ai-profile-row')).forEach((row) => row.remove())")) {
+  throw new Error('AI settings profile refresh must remove all stale profile rows')
 }
 
 if (!main.includes('testConnection: 512')) {
