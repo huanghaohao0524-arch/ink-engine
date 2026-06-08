@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">墨引擎开源封面</title>
+  <desc id="desc">墨引擎是本地优先的 AI 网文写作工作台，强调候选确认、项目记忆和追踪同步。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050712"/>
+      <stop offset="0.52" stop-color="#071226"/>
+      <stop offset="1" stop-color="#05040d"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#35f5ff"/>
+      <stop offset="1" stop-color="#5c7cff"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9b5cff"/>
+      <stop offset="1" stop-color="#35f5ff"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9cff85"/>
+      <stop offset="1" stop-color="#36f3c3"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.1  0 0 0 0 0.85  0 0 0 0 1  0 0 0 0.65 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <style>
+      .font { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif; }
+      .mono { font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
+      .small { font-size: 24px; fill: #a9c7e8; }
+      .tiny { font-size: 19px; fill: #86a6c9; }
+      .panel { fill: rgba(7, 18, 38, 0.72); stroke: rgba(89, 222, 255, 0.46); stroke-width: 2; }
+      .chip { fill: rgba(64, 100, 255, 0.18); stroke: rgba(107, 231, 255, 0.35); stroke-width: 1.5; }
+      .label { font-size: 22px; fill: #8ba9ca; }
+      .metric { font-size: 42px; font-weight: 800; fill: #ffffff; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity="0.55">
+    <circle cx="1330" cy="120" r="260" fill="#183bff" filter="url(#soft)" opacity="0.18"/>
+    <circle cx="260" cy="780" r="300" fill="#00e5ff" filter="url(#soft)" opacity="0.14"/>
+    <circle cx="1050" cy="710" r="260" fill="#8d49ff" filter="url(#soft)" opacity="0.13"/>
+  </g>
+
+  <g opacity="0.2" stroke="#5fdcff" stroke-width="1">
+    <path d="M0 140 H1600 M0 260 H1600 M0 380 H1600 M0 500 H1600 M0 620 H1600 M0 740 H1600"/>
+    <path d="M140 0 V900 M300 0 V900 M460 0 V900 M620 0 V900 M780 0 V900 M940 0 V900 M1100 0 V900 M1260 0 V900 M1420 0 V900"/>
+  </g>
+
+  <g class="font">
+    <text x="70" y="92" font-size="28" fill="#d9eaff" font-weight="700">OPEN SOURCE · AI WRITING WORKBENCH</text>
+    <text x="70" y="180" font-size="74" fill="#ffffff" font-weight="900">墨引擎开源了</text>
+    <text x="70" y="252" font-size="58" fill="url(#cyan)" font-weight="900">AI 网文写作工作台</text>
+    <text x="70" y="304" class="small">不是一键生成小说，而是把立项、设定、大纲、正文候选和追踪同步串成一条可控流程。</text>
+  </g>
+
+  <g transform="translate(62 360)" class="font">
+    <rect x="0" y="0" width="430" height="230" rx="22" class="panel"/>
+    <text x="26" y="46" font-size="25" fill="#aeefff" font-weight="800">项目资料</text>
+    <g transform="translate(28 72)">
+      <rect x="0" y="0" width="70" height="120" rx="8" fill="#2d2218" stroke="#d7a15b"/>
+      <rect x="88" y="0" width="70" height="120" rx="8" fill="#1d2e3a" stroke="#5fdcff"/>
+      <rect x="176" y="0" width="70" height="120" rx="8" fill="#2a1d3a" stroke="#a06dff"/>
+      <rect x="264" y="0" width="70" height="120" rx="8" fill="#193428" stroke="#5fffb4"/>
+      <text x="21" y="72" font-size="30" fill="#ffe3b2" writing-mode="tb">设定</text>
+      <text x="109" y="72" font-size="30" fill="#cfffff" writing-mode="tb">角色</text>
+      <text x="197" y="72" font-size="30" fill="#dfc7ff" writing-mode="tb">大纲</text>
+      <text x="285" y="72" font-size="30" fill="#caffdc" writing-mode="tb">追踪</text>
+    </g>
+    <text x="26" y="210" class="tiny">本地文件透明保存 · 正文与项目记忆分离</text>
+  </g>
+
+  <g transform="translate(530 360)" class="font">
+    <rect x="0" y="0" width="410" height="230" rx="22" class="panel"/>
+    <text x="26" y="46" font-size="25" fill="#aeefff" font-weight="800">候选确认式写作</text>
+    <rect x="30" y="74" width="350" height="104" rx="14" fill="#07172d" stroke="#355dff"/>
+    <text x="54" y="111" class="mono" font-size="20" fill="#7fe7ff">draft.candidate</text>
+    <text x="54" y="146" class="mono" font-size="20" fill="#dcecff">AI 先生成候选，不直接覆盖正文</text>
+    <path d="M64 194 H328" stroke="url(#cyan)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+    <circle cx="64" cy="194" r="8" fill="#35f5ff"/>
+    <circle cx="328" cy="194" r="8" fill="#9b5cff"/>
+  </g>
+
+  <g transform="translate(980 360)" class="font">
+    <rect x="0" y="0" width="548" height="230" rx="22" class="panel"/>
+    <text x="28" y="44" font-size="24" fill="#ffffff" font-weight="800">GitHub</text>
+    <text x="28" y="86" font-size="34" fill="#ffffff" font-weight="900">huanghaohao0524-arch/ink-engine</text>
+    <text x="28" y="122" class="tiny">Local-first AI writing workbench for Chinese web-novel planning.</text>
+    <g transform="translate(28 150)">
+      <rect x="0" y="0" width="86" height="34" rx="17" class="chip"/>
+      <text x="18" y="23" class="tiny" fill="#bfefff">MIT</text>
+      <rect x="102" y="0" width="132" height="34" rx="17" class="chip"/>
+      <text x="121" y="23" class="tiny">Electron</text>
+      <rect x="250" y="0" width="112" height="34" rx="17" class="chip"/>
+      <text x="272" y="23" class="tiny">React</text>
+      <rect x="378" y="0" width="132" height="34" rx="17" class="chip"/>
+      <text x="397" y="23" class="tiny">OpenAI</text>
+    </g>
+  </g>
+
+  <g transform="translate(72 642)" class="font">
+    <g>
+      <rect x="0" y="0" width="230" height="78" rx="18" class="panel"/>
+      <text x="24" y="30" class="label">本地优先</text>
+      <text x="24" y="62" class="metric">Local</text>
+    </g>
+    <g transform="translate(256 0)">
+      <rect x="0" y="0" width="230" height="78" rx="18" class="panel"/>
+      <text x="24" y="30" class="label">候选区</text>
+      <text x="24" y="62" class="metric">Confirm</text>
+    </g>
+    <g transform="translate(512 0)">
+      <rect x="0" y="0" width="230" height="78" rx="18" class="panel"/>
+      <text x="24" y="30" class="label">项目记忆</text>
+      <text x="24" y="62" class="metric">Memory</text>
+    </g>
+    <g transform="translate(768 0)">
+      <rect x="0" y="0" width="230" height="78" rx="18" class="panel"/>
+      <text x="24" y="30" class="label">章节追踪</text>
+      <text x="24" y="62" class="metric">Trace</text>
+    </g>
+    <g transform="translate(1024 0)">
+      <rect x="0" y="0" width="430" height="78" rx="18" class="panel"/>
+      <text x="24" y="30" class="label">线性流程</text>
+      <text x="24" y="62" class="metric">Idea → Draft → Sync</text>
+    </g>
+  </g>
+
+  <g transform="translate(72 756)" class="font">
+    <rect x="0" y="0" width="1456" height="66" rx="19" fill="rgba(7,18,38,0.62)" stroke="rgba(89,222,255,0.35)"/>
+    <text x="28" y="42" font-size="26" fill="#dff8ff" font-weight="700">适合：网文作者 / AI 写作工具研究者 / 本地优先应用开发者 / 想重建可维护源码的人</text>
+    <text x="1078" y="42" font-size="24" fill="#6be7ff">github.com/huanghaohao0524-arch/ink-engine</text>
+  </g>
+
+  <g transform="translate(1120 120)" opacity="0.95" filter="url(#glow)">
+    <path d="M0 160 C95 44 228 24 340 54" fill="none" stroke="url(#violet)" stroke-width="4"/>
+    <path d="M20 180 C130 108 240 110 350 162" fill="none" stroke="url(#green)" stroke-width="3" opacity="0.8"/>
+    <circle cx="0" cy="160" r="9" fill="#35f5ff"/>
+    <circle cx="340" cy="54" r="9" fill="#9b5cff"/>
+    <circle cx="350" cy="162" r="9" fill="#9cff85"/>
+  </g>
+</svg>
