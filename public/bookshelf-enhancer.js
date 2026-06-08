@@ -868,7 +868,11 @@ function setReactInputValue(input, value) {
     return
   }
   const descriptor = Object.getOwnPropertyDescriptor(Object.getPrototypeOf(input), 'value')
-  descriptor?.set?.call(input, value)
+  if (descriptor?.set) {
+    descriptor.set.call(input, value)
+  } else {
+    input.value = value
+  }
   input.dispatchEvent(new Event('input', { bubbles: true }))
   input.dispatchEvent(new Event('change', { bubbles: true }))
 }
@@ -890,18 +894,80 @@ async function applyAiProfileToPanel(panel, profileId) {
 
 function applyAiProviderPresetToPanel(panel, provider) {
   const inputs = findAiSettingsInputs(panel)
+  const status = panel.querySelector('.ai-provider-preset-status')
   if (provider === 'deepseek') {
     setReactInputValue(inputs.baseUrl, 'https://api.deepseek.com/v1')
     setReactInputValue(inputs.model, 'deepseek-chat')
     inputs.apiKey?.focus()
-    panel.querySelector('.ai-provider-preset-status').textContent = '已填入 DeepSeek 地址和模型，请粘贴 API Key 后保存。'
+    if (status) {
+      status.textContent = '已填入 DeepSeek 地址和模型，请粘贴 API Key 后保存。'
+    }
     return
   }
 
   setReactInputValue(inputs.baseUrl, 'https://api.openai.com/v1')
   setReactInputValue(inputs.model, 'gpt-4.1')
   inputs.apiKey?.focus()
-  panel.querySelector('.ai-provider-preset-status').textContent = '已切换为 OpenAI 默认地址和模型。'
+  if (status) {
+    status.textContent = '已切换为 OpenAI 默认地址和模型。'
+  }
+}
+
+function maybeAutoFillDeepSeekPreset(panel) {
+  if (panel.dataset.aiProviderAutoFilled === 'true') {
+    return
+  }
+
+  const inputs = findAiSettingsInputs(panel)
+  const apiKey = inputs.apiKey?.value?.trim() || ''
+  const baseUrl = inputs.baseUrl?.value?.trim() || ''
+  const model = inputs.model?.value?.trim() || ''
+  const isDefaultOpenAi =
+    (!baseUrl || baseUrl === 'https://api.openai.com/v1') &&
+    (!model || model === 'gpt-4.1')
+
+  if (apiKey || !isDefaultOpenAi) {
+    return
+  }
+
+  panel.dataset.aiProviderAutoFilled = 'true'
+  applyAiProviderPresetToPanel(panel, 'deepseek')
+  const status = panel.querySelector('.ai-provider-preset-status')
+  if (status) {
+    status.textContent = '已默认填入 DeepSeek 地址和模型，请直接粘贴 API Key。'
+  }
+}
+
+function handleAiProviderPresetEvent(event) {
+  const button = event.target?.closest?.('[data-ai-provider-preset]')
+  if (!button) {
+    return
+  }
+  const panel = button.closest('.ai-settings-panel')
+  const provider = button.dataset.aiProviderPreset
+  if (!panel || !provider) {
+    return
+  }
+  event.preventDefault()
+  event.stopPropagation()
+  applyAiProviderPresetToPanel(panel, provider)
+}
+
+function bindAiProviderPresetDelegation() {
+  if (window.__inkEngineAiProviderPresetDelegationBound) {
+    return
+  }
+  window.__inkEngineAiProviderPresetDelegationBound = true
+  window.__inkEngineApplyAiPreset = (button, provider) => {
+    const panel = button?.closest?.('.ai-settings-panel')
+    if (!panel || !provider) {
+      return false
+    }
+    applyAiProviderPresetToPanel(panel, provider)
+    return false
+  }
+  document.addEventListener('pointerdown', handleAiProviderPresetEvent, true)
+  document.addEventListener('click', handleAiProviderPresetEvent, true)
 }
 
 async function deleteAiProfileFromPanel(panel, profileId) {
@@ -931,13 +997,15 @@ async function enhanceAiSettingsProfiles() {
     presetRow.className = 'ai-provider-preset-row'
     presetRow.innerHTML = `
       <strong>快速填入</strong>
-      <button type="button" class="secondary-button ai-preset-deepseek">DeepSeek</button>
-      <button type="button" class="secondary-button ai-preset-openai">OpenAI</button>
+      <button type="button" class="secondary-button ai-preset-deepseek" data-ai-provider-preset="deepseek" onpointerdown="return window.__inkEngineApplyAiPreset?.(this, 'deepseek')" onclick="return window.__inkEngineApplyAiPreset?.(this, 'deepseek')">DeepSeek</button>
+      <button type="button" class="secondary-button ai-preset-openai" data-ai-provider-preset="openai" onpointerdown="return window.__inkEngineApplyAiPreset?.(this, 'openai')" onclick="return window.__inkEngineApplyAiPreset?.(this, 'openai')">OpenAI</button>
       <small class="ai-provider-preset-status">点 DeepSeek 会自动填写 Base URL 和模型，API Key 仍需手动粘贴。</small>
     `
     panel.insertBefore(presetRow, formGrid)
-    presetRow.querySelector('.ai-preset-deepseek').addEventListener('click', () => applyAiProviderPresetToPanel(panel, 'deepseek'))
-    presetRow.querySelector('.ai-preset-openai').addEventListener('click', () => applyAiProviderPresetToPanel(panel, 'openai'))
+    if (panel.dataset.aiProviderAutoFilled === 'true') {
+      presetRow.querySelector('.ai-provider-preset-status').textContent = '已默认填入 DeepSeek 地址和模型，请直接粘贴 API Key。'
+    }
+    maybeAutoFillDeepSeekPreset(panel)
 
     if (!api?.listAiProfiles) {
       continue
@@ -1165,5 +1233,6 @@ function queueEnhanceDashboard() {
 const observer = new MutationObserver(queueEnhanceDashboard)
 observer.observe(document.documentElement, { childList: true, subtree: true })
 bindGenreRailDelegation()
+bindAiProviderPresetDelegation()
 attachAiProgressListener()
 queueEnhanceDashboard()
