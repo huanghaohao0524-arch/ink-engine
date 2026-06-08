@@ -1182,11 +1182,153 @@ function renderDashboard(dashboard, totalCount, visibleCount, activeGenre, genre
   `
 }
 
-function scrollToEditorSection(selector) {
-  const target = document.querySelector(selector)
-  if (target) {
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+const EDITOR_COCKPIT_MODULES = [
+  { id: 'overview', label: '概览', hint: '项目态势', marker: '01' },
+  { id: 'setup', label: '立项', hint: '地基检查', marker: '02' },
+  { id: 'knowledge', label: '资料库', hint: '素材健康', marker: '03' },
+  { id: 'chapter', label: '章节准备', hint: '当前章节', marker: '04' },
+  { id: 'outline', label: '细纲目录', hint: '批量规划', marker: '05', action: 'outline' },
+  { id: 'write', label: '进入写作', hint: '正文工作区', marker: '06', action: 'write' },
+]
+
+function collectPanelItems(container, selector, fallback = []) {
+  const items = Array.from(container.querySelectorAll(selector))
+    .map((node) => {
+      const title = node.querySelector('span, dt, h3')?.textContent?.trim()
+        || node.querySelector('strong')?.textContent?.trim()
+      const detail = node.querySelector('strong, dd, em, small, p')?.textContent?.trim()
+      const text = node.textContent?.replace(/\s+/g, ' ').trim()
+      return {
+        title: title || text || '',
+        detail: detail && detail !== title ? detail : text && text !== title ? text.replace(title, '').trim() : '',
+      }
+    })
+    .filter((item) => item.title)
+  return items.length ? items : fallback
+}
+
+function getEditorCockpitPanelData(panelId, commandCenter) {
+  const root = commandCenter.closest('.editor-shell') || document
+  const heading = commandCenter.querySelector('.editor-cockpit-overview h2')?.textContent?.trim()
+    || commandCenter.querySelector('.section-title h2')?.textContent?.trim()
+    || '项目驾驶舱'
+  const description = commandCenter.querySelector('.editor-cockpit-overview p')?.textContent?.trim()
+    || commandCenter.querySelector('.section-title p')?.textContent?.trim()
+    || '把立项、资料、细纲和写作状态放在同一个工作台里看。'
+  const metrics = collectPanelItems(commandCenter, '.command-metric-grid div', [
+    { title: '状态', detail: '等待项目数据' },
+  ])
+  const setupItems = collectPanelItems(root, '.prep-overview .prep-check-item', [
+    { title: '项目地基', detail: '进入书籍后读取平台、题材、设定和人物资料。' },
+  ])
+  const knowledgeItems = collectPanelItems(root, '.knowledge-board .knowledge-lane', [
+    { title: '资料库', detail: '核心设定、人物资产、剧情骨架和连续性状态。' },
+  ])
+  const chapterItems = collectPanelItems(root, '.chapter-prep-card div', [
+    { title: '当前章节', detail: '本章细纲、上一章和写作依据。' },
+  ])
+
+  const panels = {
+    overview: {
+      kicker: '项目态势',
+      title: heading,
+      detail: description,
+      items: metrics,
+      actionLabel: '保存当前状态',
+      action: 'save',
+    },
+    setup: {
+      kicker: '立项地基',
+      title: '项目资料是否可写',
+      detail: '这里不是跳到下面，而是把下方立项检查抽到总控台里，看缺口再决定是否进入章节。',
+      items: setupItems,
+      actionLabel: '进入章节写作',
+      action: 'write',
+    },
+    knowledge: {
+      kicker: '资料库健康',
+      title: '按用途查看资料资产',
+      detail: '参考图里的资料区应该告诉你哪些资产能支撑后续写作，而不是只换一层颜色。',
+      items: knowledgeItems,
+    },
+    chapter: {
+      kicker: '章节准备',
+      title: '当前章节可写依据',
+      detail: '把本章细纲、上一章和当前章节信息集中在这里，决定下一步是补细纲还是写正文。',
+      items: chapterItems,
+      actionLabel: '按依据写作',
+      action: 'write',
+    },
+    outline: {
+      kicker: '前置规划',
+      title: '细纲目录',
+      detail: '打开真实细纲目录，可以查看、批量生成或重写单章细纲。',
+      items: [
+        { title: '批量细纲', detail: '补齐缺失章节细纲' },
+        { title: '单章预览', detail: '每章都能单独查看' },
+        { title: '覆盖开关', detail: '需要时再重写已有细纲' },
+      ],
+      actionLabel: '打开细纲目录',
+      action: 'outline',
+    },
+    write: {
+      kicker: '正文工作区',
+      title: '进入章节写作',
+      detail: '进入真实写作界面，继续用候选区确认正文，不在总控台里假装生成。',
+      items: chapterItems,
+      actionLabel: '进入写作',
+      action: 'write',
+    },
   }
+
+  return panels[panelId] || panels.overview
+}
+
+function triggerEditorCockpitAction(action) {
+  if (action === 'outline') {
+    openOutlineCockpitFromCurrentEditor()
+    return true
+  }
+  if (action === 'write') {
+    document.querySelector('.prep-overview .primary-button')?.click()
+    return true
+  }
+  if (action === 'save') {
+    Array.from(document.querySelectorAll('.editor-shell .topbar-actions button'))
+      .find((button) => button.textContent?.trim() === '保存')
+      ?.click()
+    return true
+  }
+  return false
+}
+
+function setEditorCockpitPanel(commandCenter, panelId) {
+  const preview = commandCenter.querySelector('.editor-cockpit-preview')
+  if (!preview) {
+    return
+  }
+  commandCenter.dataset.activeCockpitPanel = panelId
+  commandCenter.querySelectorAll('[data-cockpit-panel]').forEach((button) => {
+    button.classList.toggle('active', button.dataset.cockpitPanel === panelId)
+  })
+
+  const panel = getEditorCockpitPanelData(panelId, commandCenter)
+  preview.innerHTML = `
+    <div class="editor-cockpit-preview-head">
+      <span>${sanitize(panel.kicker)}</span>
+      <strong>${sanitize(panel.title)}</strong>
+      <p>${sanitize(panel.detail)}</p>
+    </div>
+    <div class="editor-cockpit-preview-grid">
+      ${panel.items.slice(0, 6).map((item) => `
+        <section>
+          <span>${sanitize(item.title)}</span>
+          <strong>${sanitize(item.detail || '已纳入总控')}</strong>
+        </section>
+      `).join('')}
+    </div>
+    ${panel.action ? `<button type="button" class="primary-button" data-cockpit-action="${panel.action}">${sanitize(panel.actionLabel)}</button>` : ''}
+  `
 }
 
 function enhanceEditorCommandCenter() {
@@ -1197,36 +1339,76 @@ function enhanceEditorCommandCenter() {
   }
 
   commandCenter.dataset.editorCockpitEnhanced = 'true'
-  const nav = document.createElement('nav')
-  nav.className = 'editor-cockpit-nav'
-  nav.setAttribute('aria-label', '项目驾驶舱导航')
-  nav.innerHTML = `
-    <button type="button" data-target=".project-command-center">概览</button>
-    <button type="button" data-target=".prep-overview">立项</button>
-    <button type="button" data-target=".knowledge-board">资料库</button>
-    <button type="button" data-target=".chapter-prep-card">章节准备</button>
-    <button type="button" data-action="outline">细纲目录</button>
-    <button type="button" data-action="write">进入写作</button>
+  const title = commandCenter.querySelector(':scope > .section-title')
+  const metrics = commandCenter.querySelector(':scope > .command-metric-grid')
+  const cockpit = document.createElement('section')
+  cockpit.className = 'editor-cockpit-shell'
+  cockpit.innerHTML = `
+    <aside class="editor-cockpit-rail" aria-label="项目模块">
+      <strong>墨引擎</strong>
+      ${EDITOR_COCKPIT_MODULES.map((item) => `
+        <button type="button" data-cockpit-panel="${item.id}">
+          <i aria-hidden="true">${item.marker}</i>
+          <span>${item.label}</span>
+        </button>
+      `).join('')}
+    </aside>
+    <div class="editor-cockpit-main">
+      <div class="editor-cockpit-topbar">
+        <span>写作工作台</span>
+        <div aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+      <div class="editor-cockpit-core">
+        <article class="editor-cockpit-overview"></article>
+        <article class="editor-cockpit-assistant">
+          <span>智能助手</span>
+          <strong>把状态先看清，再进入动作</strong>
+          <p>左侧模块会切换总控内容；只有细纲、写作、保存这类已有链路才直接触发真实动作。</p>
+        </article>
+      </div>
+      <div class="editor-cockpit-modules">
+        ${EDITOR_COCKPIT_MODULES.map((item) => `
+          <button type="button" class="editor-cockpit-module" data-cockpit-panel="${item.id}">
+            <i aria-hidden="true">${item.marker}</i>
+            <strong>${item.label}</strong>
+            <small>${item.hint}</small>
+          </button>
+        `).join('')}
+      </div>
+      <article class="editor-cockpit-preview" aria-live="polite"></article>
+      <div class="editor-cockpit-action-dock"></div>
+    </div>
   `
-  nav.addEventListener('click', (event) => {
+  const overview = cockpit.querySelector('.editor-cockpit-overview')
+  if (title) {
+    overview.appendChild(title)
+  }
+  if (metrics) {
+    overview.appendChild(metrics)
+  }
+  commandCenter.replaceChildren(cockpit)
+  commandCenter.addEventListener('click', (event) => {
     const button = event.target?.closest?.('button')
     if (!button) {
       return
     }
-    const action = button.dataset.action
-    if (action === 'outline') {
-      openOutlineCockpitFromCurrentEditor()
+    const action = button.dataset.cockpitAction
+    if (action && triggerEditorCockpitAction(action)) {
       return
     }
-    if (action === 'write') {
-      document.querySelector('.prep-overview .primary-button')?.click()
+    const panel = button.dataset.cockpitPanel
+    if (!panel) {
       return
     }
-    if (button.dataset.target) {
-      scrollToEditorSection(button.dataset.target)
+    const module = EDITOR_COCKPIT_MODULES.find((item) => item.id === panel)
+    if (module?.action) {
+      setEditorCockpitPanel(commandCenter, panel)
+      triggerEditorCockpitAction(module.action)
+      return
     }
+    setEditorCockpitPanel(commandCenter, panel)
   })
-  commandCenter.insertBefore(nav, commandCenter.firstChild)
+  setEditorCockpitPanel(commandCenter, 'overview')
 }
 
 function renderRail(rail, genres, counts, activeGenre, render) {
@@ -1313,7 +1495,8 @@ function enhanceProjectOutlineCockpit() {
   panel.querySelector('button').addEventListener('click', () => {
     openOutlineCockpitFromCurrentEditor()
   })
-  commandCenter.appendChild(panel)
+  const dock = commandCenter.querySelector('.editor-cockpit-action-dock')
+  ;(dock || commandCenter).appendChild(panel)
 }
 
 function queueEnhanceDashboard() {

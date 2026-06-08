@@ -18,39 +18,48 @@ const checks = [
   ],
   ['genre count remains derived', enhancer.includes('const genreCount = Math.max(genres.length - 2, 0)')],
   [
-    'editor cockpit is scoped to opened books',
-    enhancer.includes("const shell = document.querySelector('.editor-shell')")
-      && enhancer.includes("nav.className = 'editor-cockpit-nav'")
-      && enhancer.includes('commandCenter.insertBefore(nav, commandCenter.firstChild)'),
+    'editor cockpit has real workspace architecture',
+    enhancer.includes('EDITOR_COCKPIT_MODULES')
+      && enhancer.includes("cockpit.className = 'editor-cockpit-shell'")
+      && enhancer.includes('editor-cockpit-rail')
+      && enhancer.includes('editor-cockpit-modules')
+      && enhancer.includes('editor-cockpit-preview'),
   ],
   [
-    'editor cockpit buttons are wired to real actions',
-    enhancer.includes('data-target=".prep-overview"')
-      && enhancer.includes('data-target=".knowledge-board"')
-      && enhancer.includes('data-target=".chapter-prep-card"')
-      && enhancer.includes('data-action="outline"')
-      && enhancer.includes('data-action="write"')
+    'editor cockpit switches in place instead of anchor scrolling',
+    enhancer.includes('setEditorCockpitPanel(commandCenter, panel)')
+      && enhancer.includes('getEditorCockpitPanelData')
+      && !enhancer.includes('scrollToEditorSection')
+      && !enhancer.includes('data-target=".prep-overview"'),
+  ],
+  [
+    'editor cockpit direct actions are real',
+    enhancer.includes("triggerEditorCockpitAction(action)")
+      && enhancer.includes("if (action === 'outline')")
+      && enhancer.includes("if (action === 'write')")
+      && enhancer.includes("if (action === 'save')")
       && enhancer.includes('openOutlineCockpitFromCurrentEditor()')
       && enhancer.includes("document.querySelector('.prep-overview .primary-button')?.click()"),
   ],
   [
     'old fake home cockpit markup is gone',
-    !enhancer.includes('cockpit-main')
-      && !enhancer.includes('cockpit-modules')
+    !enhancer.includes('class="cockpit-main"')
+      && !enhancer.includes('class="cockpit-modules"')
       && !enhancer.includes('const moduleCards = ['),
   ],
   [
     'styles separate home shelf and editor cockpit',
     styles.includes('.shelf-library-summary')
       && styles.includes('.shelf-library-stats')
-      && styles.includes('.editor-shell .project-command-center')
-      && styles.includes('.editor-cockpit-nav'),
+      && styles.includes('.editor-cockpit-shell')
+      && styles.includes('.editor-cockpit-rail')
+      && styles.includes('.editor-cockpit-preview'),
   ],
   ['filter empty hidden rule exists', styles.includes('.bookshelf-filter-empty[hidden]') && styles.includes('display: none')],
   ['outline button stays before delete', enhancer.includes('actions.insertBefore(outlineButton, dangerButton || null)')],
   [
     'mobile editor cockpit collapses',
-    /@media \(max-width: 720px\)[\s\S]+\.editor-cockpit-nav[\s\S]+grid-template-columns: 1fr/.test(styles),
+    /@media \(max-width: 720px\)[\s\S]+\.editor-cockpit-modules[\s\S]+grid-template-columns: 1fr/.test(styles),
   ],
 ]
 
