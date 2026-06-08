@@ -1162,49 +1162,97 @@ function ensureShell(booksSection, bookGrid) {
   return { dashboard, rail, empty }
 }
 
-function renderDashboard(dashboard, totalCount, visibleCount, activeGenre, genres) {
+function renderDashboard(dashboard, totalCount, visibleCount, activeGenre, genres, cards = []) {
   const active = genres.find((genre) => genre.id === activeGenre) || genres[0]
   const genreCount = Math.max(genres.length - 2, 0)
   const scopeText = activeGenre === 'all' ? '全部作品' : active.label
-  const flowNodes = [
-    ['立项', totalCount > 0 ? '可继续' : '待创建'],
-    ['项目包', '沉淀'],
-    ['大纲', '规划'],
-    ['章节写作', '候选'],
-    ['追踪', '同步'],
+  const visibleCards = cards.filter((card) => !card.hidden)
+  const primaryMeta = visibleCards[0] ? getCardMeta(visibleCards[0]) : null
+  const progress = totalCount ? Math.max(1, Math.round((visibleCount / totalCount) * 100)) : 0
+  const progressAngle = Math.round((progress / 100) * 360)
+  const navItems = ['概览', '立项', '大纲', '角色', '写作', '追踪', '资料库', '设置']
+  const moduleCards = [
+    ['立项问答', totalCount ? '可继续' : '待创建'],
+    ['项目包', primaryMeta ? '已生成' : '待生成'],
+    ['大纲', primaryMeta?.status || '待整理'],
+    ['角色卡', '资料区'],
+    ['章节写作', primaryMeta?.task ? '进行中' : '待开始'],
+    ['追踪表', primaryMeta?.risk ? '需关注' : '同步中'],
+  ]
+  const assistantLines = primaryMeta ? [
+    `${primaryMeta.title}`,
+    primaryMeta.task || '先进入作品，检查下一步写作任务。',
+    primaryMeta.risk || '暂无明显风险。',
+  ] : [
+    '先选择或创建一个作品。',
+    '项目包、大纲和章节候选会在这里串起来。',
+    '所有写入仍应先经过候选区确认。',
   ]
   dashboard.innerHTML = `
-    <div class="shelf-dashboard-hero">
-      <span>LOCAL AI WRITING WORKBENCH</span>
-      <strong>墨引擎驾驶舱</strong>
-      <small>${activeGenre === 'all' ? '本地书库、项目资料、章节候选和追踪同步收在同一个工作台。' : `正在查看“${sanitize(active.label)}”题材下的作品。`}</small>
-      <div class="shelf-dashboard-tags" aria-label="工作流标签">
-        <span>本地优先</span>
-        <span>候选区</span>
-        <span>项目记忆</span>
-        <span>章节追踪</span>
+    <aside class="cockpit-nav" aria-label="模块导航预览">
+      <strong>墨引擎</strong>
+      ${navItems.map((item, index) => `
+        <span class="${index === 0 ? 'active' : ''}">
+          <i aria-hidden="true"></i>
+          ${item}
+        </span>
+      `).join('')}
+    </aside>
+    <section class="cockpit-main">
+      <div class="cockpit-titlebar">
+        <span>墨引擎 · 写作工作台</span>
+        <div aria-hidden="true"><i></i><i></i><i></i></div>
       </div>
-    </div>
-    <div class="shelf-dashboard-panel" aria-label="当前书库状态">
-      <div class="shelf-dashboard-panel-head">
-        <span>当前筛选</span>
-        <strong>${sanitize(scopeText)}</strong>
-      </div>
-      <div class="shelf-dashboard-stats">
-        <div><span>全部作品</span><strong>${totalCount}</strong></div>
-        <div><span>当前显示</span><strong>${visibleCount}</strong></div>
-        <div><span>题材架</span><strong>${genreCount}</strong></div>
-      </div>
-      <div class="shelf-flow-strip">
-        ${flowNodes.map(([label, state]) => `
+
+      <div class="cockpit-grid">
+        <article class="cockpit-overview">
           <div>
-            <i aria-hidden="true"></i>
-            <strong>${label}</strong>
-            <span>${state}</span>
+            <span>项目概览</span>
+            <dl>
+              <div><dt>当前</dt><dd>${sanitize(scopeText)}</dd></div>
+              <div><dt>作品</dt><dd>${visibleCount} / ${totalCount}</dd></div>
+              <div><dt>题材</dt><dd>${genreCount}</dd></div>
+              <div><dt>状态</dt><dd>${totalCount ? '创作中' : '待创建'}</dd></div>
+            </dl>
           </div>
-        `).join('')}
+          <div class="cockpit-progress" style="--progress-angle: ${progressAngle}deg">
+            <i></i>
+            <strong>${progress}%</strong>
+            <span>${activeGenre === 'all' ? '书库覆盖' : '筛选占比'}</span>
+          </div>
+        </article>
+
+        <article class="cockpit-assistant">
+          <div>
+            <span>智能助手</span>
+            <strong>${primaryMeta ? '下一步提醒' : '启动提示'}</strong>
+          </div>
+          <ul>
+            ${assistantLines.map((line) => `<li>${sanitize(line)}</li>`).join('')}
+          </ul>
+          <b aria-hidden="true"></b>
+        </article>
       </div>
-    </div>
+
+      <div class="cockpit-modules" aria-label="创作模块">
+        <span>创作模块</span>
+        <div>
+          ${moduleCards.map(([label, state]) => `
+            <section>
+              <i aria-hidden="true"></i>
+              <strong>${sanitize(label)}</strong>
+              <small>${sanitize(state)}</small>
+            </section>
+          `).join('')}
+        </div>
+      </div>
+      <div class="cockpit-footer">
+        <span>本地优先</span>
+        <span>候选区确认</span>
+        <span>项目记忆</span>
+        <span>追踪同步</span>
+      </div>
+    </section>
   `
 }
 
@@ -1263,7 +1311,7 @@ function enhanceDashboard() {
     const visibleCount = filterCards(cards, currentActiveGenre)
     empty.hidden = cards.length === 0 || visibleCount > 0
 
-    renderDashboard(dashboard, cards.length, visibleCount, currentActiveGenre, genres)
+    renderDashboard(dashboard, cards.length, visibleCount, currentActiveGenre, genres, cards)
     renderRail(rail, genres, counts, currentActiveGenre, render)
   }
 
