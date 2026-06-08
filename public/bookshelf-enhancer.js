@@ -751,7 +751,8 @@ function decorateCard(card, genreId) {
       event.stopPropagation()
       openOutlineCockpitFromCard(card)
     })
-    actions.appendChild(outlineButton)
+    const dangerButton = actions.querySelector('.danger-button')
+    actions.insertBefore(outlineButton, dangerButton || null)
   }
   if (firstAction && card.dataset.bookshelfKeybound !== 'true') {
     card.dataset.bookshelfKeybound = 'true'
@@ -1163,16 +1164,46 @@ function ensureShell(booksSection, bookGrid) {
 
 function renderDashboard(dashboard, totalCount, visibleCount, activeGenre, genres) {
   const active = genres.find((genre) => genre.id === activeGenre) || genres[0]
+  const genreCount = Math.max(genres.length - 2, 0)
+  const scopeText = activeGenre === 'all' ? '全部作品' : active.label
+  const flowNodes = [
+    ['立项', totalCount > 0 ? '可继续' : '待创建'],
+    ['项目包', '沉淀'],
+    ['大纲', '规划'],
+    ['章节写作', '候选'],
+    ['追踪', '同步'],
+  ]
   dashboard.innerHTML = `
-    <div class="shelf-dashboard-copy">
-      <span>我的书库</span>
-      <strong>${sanitize(active.label)}</strong>
-      <small>${activeGenre === 'all' ? '按题材管理作品，进入书内再处理卷与章节。' : '当前只显示这个题材下的作品。'}</small>
+    <div class="shelf-dashboard-hero">
+      <span>LOCAL AI WRITING WORKBENCH</span>
+      <strong>墨引擎驾驶舱</strong>
+      <small>${activeGenre === 'all' ? '本地书库、项目资料、章节候选和追踪同步收在同一个工作台。' : `正在查看“${sanitize(active.label)}”题材下的作品。`}</small>
+      <div class="shelf-dashboard-tags" aria-label="工作流标签">
+        <span>本地优先</span>
+        <span>候选区</span>
+        <span>项目记忆</span>
+        <span>章节追踪</span>
+      </div>
     </div>
-    <div class="shelf-dashboard-stats">
-      <div><span>全部</span><strong>${totalCount}</strong></div>
-      <div><span>当前</span><strong>${visibleCount}</strong></div>
-      <div><span>题材</span><strong>${Math.max(genres.length - 2, 0)}</strong></div>
+    <div class="shelf-dashboard-panel" aria-label="当前书库状态">
+      <div class="shelf-dashboard-panel-head">
+        <span>当前筛选</span>
+        <strong>${sanitize(scopeText)}</strong>
+      </div>
+      <div class="shelf-dashboard-stats">
+        <div><span>全部作品</span><strong>${totalCount}</strong></div>
+        <div><span>当前显示</span><strong>${visibleCount}</strong></div>
+        <div><span>题材架</span><strong>${genreCount}</strong></div>
+      </div>
+      <div class="shelf-flow-strip">
+        ${flowNodes.map(([label, state]) => `
+          <div>
+            <i aria-hidden="true"></i>
+            <strong>${label}</strong>
+            <span>${state}</span>
+          </div>
+        `).join('')}
+      </div>
     </div>
   `
 }

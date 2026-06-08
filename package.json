@@ -22,6 +22,7 @@
     "lint": "eslint .",
     "qa:gstack:home": "node scripts/qa-gstack-home.mjs",
     "smoke:brand": "node scripts/smoke-branding.mjs",
+    "smoke:home-command-console": "node scripts/smoke-home-command-console.mjs",
     "smoke:planning": "node scripts/smoke-planning-checkpoint.mjs",
     "smoke:project-package": "node scripts/smoke-project-package-split.mjs",
     "smoke:delete-book-project": "node scripts/smoke-delete-book-project.mjs",
