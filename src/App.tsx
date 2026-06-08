@@ -230,7 +230,7 @@ const text = {
   providerPreset: '\u5feb\u901f\u586b\u5165',
   deepSeekPreset: 'DeepSeek',
   openAiPreset: 'OpenAI',
-  aiSettingsHint: '\u5148\u586b API Key\uff0c\u518d\u4fdd\u5b58\u6216\u6d4b\u8bd5\u8fde\u63a5\u3002DeepSeek \u8bf7\u7528 https://api.deepseek.com/v1 \u548c deepseek-chat\u3002',
+  aiSettingsHint: '\u5148\u586b API Key\uff0c\u518d\u4fdd\u5b58\u6216\u6d4b\u8bd5\u8fde\u63a5\u3002DeepSeek \u8bf7\u7528 https://api.deepseek.com \u548c deepseek-v4-flash\u3002',
   configured: '\u5df2\u914d\u7f6e',
   notConfigured: '\u672a\u914d\u7f6e',
   saveSettings: '\u4fdd\u5b58\u8bbe\u7f6e',
@@ -1084,8 +1084,8 @@ function App() {
   function applyAiProviderPreset(provider: 'deepseek' | 'openai') {
     if (provider === 'deepseek') {
       updateAiForm({
-        baseUrl: 'https://api.deepseek.com/v1',
-        model: 'deepseek-chat',
+        baseUrl: 'https://api.deepseek.com',
+        model: 'deepseek-v4-flash',
       })
       return
     }

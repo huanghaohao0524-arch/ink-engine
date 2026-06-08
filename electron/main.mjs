@@ -4,11 +4,13 @@ import crypto from 'node:crypto'
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { fetch as undiciFetch, ProxyAgent } from 'undici'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 let mainWindow = null
 const aiRequestControllers = new Map()
+const aiProxyAgents = new Map()
 
 const aiOutputLimits = {
   planningQuestion: 1200,
@@ -1275,6 +1277,21 @@ async function withAiProxy(proxyUrl, task) {
   }
 }
 
+async function nodeAiFetch(url, options = {}, proxyUrl = '') {
+  let dispatcher = null
+  if (proxyUrl) {
+    dispatcher = aiProxyAgents.get(proxyUrl)
+    if (!dispatcher) {
+      dispatcher = new ProxyAgent(proxyUrl)
+      aiProxyAgents.set(proxyUrl, dispatcher)
+    }
+  }
+  return undiciFetch(url, {
+    ...options,
+    ...(dispatcher ? { dispatcher } : {}),
+  })
+}
+
 const aiRequestTimeoutMs = 180000
 const aiStreamRequestTimeoutMs = 240000
 
@@ -1326,6 +1343,7 @@ async function aiFetch(url, options = {}, proxyUrl = '', fetchOptions = {}) {
   const requestOptions = { ...options, signal: timedSignal.signal }
   const request = () => net.fetch(url, requestOptions)
   let response
+  let netFetchError = null
 
   try {
     if (net?.fetch) {
@@ -1338,18 +1356,19 @@ async function aiFetch(url, options = {}, proxyUrl = '', fetchOptions = {}) {
       return response
     }
   } catch (error) {
-    timedSignal.cleanup()
     if (timedSignal.isTimedOut()) {
+      timedSignal.cleanup()
       throw new Error(`AI request timed out after ${Math.round((fetchOptions.timeoutMs ?? aiRequestTimeoutMs) / 1000)} seconds. Try again or switch to a faster model.`)
     }
     if (options.signal?.aborted || error?.name === 'AbortError') {
+      timedSignal.cleanup()
       throw createAiAbortError()
     }
-    throw createAiNetworkError(error, url)
+    netFetchError = error
   }
 
   try {
-    response = await fetch(url, requestOptions)
+    response = await nodeAiFetch(url, requestOptions, proxyUrl)
     if (fetchOptions.keepSignalAlive) {
       response.__aiSignalCleanup = timedSignal.cleanup
     } else {
@@ -1364,7 +1383,10 @@ async function aiFetch(url, options = {}, proxyUrl = '', fetchOptions = {}) {
     if (options.signal?.aborted || error?.name === 'AbortError') {
       throw createAiAbortError()
     }
-    throw createAiNetworkError(error, url)
+    const fallbackError = netFetchError instanceof Error
+      ? new Error(`${error instanceof Error ? error.message : String(error)}; Electron net.fetch: ${netFetchError.message}`)
+      : error
+    throw createAiNetworkError(fallbackError, url)
   }
 }
 

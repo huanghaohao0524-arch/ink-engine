@@ -11,9 +11,10 @@ const checks = [
   ['chat-only provider detector exists', main.includes('function isChatCompletionsOnlyProvider')],
   ['deepseek model is detected', main.includes("model.startsWith('deepseek')")],
   ['deepseek base url is detected', main.includes("baseUrl.includes('deepseek.')")],
+  ['AI fetch has undici fallback for Electron network failures', main.includes("import { fetch as undiciFetch, ProxyAgent } from 'undici'") && main.includes('async function nodeAiFetch') && main.includes('let netFetchError = null')],
   ['callOpenAiText routes chat-only providers to chat text', main.includes('isChatCompletionsOnlyProvider({ model, baseUrl })') && main.includes('return callOpenAiChatText({ input, temperature, maxOutputTokens, signal, settings: { ...settings, apiKey, model, baseUrl, proxyUrl } })')],
-  ['deepseek preset fills editable settings form', app.includes("applyAiProviderPreset('deepseek')") && app.includes("baseUrl: 'https://api.deepseek.com/v1'") && app.includes("model: 'deepseek-chat'")],
-  ['deepseek preset is injected into legacy runtime settings panel', enhancer.includes('ai-provider-preset-row') && enhancer.includes('https://api.deepseek.com/v1') && enhancer.includes('deepseek-chat')],
+  ['deepseek preset fills editable settings form', app.includes("applyAiProviderPreset('deepseek')") && app.includes("baseUrl: 'https://api.deepseek.com'") && app.includes("model: 'deepseek-v4-flash'")],
+  ['deepseek preset is injected into legacy runtime settings panel', enhancer.includes('ai-provider-preset-row') && enhancer.includes('https://api.deepseek.com') && enhancer.includes('deepseek-v4-flash')],
   ['legacy runtime preset uses delegated pointer/click handling', enhancer.includes('function bindAiProviderPresetDelegation') && enhancer.includes("document.addEventListener('pointerdown', handleAiProviderPresetEvent, true)") && enhancer.includes('data-ai-provider-preset="deepseek"')],
   ['legacy runtime preset has inline pointer fallback', enhancer.includes('window.__inkEngineApplyAiPreset') && enhancer.includes('onpointerdown="return window.__inkEngineApplyAiPreset') && enhancer.includes("onclick=\"return window.__inkEngineApplyAiPreset")],
   ['legacy runtime defaults unconfigured settings to deepseek', enhancer.includes('function maybeAutoFillDeepSeekPreset') && enhancer.includes("status.textContent = '已默认填入 DeepSeek 地址和模型，请直接粘贴 API Key。'")],
@@ -24,6 +25,7 @@ const checks = [
   ['legacy runtime preset uses React-compatible input events', enhancer.includes('setReactInputValue(inputs.baseUrl') && enhancer.includes("new Event('input', { bubbles: true })")],
   ['AI settings inputs use stable updater', app.includes('function updateAiForm') && app.includes('onChange={(event) => updateAiForm({ apiKey: event.target.value })}') && app.includes('onChange={(event) => updateAiForm({ baseUrl: event.target.value })}')],
   ['AI settings submit disabled state is explicit', app.includes('isAiSettingsSubmitDisabled') && app.includes('disabled={isAiSettingsSubmitDisabled}')],
+  ['undici is packaged for production fallback fetch', Boolean(pkg.dependencies?.undici)],
   ['deepseek smoke script is registered', pkg.scripts?.['smoke:deepseek-chat-provider'] === 'node scripts/smoke-deepseek-chat-provider.mjs'],
 ]
 

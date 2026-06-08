@@ -896,8 +896,8 @@ function applyAiProviderPresetToPanel(panel, provider) {
   const inputs = findAiSettingsInputs(panel)
   const status = panel.querySelector('.ai-provider-preset-status')
   if (provider === 'deepseek') {
-    setReactInputValue(inputs.baseUrl, 'https://api.deepseek.com/v1')
-    setReactInputValue(inputs.model, 'deepseek-chat')
+    setReactInputValue(inputs.baseUrl, 'https://api.deepseek.com')
+    setReactInputValue(inputs.model, 'deepseek-v4-flash')
     if (status) {
       status.textContent = '已填入 DeepSeek 地址和模型，请粘贴 API Key 后保存。'
     }
