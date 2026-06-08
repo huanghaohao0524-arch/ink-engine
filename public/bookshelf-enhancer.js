@@ -898,7 +898,6 @@ function applyAiProviderPresetToPanel(panel, provider) {
   if (provider === 'deepseek') {
     setReactInputValue(inputs.baseUrl, 'https://api.deepseek.com/v1')
     setReactInputValue(inputs.model, 'deepseek-chat')
-    inputs.apiKey?.focus()
     if (status) {
       status.textContent = '已填入 DeepSeek 地址和模型，请粘贴 API Key 后保存。'
     }
@@ -907,7 +906,6 @@ function applyAiProviderPresetToPanel(panel, provider) {
 
   setReactInputValue(inputs.baseUrl, 'https://api.openai.com/v1')
   setReactInputValue(inputs.model, 'gpt-4.1')
-  inputs.apiKey?.focus()
   if (status) {
     status.textContent = '已切换为 OpenAI 默认地址和模型。'
   }
@@ -976,7 +974,7 @@ async function deleteAiProfileFromPanel(panel, profileId) {
     return
   }
   await api.deleteAiProfile(profileId)
-  panel.dataset.aiProfileEnhanced = ''
+  panel.querySelector('.ai-profile-row')?.remove()
   enhanceAiSettingsProfiles()
 }
 
@@ -984,30 +982,33 @@ async function enhanceAiSettingsProfiles() {
   const api = window.writingWorkbench
   const panels = Array.from(document.querySelectorAll('.ai-settings-panel'))
   for (const panel of panels) {
-    panel.dataset.aiProfileEnhanced = 'true'
-    Array.from(panel.querySelectorAll('.ai-profile-row')).forEach((row) => row.remove())
-    Array.from(panel.querySelectorAll('.ai-provider-preset-row')).forEach((row) => row.remove())
-
     const formGrid = panel.querySelector('.form-grid')
     if (!formGrid) {
       continue
     }
 
-    const presetRow = document.createElement('div')
-    presetRow.className = 'ai-provider-preset-row'
-    presetRow.innerHTML = `
-      <strong>快速填入</strong>
-      <button type="button" class="secondary-button ai-preset-deepseek" data-ai-provider-preset="deepseek" onpointerdown="return window.__inkEngineApplyAiPreset?.(this, 'deepseek')" onclick="return window.__inkEngineApplyAiPreset?.(this, 'deepseek')">DeepSeek</button>
-      <button type="button" class="secondary-button ai-preset-openai" data-ai-provider-preset="openai" onpointerdown="return window.__inkEngineApplyAiPreset?.(this, 'openai')" onclick="return window.__inkEngineApplyAiPreset?.(this, 'openai')">OpenAI</button>
-      <small class="ai-provider-preset-status">点 DeepSeek 会自动填写 Base URL 和模型，API Key 仍需手动粘贴。</small>
-    `
-    panel.insertBefore(presetRow, formGrid)
+    let presetRow = panel.querySelector('.ai-provider-preset-row')
+    if (!presetRow) {
+      presetRow = document.createElement('div')
+      presetRow.className = 'ai-provider-preset-row'
+      presetRow.innerHTML = `
+        <strong>快速填入</strong>
+        <button type="button" class="secondary-button ai-preset-deepseek" data-ai-provider-preset="deepseek" onpointerdown="return window.__inkEngineApplyAiPreset?.(this, 'deepseek')" onclick="return window.__inkEngineApplyAiPreset?.(this, 'deepseek')">DeepSeek</button>
+        <button type="button" class="secondary-button ai-preset-openai" data-ai-provider-preset="openai" onpointerdown="return window.__inkEngineApplyAiPreset?.(this, 'openai')" onclick="return window.__inkEngineApplyAiPreset?.(this, 'openai')">OpenAI</button>
+        <small class="ai-provider-preset-status">点 DeepSeek 会自动填写 Base URL 和模型，API Key 仍需手动粘贴。</small>
+      `
+      panel.insertBefore(presetRow, formGrid)
+    }
     if (panel.dataset.aiProviderAutoFilled === 'true') {
       presetRow.querySelector('.ai-provider-preset-status').textContent = '已默认填入 DeepSeek 地址和模型，请直接粘贴 API Key。'
     }
     maybeAutoFillDeepSeekPreset(panel)
 
     if (!api?.listAiProfiles) {
+      continue
+    }
+
+    if (panel.querySelector('.ai-profile-row')) {
       continue
     }
 
@@ -1069,7 +1070,7 @@ async function enhanceAiSettingsProfiles() {
       button.dataset.aiProfileRefreshBound = 'true'
       button.addEventListener('click', () => {
         window.setTimeout(() => {
-          panel.dataset.aiProfileEnhanced = ''
+          panel.querySelector('.ai-profile-row')?.remove()
           enhanceAiSettingsProfiles()
         }, 1400)
       })
