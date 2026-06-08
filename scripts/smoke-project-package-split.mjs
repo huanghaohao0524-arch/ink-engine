@@ -14,6 +14,11 @@ const checks = [
   ['project package extracts balanced JSON objects', main.includes('function findBalancedJsonObjects')],
   ['project package retries invalid JSON through repair prompt', main.includes('async function repairProjectPackageSectionJson')],
   ['project package falls back instead of throwing parse error', main.includes('fallbackProjectPackageSection(section, known)')],
+  ['project package fills partial section objects', main.includes('function mergeProjectPackageSectionFallback')],
+  ['project package parallelizes non-base sections', main.includes('const remainingParts = await Promise.all')],
+  ['project package normalizer fills missing module fields', main.includes("const ruleFallback = fallbackProjectPackageSection('rules'")],
+  ['project package preserves selected platform', main.includes('platform: book.platform')],
+  ['project package preserves user title when provided', main.includes('title: book.title ? book.title : normalizedPackage.title')],
 ]
 
 const failures = checks.filter(([, passed]) => !passed)

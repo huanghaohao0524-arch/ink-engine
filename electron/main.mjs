@@ -2684,6 +2684,10 @@ async function importAuthorizedBookSources(input) {
 function normalizeProjectPackage(rawPackage, fallback) {
   const projectPackage = rawPackage && typeof rawPackage === 'object' ? rawPackage : {}
   const platform = valueOrFallback(projectPackage.platform, fallback.platform)
+  const ruleFallback = fallbackProjectPackageSection('rules', { platform, genre: projectPackage.genre })
+  const outlineFallback = fallbackProjectPackageSection('outline', { platform, genre: projectPackage.genre })
+  const characterFallback = fallbackProjectPackageSection('characters', { platform, genre: projectPackage.genre })
+  const trackingFallback = fallbackProjectPackageSection('tracking', { platform, genre: projectPackage.genre })
 
   return {
     title: valueOrFallback(projectPackage.title, fallback.title),
@@ -2694,15 +2698,15 @@ function normalizeProjectPackage(rawPackage, fallback) {
     updateStrategy: valueOrFallback(projectPackage.updateStrategy, '\u6bcf\u65e5\u7a33\u5b9a\u66f4\u65b0\uff0c\u5148\u4fdd\u8bc1\u524d\u4e09\u7ae0\u5b8c\u6574\u6253\u78e8'),
     sellingPoint: valueOrFallback(projectPackage.sellingPoint, '\u5f85 AI \u7acb\u9879\u95ee\u7b54\u8865\u5168\u3002'),
     synopsis: valueOrFallback(projectPackage.synopsis, '\u5f85 AI \u7acb\u9879\u95ee\u7b54\u8865\u5168\u3002'),
-    coreSetting: valueOrFallback(projectPackage.coreSetting, ''),
-    genreRules: valueOrFallback(projectPackage.genreRules, ''),
-    platformFit: valueOrFallback(projectPackage.platformFit, ''),
-    overallOutline: valueOrFallback(projectPackage.overallOutline, ''),
-    goldenFirstThree: valueOrFallback(projectPackage.goldenFirstThree, ''),
-    mainCharacter: valueOrFallback(projectPackage.mainCharacter, ''),
-    supportingCharacters: valueOrFallback(projectPackage.supportingCharacters, ''),
-    minorCharacters: valueOrFallback(projectPackage.minorCharacters, ''),
-    tracking: valueOrFallback(projectPackage.tracking, ''),
+    coreSetting: valueOrFallback(projectPackage.coreSetting, ruleFallback.coreSetting),
+    genreRules: valueOrFallback(projectPackage.genreRules, ruleFallback.genreRules),
+    platformFit: valueOrFallback(projectPackage.platformFit, ruleFallback.platformFit),
+    overallOutline: valueOrFallback(projectPackage.overallOutline, outlineFallback.overallOutline),
+    goldenFirstThree: valueOrFallback(projectPackage.goldenFirstThree, outlineFallback.goldenFirstThree),
+    mainCharacter: valueOrFallback(projectPackage.mainCharacter, characterFallback.mainCharacter),
+    supportingCharacters: valueOrFallback(projectPackage.supportingCharacters, characterFallback.supportingCharacters),
+    minorCharacters: valueOrFallback(projectPackage.minorCharacters, characterFallback.minorCharacters),
+    tracking: valueOrFallback(projectPackage.tracking, trackingFallback.tracking),
   }
 }
 
@@ -3009,6 +3013,24 @@ function fallbackProjectPackageSection(section, known = {}) {
   }
 }
 
+function mergeProjectPackageSectionFallback(section, part, known = {}) {
+  const fallback = fallbackProjectPackageSection(section, known)
+  const source = part && typeof part === 'object' && !Array.isArray(part) ? part : {}
+  const merged = { ...fallback }
+
+  for (const [key, value] of Object.entries(source)) {
+    if (typeof value === 'string') {
+      if (value.trim()) {
+        merged[key] = value.trim()
+      }
+    } else if (value !== null && value !== undefined) {
+      merged[key] = value
+    }
+  }
+
+  return merged
+}
+
 async function repairProjectPackageSectionJson({ section, content, known, signal }) {
   const repairPrompt = [
     '\u4f60\u662f JSON \u4fee\u590d\u5668\u3002\u4e0b\u9762\u662f\u5199\u4f5c\u8f6f\u4ef6\u9879\u76ee\u5305\u5206\u6bb5\u7684 AI \u8f93\u51fa\uff0c\u5b83\u6ca1\u6709\u88ab\u7a0b\u5e8f\u89e3\u6790\u3002',
@@ -3047,13 +3069,13 @@ async function generateProjectPackageSection({ context, section, known, signal }
   })
 
   try {
-    return extractJsonObject(content)
+    return mergeProjectPackageSectionFallback(section, extractJsonObject(content), known)
   } catch (parseError) {
     console.warn(`Project package section ${section} returned invalid JSON; trying repair.`, parseError)
   }
 
   try {
-    return await repairProjectPackageSectionJson({ section, content, known, signal })
+    return mergeProjectPackageSectionFallback(section, await repairProjectPackageSectionJson({ section, content, known, signal }), known)
   } catch (repairError) {
     console.warn(`Project package section ${section} repair failed; using fallback.`, repairError)
     return fallbackProjectPackageSection(section, known)
@@ -3083,15 +3105,23 @@ async function generateProjectPackage(input) {
     const packageParts = {}
     const sections = ['base', 'rules', 'outline', 'characters', 'tracking']
 
-    for (const section of sections) {
-      const part = await generateProjectPackageSection({ context, section, known: packageParts, signal })
+    const basePart = await generateProjectPackageSection({ context, section: 'base', known: packageParts, signal })
+    Object.assign(packageParts, basePart)
+
+    const remainingParts = await Promise.all(sections.slice(1).map((section) => generateProjectPackageSection({ context, section, known: packageParts, signal })))
+    for (const part of remainingParts) {
       Object.assign(packageParts, part)
     }
 
-    return normalizeProjectPackage(packageParts, {
+    const normalizedPackage = normalizeProjectPackage(packageParts, {
       title: book.title || createUntitledBookName(book.platform),
       platform: book.platform,
     })
+    return {
+      ...normalizedPackage,
+      title: book.title ? book.title : normalizedPackage.title,
+      platform: book.platform,
+    }
   })
 }
 
