@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build outputs and packaged apps
+dist/
+release/
+artifacts/
+output/
+*.log
+
+# Local app/tooling state
+.gstack/
+.DS_Store
+Thumbs.db
+
+# Environment and local secrets
+.env
+.env.*
+!.env.example
+
+# Recovered or third-party local leftovers that are not part of this app source
+/main.mjs
+*.bak-*
+so-novel-main (1)/
+
+# Generated scratch data
+build/writing-fingerprints/tmp/
+__pycache__/
+*.pyc

@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-21T15:04:44.862Z",
+  "curatedPath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\curated-book-candidates.json",
+  "perGenreLimit": 10,
+  "searchTimeoutMs": 22000,
+  "fetchTimeoutMs": 55000,
+  "runs": [
+    {
+      "genre": "网游",
+      "acceptedCount": 61,
+      "existingSampleCount": 54,
+      "pendingCandidateCount": 44,
+      "candidateCount": 10,
+      "summary": {
+        "genre": "网游",
+        "total": 10,
+        "collected": 4,
+        "skippedExisting": 0,
+        "notFound": 5,
+        "downloadMissing": 1,
+        "errors": 0
+      }
+    }
+  ]
+}

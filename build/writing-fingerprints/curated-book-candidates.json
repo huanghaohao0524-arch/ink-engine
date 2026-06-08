@@ -1,0 +1,4643 @@
+{
+  "generatedAt": "2026-05-21T13:49:09.541Z",
+  "sourcePath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\discovered-book-candidates.json",
+  "genres": [
+    {
+      "genre": "网游",
+      "existingSampleCount": 37,
+      "targetSampleCount": 1000,
+      "remainingToTarget": 963,
+      "discoveryKeywords": [
+        "网游",
+        "失落叶",
+        "蝴蝶蓝",
+        "发飙的蜗牛",
+        "火星引力",
+        "铁牛仙",
+        "笙箫剑客",
+        "乱",
+        "孤单地飞",
+        "张扬的五月",
+        "网游之",
+        "游戏",
+        "电竞",
+        "联盟",
+        "虚拟网游",
+        "国战",
+        "公会",
+        "副本",
+        "职业玩家",
+        "重生网游",
+        "网游重生",
+        "全息网游",
+        "MMORPG",
+        "三国网游"
+      ],
+      "acceptedCount": 61,
+      "rejectedCount": 62,
+      "booklistPath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\booklists\\curated\\网游-candidates.txt",
+      "accepted": [
+        {
+          "bookName": "电竞人生",
+          "author": "HJ",
+          "category": "游戏",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "三国网游之孤岛新纪元",
+          "author": "五岁抬头",
+          "category": "游戏动漫",
+          "sourceName": "悠久小说网",
+          "score": 3
+        },
+        {
+          "bookName": "网游之换骨",
+          "author": "如水流年",
+          "category": "游戏",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "网游之开始",
+          "author": "虚拟网游",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 3
+        },
+        {
+          "bookName": "网游之系统重生",
+          "author": "一杰凡人",
+          "category": "游戏",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "网游之重生贼神",
+          "author": "无名灬",
+          "category": "游戏",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "网游之罪人",
+          "author": "乡村胖子",
+          "category": "游戏",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "【电竞】赴光",
+          "author": "鹿枝",
+          "category": "[其他类型]",
+          "sourceName": "笔趣阁365",
+          "score": 2
+        },
+        {
+          "bookName": "别钓[电竞]",
+          "author": "柒曲",
+          "category": "女生言情",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "带着公会穿越",
+          "author": "沐日海洋",
+          "category": "游戏",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "电竞狂小狗",
+          "author": "减子哥哥",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "电竞梦想！",
+          "author": "南苏的秦天逸",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "电竞未央",
+          "author": "韩诗",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "电竞我为王",
+          "author": "无敌飞天猫",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "电竞先锋",
+          "author": "七星少将",
+          "category": "",
+          "sourceName": "梦书中文",
+          "score": 2
+        },
+        {
+          "bookName": "电竞英雄",
+          "author": "蜊黄大帝",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 2
+        },
+        {
+          "bookName": "电竞之巅",
+          "author": "夕阳下的凋零",
+          "category": "其他",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "副本掌控者",
+          "author": "凯塔",
+          "category": "网游动漫",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "氪金联盟",
+          "author": "山下竹狸",
+          "category": "游戏动漫",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "乱撩[电竞]",
+          "author": "消失绿缇",
+          "category": "女生言情",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "全球刷副本",
+          "author": "倔强草履虫",
+          "category": "游戏",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "全息网游之白光",
+          "author": "牙牙",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "score": 2
+        },
+        {
+          "bookName": "全息网游之独宠",
+          "author": "夜风花落",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "全息网游之幻境",
+          "author": "爆发药",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "全息网游之苦力",
+          "author": "酥油饼",
+          "category": "[网游动漫]",
+          "sourceName": "笔趣阁365",
+          "score": 2
+        },
+        {
+          "bookName": "全息网游之女将",
+          "author": "执酒白衣",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "全息网游之卧底",
+          "author": "言水",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "全息网游之妖孽",
+          "author": "寒夜飘零",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "score": 2
+        },
+        {
+          "bookName": "三国网游之改变人生",
+          "author": "炭笔乌龙z",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "三国网游之古今相争",
+          "author": "炭笔乌龙z",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "三国网游之英雄世界",
+          "author": "上影线",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "三国网游之诸侯争霸",
+          "author": "夏宇星辰",
+          "category": "[科幻小说]",
+          "sourceName": "顶点小说",
+          "score": 2
+        },
+        {
+          "bookName": "生存副本",
+          "author": "妙笔无痕",
+          "category": "游戏动漫",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "世界副本",
+          "author": "未来进行时",
+          "category": "网游动漫",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "玩转电竞圈",
+          "author": "佚名",
+          "category": "[玄幻魔法]",
+          "sourceName": "笔趣阁22",
+          "score": 2
+        },
+        {
+          "bookName": "网游之璀璨",
+          "author": "奇末",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "网游之盗贼重生",
+          "author": "瞌睡滴蚂蚁",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "网游之洞天",
+          "author": "亏透天机",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 2
+        },
+        {
+          "bookName": "网游之寒殇",
+          "author": "寒门出将",
+          "category": "",
+          "sourceName": "梦书中文",
+          "score": 2
+        },
+        {
+          "bookName": "网游之进化",
+          "author": "屌丝一枚",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "网游之绝学",
+          "author": "依郁",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "网游之起源",
+          "author": "叶晓凡",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 2
+        },
+        {
+          "bookName": "网游之师徒",
+          "author": "一生无迹",
+          "category": "",
+          "sourceName": "梦书中文",
+          "score": 2
+        },
+        {
+          "bookName": "网游之天堂",
+          "author": "夜鸣猪",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 2
+        },
+        {
+          "bookName": "网游之纨绔重生",
+          "author": "日月星",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 2
+        },
+        {
+          "bookName": "网游之野望",
+          "author": "太极阴阳鱼",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "网游之异域",
+          "author": "北宫霁",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "网游之隐士",
+          "author": "外1号人物",
+          "category": "",
+          "sourceName": "梦书中文",
+          "score": 2
+        },
+        {
+          "bookName": "网游之永恒",
+          "author": "孤单的蟋蟀",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 2
+        },
+        {
+          "bookName": "网游之永生",
+          "author": "火神.",
+          "category": "科幻灵异",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "网游之征途",
+          "author": "公子易云",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 2
+        },
+        {
+          "bookName": "网游之重生法神",
+          "author": "缴文",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "网游之重生封神",
+          "author": "四不相",
+          "category": "言情小说",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "网游之重生剑魂",
+          "author": "异世飞羽",
+          "category": "",
+          "sourceName": "梦书中文",
+          "score": 2
+        },
+        {
+          "bookName": "网游之重生开天",
+          "author": "悟宅",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "网游之宙斯",
+          "author": "冰冷之海",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 2
+        },
+        {
+          "bookName": "网游之诛神重生",
+          "author": "李小猫",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "游戏不朽",
+          "author": "冰雪无忌",
+          "category": "网游动漫",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "欲钓[电竞]",
+          "author": "消失绿缇",
+          "category": "女生言情",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "重生网游之星辰",
+          "author": "力量加三",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "重生之网游天下",
+          "author": "枫叶子孑",
+          "category": "游戏",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        }
+      ],
+      "rejected": [
+        {
+          "bookName": "网游大唐",
+          "author": "九霄环佩",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "高纬网游",
+          "author": "侠不留影",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "网游轮回",
+          "author": "八荒",
+          "category": "言情小说",
+          "sourceName": "阅读库",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "别玩网游",
+          "author": "尝谕",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "title-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "网游方舟",
+          "author": "水亦流",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "网游无尽",
+          "author": "洛水浅尘",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "秘境网游",
+          "author": "浅羽天瑞",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "网游无极",
+          "author": "紫门青月",
+          "category": "其他",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "网游审判",
+          "author": "羽民",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "网游校园",
+          "author": "西域小王爷",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "title-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "游戏侠",
+          "author": "倪逗歪逗",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "禁忌游戏",
+          "author": "Huguette",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "游戏追命",
+          "author": "IY呀",
+          "category": "女生言情",
+          "sourceName": "悠久小说网",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "游戏韩国",
+          "author": "一曳随风",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "回溯游戏",
+          "author": "三无up产品",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "游戏境界",
+          "author": "上单路",
+          "category": "科幻灵异",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "游戏永恒",
+          "author": "不癫真人",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "欺世游戏",
+          "author": "不祈十弦",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "毁灭游戏",
+          "author": "人怜众神",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "谋杀游戏",
+          "author": "付小天a",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "欺世游戏",
+          "author": "佚名",
+          "category": "[玄幻魔法]",
+          "sourceName": "笔趣阁22",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "神徒游戏",
+          "author": "佚名",
+          "category": "[玄幻魔法]",
+          "sourceName": "笔趣阁22",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "异常游戏",
+          "author": "偷懒计划",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "屠戮游戏",
+          "author": "公子禹",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "矩阵游戏",
+          "author": "刹那辉煌",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "超神联盟",
+          "author": "一根粗黄瓜",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "旭日联盟",
+          "author": "北门桂花香",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "天赋联盟",
+          "author": "南塘坑主",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "护宝联盟",
+          "author": "和一",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "格斗联盟",
+          "author": "型男密码",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "种花联盟",
+          "author": "大国兔子",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "海怪联盟",
+          "author": "天堂放逐者",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "魔盗联盟",
+          "author": "天悦有熊氏",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "捉妖联盟",
+          "author": "小鳄鱼",
+          "category": "都市言情",
+          "sourceName": "阅读库",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "猥琐联盟",
+          "author": "差一点",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "破墓联盟",
+          "author": "帝奈修克",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "星武联盟",
+          "author": "影闪影靓",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "联盟令主",
+          "author": "恋情之剑",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "异界职业玩家",
+          "author": "涂章溢",
+          "category": "[游戏竞技]",
+          "sourceName": "笔趣阁22",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "游戏之职业玩家",
+          "author": "西窗沧海",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "传奇三职业玩家",
+          "author": "路坚",
+          "category": "游戏",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "巅峰玩家",
+          "author": "叶游然",
+          "category": "游戏动漫",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "重生网游大时代",
+          "author": "云天明",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "重生之网游世界",
+          "author": "再临人间",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "重生之网游帝王",
+          "author": "第七圣剑",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "网游废土重生",
+          "author": "游椋",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "网游重生之黎墨",
+          "author": "懒懒的飞雪",
+          "category": "女生",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "网游重生之命运",
+          "author": "拿烟",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "网游重生之崛起",
+          "author": "杀千骑",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "灵仙传全息网游）",
+          "author": "啾咪啾咪",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "快穿之全息网游",
+          "author": "流萤织纱",
+          "category": "[网游动漫]",
+          "sourceName": "笔趣阁365",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "灵仙传全息网游）",
+          "author": "采采卷耳",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "把他拿下（全息网游）",
+          "author": "一个包两个包子",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "把他拿下（全息网游）",
+          "author": "一个包子两个包子",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "把他拿下（全息网游）",
+          "author": "也露鹿",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "唐门刺客[全息网游]",
+          "author": "折紙戏",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "【全息网游】公主倾城",
+          "author": "明月",
+          "category": "[都市小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "把他拿下（全息网游）",
+          "author": "暖月琉璃盏",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "美食三国",
+          "author": "日月伴我行",
+          "category": "游戏动漫",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "我梦幻中的三国网游",
+          "author": "百家疯子",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "三国网游再开新篇章",
+          "author": "紫藕",
+          "category": "[科幻小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "不玩建村令的三国网游",
+          "author": "双海诗音",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "genre": "都市",
+      "existingSampleCount": 8,
+      "targetSampleCount": 1000,
+      "remainingToTarget": 992,
+      "discoveryKeywords": [
+        "都市",
+        "打眼",
+        "鱼人二代",
+        "十里剑神",
+        "石章鱼",
+        "何常在",
+        "夜十三",
+        "辰机唐红豆",
+        "官场",
+        "神豪",
+        "都市重生",
+        "都市修仙",
+        "都市兵王",
+        "鉴宝",
+        "校花",
+        "神医",
+        "首席",
+        "赘婿",
+        "相师",
+        "商战",
+        "娱乐圈",
+        "官途",
+        "败家",
+        "暧昧"
+      ],
+      "acceptedCount": 79,
+      "rejectedCount": 63,
+      "booklistPath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\booklists\\curated\\都市-candidates.txt",
+      "accepted": [
+        {
+          "bookName": "都市兵王",
+          "author": "忘记",
+          "category": "",
+          "sourceName": "梦书中文",
+          "score": 3
+        },
+        {
+          "bookName": "都市兵王",
+          "author": "最强玩者",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 3
+        },
+        {
+          "bookName": "都市兵王",
+          "author": "杜家六郎",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 3
+        },
+        {
+          "bookName": "都市兵王",
+          "author": "河帅",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 3
+        },
+        {
+          "bookName": "都市兵王",
+          "author": "神无踪",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 3
+        },
+        {
+          "bookName": "都市超级兵王",
+          "author": "就为活着",
+          "category": "",
+          "sourceName": "梦书中文",
+          "score": 3
+        },
+        {
+          "bookName": "都市盖世兵王",
+          "author": "余清",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "都市极品兵王",
+          "author": "大笨驴",
+          "category": "",
+          "sourceName": "梦书中文",
+          "score": 3
+        },
+        {
+          "bookName": "都市绝品兵王",
+          "author": "大青衣",
+          "category": "",
+          "sourceName": "梦书中文",
+          "score": 3
+        },
+        {
+          "bookName": "都市少年兵王",
+          "author": "干巴铁",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "都市神豪",
+          "author": "刘笔笔",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 3
+        },
+        {
+          "bookName": "都市特级兵王",
+          "author": "从南",
+          "category": "",
+          "sourceName": "梦书中文",
+          "score": 3
+        },
+        {
+          "bookName": "都市特种兵王",
+          "author": "公子世无双",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 3
+        },
+        {
+          "bookName": "都市铁血兵王",
+          "author": "吊打一切不服",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 3
+        },
+        {
+          "bookName": "都市逍遥兵王",
+          "author": "夜白之",
+          "category": "",
+          "sourceName": "梦书中文",
+          "score": 3
+        },
+        {
+          "bookName": "都市至强兵王",
+          "author": "平放",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 3
+        },
+        {
+          "bookName": "都市至尊兵王",
+          "author": "不吃鱼的喵",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 3
+        },
+        {
+          "bookName": "官场悍将",
+          "author": "太虚之梦",
+          "category": "都市言情",
+          "sourceName": "阅读库",
+          "score": 3
+        },
+        {
+          "bookName": "官场新贵",
+          "author": "书虫大大",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 3
+        },
+        {
+          "bookName": "官场雅痞",
+          "author": "六月榴火",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "官场诱惑",
+          "author": "中国扣扣",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "官场政道",
+          "author": "勃勃",
+          "category": "都市言情",
+          "sourceName": "阅读库",
+          "score": 3
+        },
+        {
+          "bookName": "玛法神豪",
+          "author": "3vvpow",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "铁胆神豪",
+          "author": "丝黛拉",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 3
+        },
+        {
+          "bookName": "相师豪医",
+          "author": "不若也",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 3
+        },
+        {
+          "bookName": "败家神豪",
+          "author": "邪神洛基",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "超凡神医",
+          "author": "二郎小酱酱",
+          "category": "都市言情",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "冲出官场",
+          "author": "不是小三",
+          "category": "其他类型",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "大相师",
+          "author": "北境",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 2
+        },
+        {
+          "bookName": "大相师",
+          "author": "陈平林青霜",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "第一神医",
+          "author": "凌晨",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "顶级神豪",
+          "author": "北辰本尊",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "顶尖神豪",
+          "author": "凌云驾雾",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "都市神医",
+          "author": "公子哥",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 2
+        },
+        {
+          "bookName": "都市之大圣重生",
+          "author": "飞在天空",
+          "category": "仙侠修真",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "都市之魔主重生",
+          "author": "三日随风",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "都市之卧龙重生",
+          "author": "双双梦",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "都市之最强重生",
+          "author": "小小财神",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "官场布衣",
+          "author": "如水追梦",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "官场风云",
+          "author": "叼西人",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 2
+        },
+        {
+          "bookName": "官场奇才",
+          "author": "北岸",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "官场神算",
+          "author": "勃勃",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "官场先锋",
+          "author": "岑寨散人",
+          "category": "",
+          "sourceName": "梦书中文",
+          "score": 2
+        },
+        {
+          "bookName": "官场硬汉",
+          "author": "南海十三郎",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "官场智斗",
+          "author": "佚名",
+          "category": "[玄幻魔法]",
+          "sourceName": "笔趣阁22",
+          "score": 2
+        },
+        {
+          "bookName": "鉴宝",
+          "author": "天雨君",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "鉴宝金瞳",
+          "author": "七宝琉璃",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "鉴宝神婿",
+          "author": "举世问苍天",
+          "category": "都市言情",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "鉴宝天师",
+          "author": "三尺键",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "绝世神豪",
+          "author": "一介白丁",
+          "category": "",
+          "sourceName": "梦书中文",
+          "score": 2
+        },
+        {
+          "bookName": "炼魂相师",
+          "author": "JK丶y",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "喵相师",
+          "author": "春溪笛晓",
+          "category": "女生言情",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "逆命相师",
+          "author": "不修边幅",
+          "category": "[武侠修真]",
+          "sourceName": "笔趣阁22",
+          "score": 2
+        },
+        {
+          "bookName": "女相师",
+          "author": "熙九歌",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "入赘神医",
+          "author": "不二不3",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "神豪宁败家",
+          "author": "偷名",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "神医狂婿",
+          "author": "一筒",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "神医无敌",
+          "author": "东海泛舟",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "圣手神医",
+          "author": "云水小生",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "首席国医",
+          "author": "江门二爷",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "首席嗜妻",
+          "author": "墨殇兮",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "首席医官",
+          "author": "天选之主",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "首席医圣",
+          "author": "江湖喵",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "特权神豪",
+          "author": "三只椰子猫",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "天才相师",
+          "author": "乙木丙火",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "天命相师",
+          "author": "一曲惊鸿",
+          "category": "[玄幻魔法]",
+          "sourceName": "笔趣阁22",
+          "score": 2
+        },
+        {
+          "bookName": "天相师",
+          "author": "埃克斯",
+          "category": "[玄幻魔法]",
+          "sourceName": "笔趣阁22",
+          "score": 2
+        },
+        {
+          "bookName": "无相神医",
+          "author": "刺红",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "武道高手都市之行",
+          "author": "街头搞暧昧",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "误入官场",
+          "author": "可大可小",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "乡村神医",
+          "author": "一朵青莲",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "相师",
+          "author": "何婪",
+          "category": "现言",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "相师",
+          "author": "屋子漏雨",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "校花别追了",
+          "author": "红月晴云",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "校花狂少",
+          "author": "再续战火",
+          "category": "都市言情",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "校花求偶记",
+          "author": "厍建玉",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "校花有点甜",
+          "author": "李个猪",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "寻龙相师",
+          "author": "万大仙",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "渔村神医",
+          "author": "侃哥",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        }
+      ],
+      "rejected": [
+        {
+          "bookName": "实力都市",
+          "author": "Duo圣诞结",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市青龙",
+          "author": "一只咸鱼",
+          "category": "女生言情",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市邪神",
+          "author": "一本道长",
+          "category": "其他类型",
+          "sourceName": "阅读库",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "异化都市",
+          "author": "一梦一界",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市战神",
+          "author": "丛林狼",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "阴阳都市",
+          "author": "九月神君",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市修罗",
+          "author": "九月雪",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市情劫",
+          "author": "佚名",
+          "category": "[玄幻魔法]",
+          "sourceName": "笔趣阁22",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "都市野仙",
+          "author": "佚名",
+          "category": "[玄幻魔法]",
+          "sourceName": "笔趣阁22",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "都市强龙",
+          "author": "偏锋",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "勾魂都市",
+          "author": "公子初",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "异人都市",
+          "author": "其实我很淘气",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "重生农门小福妻",
+          "author": "风十里",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "顶流凶猛",
+          "author": "十三夷",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市重生高手",
+          "author": "一片楼月",
+          "category": "[女生耽美]",
+          "sourceName": "笔趣阁22",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "都市重生之诛邪",
+          "author": "凌云笙歌",
+          "category": "[都市小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "仙路之都市重生",
+          "author": "孤山有幸",
+          "category": "[都市小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "修仙之都市重生",
+          "author": "幽冥帝君",
+          "category": "[都市小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市重生逆袭记",
+          "author": "旭凌洛寒",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "孙悟空都市重生",
+          "author": "牧云随风",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "药帝之都市重生",
+          "author": "瓜宝",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "剑仙之都市重生",
+          "author": "风雨度长月",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "重生都市人生",
+          "author": "北幕11",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市重生无上仙尊",
+          "author": "夕阳炸了",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市重生：命运之路",
+          "author": "奴良组总大将",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市重生:枭雄归来",
+          "author": "小豪和小烈",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市重生：逆转青春",
+          "author": "破晓的蛋黄",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市重生之神界主宰",
+          "author": "不是很苦",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市重生之全美人生",
+          "author": "修个半仙",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市重生之修仙系统",
+          "author": "冷傲的飞",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市重生之卧龙飞天",
+          "author": "和小吉",
+          "category": "[玄幻修真]",
+          "sourceName": "顶点小说",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "都市修仙园",
+          "author": "步杨",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "都市修仙记",
+          "author": "银金沙",
+          "category": "仙侠修真",
+          "sourceName": "悠久小说网",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "重生都市修仙",
+          "author": "一曲东风",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市修仙至尊",
+          "author": "三胜",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "都市传奇修仙",
+          "author": "不会飞的舒克",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市低调修仙",
+          "author": "不要偷懒啦",
+          "category": "仙侠修真",
+          "sourceName": "悠久小说网",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "都市狂兵",
+          "author": "乙崛",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "都市狂兵",
+          "author": "混元钟",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "阴阳赘婿",
+          "author": "baby╯╰酱",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "赘婿归来",
+          "author": "七星瓢虫",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "冒牌赘婿",
+          "author": "东街十三少",
+          "category": "都市言情",
+          "sourceName": "阅读库",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "商战",
+          "author": "雪在烧",
+          "category": "[都市小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "蛊事商战",
+          "author": "声声客",
+          "category": "都市言情",
+          "sourceName": "阅读库",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "商战江湖",
+          "author": "帅侠",
+          "category": "都市言情",
+          "sourceName": "阅读库",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "商战教父",
+          "author": "非议",
+          "category": "[都市言情]",
+          "sourceName": "笔趣阁22",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "名扬娱乐圈",
+          "author": "Onel",
+          "category": "都市言情",
+          "sourceName": "阅读库",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "修真娱乐圈",
+          "author": "三七王爷",
+          "category": "都市言情",
+          "sourceName": "阅读库",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "娱乐圈猫王",
+          "author": "任鱼非鱼",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "桃运官途",
+          "author": "一茗香茶",
+          "category": "[都市言情]",
+          "sourceName": "笔趣阁365",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "官途沉浮",
+          "author": "万路之遥",
+          "category": "[都市言情]",
+          "sourceName": "笔趣阁22",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "官途医道",
+          "author": "九月星河",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "官途纵横",
+          "author": "佚名",
+          "category": "[都市言情]",
+          "sourceName": "笔趣阁365",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "官途天骄",
+          "author": "佚名",
+          "category": "[都市小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "官途借势",
+          "author": "凤凌苑",
+          "category": "[都市言情]",
+          "sourceName": "笔趣阁22",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "官途扶摇",
+          "author": "和尚爱尼姑",
+          "category": "[都市小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "铁腕官途",
+          "author": "大示申",
+          "category": "[都市言情]",
+          "sourceName": "笔趣阁22",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "败家之王",
+          "author": "小桥流水哗啦啦",
+          "category": "都市言情",
+          "sourceName": "阅读库",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "极品败家子",
+          "author": "勿忘吾本心",
+          "category": "[都市言情]",
+          "sourceName": "笔趣阁22",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "八零媳妇哥替嫁进村",
+          "author": "暧昧关系",
+          "category": "[都市小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "拒做丫鬟：城主别暧昧",
+          "author": "暧昧因子",
+          "category": "[都市言情]",
+          "sourceName": "笔趣阁365",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "绝色女上司",
+          "author": "暧昧无罪",
+          "category": "[都市言情]",
+          "sourceName": "笔趣阁22",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "不做坏男孩",
+          "author": "24k纯暧昧",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "genre": "玄幻",
+      "existingSampleCount": 19,
+      "targetSampleCount": 1000,
+      "remainingToTarget": 981,
+      "discoveryKeywords": [
+        "玄幻",
+        "天蚕土豆",
+        "辰东",
+        "风凌天下",
+        "猫腻",
+        "烽火戏诸侯",
+        "我吃西红柿",
+        "耳根",
+        "忘语",
+        "东方玄幻",
+        "奇幻",
+        "修真",
+        "修仙",
+        "仙侠",
+        "异界",
+        "宗门",
+        "天命",
+        "废柴",
+        "逆袭",
+        "圣墟",
+        "遮天",
+        "剑来",
+        "凡人修仙传",
+        "一念永恒"
+      ],
+      "acceptedCount": 46,
+      "rejectedCount": 117,
+      "booklistPath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\booklists\\curated\\玄幻-candidates.txt",
+      "accepted": [
+        {
+          "bookName": "凡人修仙传",
+          "author": "忘语",
+          "category": "[武侠修真]",
+          "sourceName": "笔趣阁22",
+          "score": 4
+        },
+        {
+          "bookName": "凡人修仙传奇",
+          "author": "风之言",
+          "category": "玄幻奇幻",
+          "sourceName": "悠久小说网",
+          "score": 4
+        },
+        {
+          "bookName": "不要修仙",
+          "author": "一枚纸钱",
+          "category": "仙侠修真",
+          "sourceName": "悠久小说网",
+          "score": 3
+        },
+        {
+          "bookName": "凡人修仙录",
+          "author": "笑看云烟",
+          "category": "仙侠修真",
+          "sourceName": "悠久小说网",
+          "score": 3
+        },
+        {
+          "bookName": "凡人修仙路",
+          "author": "南里有木",
+          "category": "仙侠修真",
+          "sourceName": "悠久小说网",
+          "score": 3
+        },
+        {
+          "bookName": "凡人修仙之仙界篇",
+          "author": "忘语",
+          "category": "[武侠修真]",
+          "sourceName": "笔趣阁22",
+          "score": 3
+        },
+        {
+          "bookName": "三寸人间",
+          "author": "耳根",
+          "category": "仙侠修真",
+          "sourceName": "悠久小说网",
+          "score": 3
+        },
+        {
+          "bookName": "三寸人间耳根起点",
+          "author": "耳根",
+          "category": "[仙侠修真]",
+          "sourceName": "笔趣阁365",
+          "score": 3
+        },
+        {
+          "bookName": "一念永恒：番外",
+          "author": "耳根",
+          "category": "仙侠修真",
+          "sourceName": "悠久小说网",
+          "score": 3
+        },
+        {
+          "bookName": "异界人",
+          "author": "老懒神",
+          "category": "武侠修真",
+          "sourceName": "阅读库",
+          "score": 3
+        },
+        {
+          "bookName": "（修真）破戒",
+          "author": "乔家小桥",
+          "category": "仙侠修真",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "此间一念",
+          "author": "不会写的橙子",
+          "category": "玄幻奇幻",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "东方仙府",
+          "author": "东方大王",
+          "category": "仙侠修真",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "凡人飞仙传",
+          "author": "振翅的蚂蚁",
+          "category": "仙侠修真",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "凡人修仙传",
+          "author": "烽火连天_",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "凡人修仙传！",
+          "author": "小疯子的风",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "凡人修仙传？",
+          "author": "帝元啊",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "凡人修仙传百度百科",
+          "author": "忘语",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "凡人修仙传仙界篇",
+          "author": "忘语",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "凡人修仙之仙界篇（凡人修仙传仙界篇）",
+          "author": "忘语",
+          "category": "武侠",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "废物修真",
+          "author": "一言不合就王",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "极上宗门",
+          "author": "锻金铸银",
+          "category": "玄幻奇幻",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "家族修仙：空间种田有灵泉",
+          "author": "东方胜",
+          "category": "玄幻",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "剑仙侠侣",
+          "author": "剑意",
+          "category": "[玄幻魔法]",
+          "sourceName": "笔趣阁22",
+          "score": 2
+        },
+        {
+          "bookName": "科技仙侠",
+          "author": "未明未明",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "懒人的一念永恒",
+          "author": "懒人读书",
+          "category": "[玄幻魔法]",
+          "sourceName": "笔趣阁365",
+          "score": 2
+        },
+        {
+          "bookName": "逆袭剑影",
+          "author": "书墨染",
+          "category": "仙侠修真",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "奇幻博士",
+          "author": "藏汐",
+          "category": "[玄幻魔法]",
+          "sourceName": "笔趣阁365",
+          "score": 2
+        },
+        {
+          "bookName": "奇幻龙珠",
+          "author": "艾曹友",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "奇幻旅途",
+          "author": "坏灬鲑鲑鱼",
+          "category": "仙侠",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "奇幻天元",
+          "author": "橙子不冰",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "神迹，奇幻",
+          "author": "陈氏大作家",
+          "category": "仙侠",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "神域奇幻",
+          "author": "枫语蛋蛋",
+          "category": "仙侠",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "圣阳墟",
+          "author": "末辉",
+          "category": "玄幻奇幻",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "天命坊",
+          "author": "南墙北望",
+          "category": "玄幻奇幻",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "玩修仙",
+          "author": "月明春江",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "仙而不侠",
+          "author": "如絮子",
+          "category": "仙侠修真",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "修仙记",
+          "author": "李少",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "修仙速递",
+          "author": "三百斤小正太",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "玄幻武馆",
+          "author": "玄饭",
+          "category": "玄幻奇幻",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "一念通幽！",
+          "author": "一滴水换世",
+          "category": "玄幻奇幻",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "一念永恒",
+          "author": "耳根",
+          "category": "[玄幻魔法]",
+          "sourceName": "笔趣阁22",
+          "score": 2
+        },
+        {
+          "bookName": "异界屠",
+          "author": "仲夏之",
+          "category": "玄幻",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "异梦界",
+          "author": "冷潇玄",
+          "category": "玄幻奇幻",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "遮天柳",
+          "author": "柳明天下",
+          "category": "仙侠修真",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "宗门小厨神",
+          "author": "酸辣茄子",
+          "category": "玄幻奇幻",
+          "sourceName": "悠久小说网",
+          "score": 2
+        }
+      ],
+      "rejected": [
+        {
+          "bookName": "玄幻扣",
+          "author": "咚咚呛",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "大玄幻",
+          "author": "百万单机王",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "玄幻巅神",
+          "author": "于国涛",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "玄幻医生",
+          "author": "冰雨少年",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "玄幻商人",
+          "author": "刀尖上的虫脚",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "玄幻之源",
+          "author": "各良人",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "玄幻：神尊",
+          "author": "大音若希",
+          "category": "玄幻",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "执掌玄幻",
+          "author": "念千灵",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "玄幻疗愈",
+          "author": "我旺夫",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "玄幻星辰",
+          "author": "暗之影杀",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "玄幻先生",
+          "author": "黑白言少",
+          "category": "言情小说",
+          "sourceName": "阅读库",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "玄幻版斗罗",
+          "author": "佚名",
+          "category": "[玄幻魔法]",
+          "sourceName": "笔趣阁22",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "玄幻模拟器",
+          "author": "咸鱼洁南",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "超玄幻文明",
+          "author": "夏食",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "超玄幻降临",
+          "author": "夏食",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "一剑荡风云",
+          "author": "风凌九天",
+          "category": "玄幻",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "御风天下",
+          "author": "御风天下",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "万倍返还：徒弟筑基我直接成仙",
+          "author": "风凌北",
+          "category": "玄幻",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "仙逆",
+          "author": "耳根",
+          "category": "[武侠修真]",
+          "sourceName": "笔趣阁22",
+          "reason": "title-too-short",
+          "score": 0
+        },
+        {
+          "bookName": "仙者",
+          "author": "忘语",
+          "category": "[武侠修真]",
+          "sourceName": "笔趣阁22",
+          "reason": "title-too-short",
+          "score": 0
+        },
+        {
+          "bookName": "仙者无错字精校版",
+          "author": "忘语",
+          "category": "玄幻",
+          "sourceName": "书林文学",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "仙者袁铭全文完整版",
+          "author": "忘语",
+          "category": "玄幻",
+          "sourceName": "书林文学",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "仙者袁铭小说",
+          "author": "忘语",
+          "category": "玄幻",
+          "sourceName": "书林文学",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "欢喜妙法，女帝尤怜",
+          "author": "东方玄明",
+          "category": "玄幻",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "丹尊至上",
+          "author": "东方白石",
+          "category": "玄幻",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "传说：绝世魔神",
+          "author": "东方农夫",
+          "category": "仙侠",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "古蜀秘宝",
+          "author": "东方一虹",
+          "category": "玄幻",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "太微战纪",
+          "author": "日出东方",
+          "category": "奇幻",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "洪荒之鸿蒙世界树",
+          "author": "东方碧落",
+          "category": "玄幻",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "越界：原来我们都是神明！",
+          "author": "东方月生",
+          "category": "玄幻",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "镇族老祖：从建立家族开始",
+          "author": "东方骷髅",
+          "category": "玄幻",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "最奇幻",
+          "author": "我的重生之魂",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "奇幻大陆",
+          "author": "低调のC",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "奇幻逆流",
+          "author": "夜神不说话",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "奇幻王座",
+          "author": "是青年一只呀",
+          "category": "科幻小说",
+          "sourceName": "阅读库",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "奇幻异典",
+          "author": "月下桑",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "奇幻战记",
+          "author": "灰色金鱼",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "奇幻大明",
+          "author": "织云女士",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "奇幻图鉴",
+          "author": "茶子再再",
+          "category": "[科幻小说]",
+          "sourceName": "笔趣阁365",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "奇幻漫游",
+          "author": "萌熊",
+          "category": "其他",
+          "sourceName": "书海阁小说网",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "奇幻之星",
+          "author": "赢墨",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "奇幻迷局",
+          "author": "锦鑫爸",
+          "category": "侦探推理",
+          "sourceName": "阅读库",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "传奇幻想",
+          "author": "静夜思1990",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "修真！",
+          "author": "躺着看小说",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "修真道",
+          "author": "云鹰",
+          "category": "言情小说",
+          "sourceName": "阅读库",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "修真归来",
+          "author": "TV帝、",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "市井修真",
+          "author": "七劫",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "修真猎手",
+          "author": "七夜之火",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "修真战队",
+          "author": "为名想三天",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "现世修真",
+          "author": "云惜少",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "大秦修真",
+          "author": "云端吟",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "最强修真",
+          "author": "会飞的猪三哥",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "missing-strong-title-token",
+          "score": 0
+        },
+        {
+          "bookName": "修仙",
+          "author": "易折",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "title-too-short",
+          "score": 0
+        },
+        {
+          "bookName": "修仙",
+          "author": "秣陵别雪",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "title-too-short",
+          "score": 0
+        },
+        {
+          "bookName": "修仙.",
+          "author": "蝴蝶鸳鸯",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "修仙客",
+          "author": "一只蜥蜴",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "修仙王",
+          "author": "大神公",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "修仙法",
+          "author": "巡山小金毛",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "修仙传",
+          "author": "归隐",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "修仙猪",
+          "author": "灵川飞羽",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "修仙日",
+          "author": "苍山泪",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "魔王修仙",
+          "author": "undear",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "极限修仙",
+          "author": "七彩乌龟",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "修仙大盗",
+          "author": "万丈狼烟",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "仙侠策",
+          "author": "古世二少",
+          "category": "仙侠",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "医仙侠侣",
+          "author": "东方黄龙",
+          "category": "[都市言情]",
+          "sourceName": "笔趣阁22",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "仙侠之路",
+          "author": "伯玉",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "仙侠乾坤",
+          "author": "墨艺风云",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "仙侠世界",
+          "author": "寂寞我独走",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "重返仙侠",
+          "author": "快乐的飞豆",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "仙侠大秦",
+          "author": "扑街的小宏",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "仙侠世界",
+          "author": "无罪",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "仙侠逆影",
+          "author": "月半时分",
+          "category": "仙侠",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "异界筑梦",
+          "author": "CL913",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "异界偶像",
+          "author": "joker陌",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "异界双子",
+          "author": "o尘心o",
+          "category": "其他类型",
+          "sourceName": "阅读库",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "玩转异界",
+          "author": "一键御江湖",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "异界归程",
+          "author": "上午9点",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "异界流浪",
+          "author": "上官观澜",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "横扫异界",
+          "author": "不是浮云",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "genre": "悬疑",
+      "existingSampleCount": 20,
+      "targetSampleCount": 1000,
+      "remainingToTarget": 980,
+      "discoveryKeywords": [
+        "悬疑",
+        "推理",
+        "刑侦",
+        "紫金陈",
+        "秦明",
+        "雷米",
+        "周浩晖",
+        "冶文彪",
+        "丁墨",
+        "priest",
+        "法医",
+        "罪",
+        "谜案",
+        "画像",
+        "凶案",
+        "破案",
+        "侦探",
+        "心理罪",
+        "死亡通知单",
+        "长夜难明",
+        "无证之罪",
+        "清明上河图密码"
+      ],
+      "acceptedCount": 49,
+      "rejectedCount": 66,
+      "booklistPath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\booklists\\curated\\悬疑-candidates.txt",
+      "accepted": [
+        {
+          "bookName": "觅迹【刑侦】",
+          "author": "巧克力拌饭",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "刑侦档案",
+          "author": "灞桥折柳",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "刑侦精英",
+          "author": "北戈",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "刑侦生活",
+          "author": "星星小蚊香",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "逐光【刑侦】",
+          "author": "北斗二娘",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "暗夜【刑侦】",
+          "author": "潇二郎",
+          "category": "其他",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "渡灵法医",
+          "author": "园中葵",
+          "category": "科幻灵异",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "法医实录",
+          "author": "一点眉黛刀",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "疯狂的推理",
+          "author": "养洋洋",
+          "category": "[都市言情]",
+          "sourceName": "笔趣阁365",
+          "score": 2
+        },
+        {
+          "bookName": "或然推理",
+          "author": "易左",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "score": 2
+        },
+        {
+          "bookName": "极限推理",
+          "author": "初与泯",
+          "category": "[科幻小说]",
+          "sourceName": "笔趣阁365",
+          "score": 2
+        },
+        {
+          "bookName": "犟种【刑侦】",
+          "author": "北斗二娘",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "日常悬疑事件",
+          "author": "大鸦的回忆",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "score": 2
+        },
+        {
+          "bookName": "时代侦探",
+          "author": "沙漠绿洲",
+          "category": "侦探推理",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "时间推理",
+          "author": "嗷嗷嗷嗷奥斯卡啊",
+          "category": "[科幻小说]",
+          "sourceName": "笔趣阁365",
+          "score": 2
+        },
+        {
+          "bookName": "是猫[悬疑]",
+          "author": "末青余枝",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "score": 2
+        },
+        {
+          "bookName": "探案刑侦",
+          "author": "小海鲜凉拌多多鱼",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "推理现场",
+          "author": "熙九歌",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 2
+        },
+        {
+          "bookName": "推理悬河",
+          "author": "金古霖",
+          "category": "[都市言情]",
+          "sourceName": "笔趣阁365",
+          "score": 2
+        },
+        {
+          "bookName": "推理已死",
+          "author": "蜘手彻",
+          "category": "[其他类型]",
+          "sourceName": "笔趣阁365",
+          "score": 2
+        },
+        {
+          "bookName": "推理亿点点",
+          "author": "张礼清",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "score": 2
+        },
+        {
+          "bookName": "推理至上",
+          "author": "梅慕Mu",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "score": 2
+        },
+        {
+          "bookName": "无限推理家",
+          "author": "周池",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "score": 2
+        },
+        {
+          "bookName": "邪门[悬疑]",
+          "author": "秋既白",
+          "category": "[女生耽美]",
+          "sourceName": "笔趣阁22",
+          "score": 2
+        },
+        {
+          "bookName": "心理防线",
+          "author": "左耳",
+          "category": "侦探推理",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "心理真相",
+          "author": "南宫寒璘",
+          "category": "侦探推理",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "刑侦案件",
+          "author": "傲天阔野",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "刑侦大明",
+          "author": "宣大总督",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 2
+        },
+        {
+          "bookName": "刑侦七组",
+          "author": "夜路无声",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "刑侦探案",
+          "author": "我爱吃红烧肉",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "刑侦天梯",
+          "author": "光头十一",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "刑侦者",
+          "author": "六划先生",
+          "category": "",
+          "sourceName": "梦书中文",
+          "score": 2
+        },
+        {
+          "bookName": "悬刃［刑侦］",
+          "author": "李横渠",
+          "category": "[都市小说]",
+          "sourceName": "顶点小说",
+          "score": 2
+        },
+        {
+          "bookName": "悬疑大冒险",
+          "author": "发饺",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "悬疑大神探",
+          "author": "张小晓",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "悬疑故事精选",
+          "author": "哎呦小萍",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "悬疑怪志",
+          "author": "我是一只小小小强",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "悬疑解密档案",
+          "author": "墨哥墨哥",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "悬疑警探",
+          "author": "秋风辞",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "悬疑破案",
+          "author": "悬丝傀儡969",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "score": 2
+        },
+        {
+          "bookName": "悬疑烧脑",
+          "author": "胡smile",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "悬疑相谈社",
+          "author": "御手洗青梅",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "悬疑罪案解密",
+          "author": "墨香葫芦",
+          "category": "科幻",
+          "sourceName": "书林文学",
+          "score": 2
+        },
+        {
+          "bookName": "异耳侦探",
+          "author": "墨道刺青",
+          "category": "侦探推理",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "恽夜遥推理",
+          "author": "小韵和小云",
+          "category": "",
+          "sourceName": "鸟书网",
+          "score": 2
+        },
+        {
+          "bookName": "遮云[刑侦]",
+          "author": "北斗二娘",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "score": 2
+        },
+        {
+          "bookName": "侦探王",
+          "author": "公子令伊",
+          "category": "侦探推理",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "重案推理者",
+          "author": "无视小蚂蚁",
+          "category": "[科幻小说]",
+          "sourceName": "笔趣阁365",
+          "score": 2
+        },
+        {
+          "bookName": "罪推理",
+          "author": "时间2011",
+          "category": "",
+          "sourceName": "梦书中文",
+          "score": 2
+        }
+      ],
+      "rejected": [
+        {
+          "bookName": "心理罪（全集）",
+          "author": "雷米",
+          "category": "[都市言情]",
+          "sourceName": "笔趣阁22",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "心理罪：画像（李易峰、廖凡主演电影《心理罪》原著）",
+          "author": "雷米",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "殉罪者（出书版）",
+          "author": "雷米",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "逆袭成尊",
+          "author": "周浩秦雨彤",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "大法医",
+          "author": "炒饭加蛋",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "法医谍影",
+          "author": "三川石",
+          "category": "军事",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "冷血法医",
+          "author": "三生石3",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "玄门法医",
+          "author": "云陵一梦",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "风流法医",
+          "author": "五莲山樵",
+          "category": "[都市小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "《法医小妾》",
+          "author": "佚名",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "追凶法医",
+          "author": "千叶大师",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "读心法医",
+          "author": "千叶大师",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "法医笔记",
+          "author": "君不贱",
+          "category": "[都市言情]",
+          "sourceName": "笔趣阁22",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "法医笔录",
+          "author": "大乐神",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "通灵法医",
+          "author": "天天抹粉嫩唇彩",
+          "category": "玄幻奇幻",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "阴倌法医",
+          "author": "天工匠人",
+          "category": "女生言情",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "叠罪",
+          "author": "一曲墨白",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "贩罪",
+          "author": "三天两觉",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "刺罪",
+          "author": "九月飞仙",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "困罪",
+          "author": "以笙",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "揭罪",
+          "author": "凌梳城",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "弱罪",
+          "author": "凡童拾芾",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "克罪",
+          "author": "可凡可不烦",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "迷罪",
+          "author": "夏梓沫",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "罪，夜",
+          "author": "夜妃颜",
+          "category": "女生言情",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "谜途",
+          "author": "三不",
+          "category": "科幻灵异",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "心魔谜案",
+          "author": "九更2016",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "谜案缉凶",
+          "author": "兰奥",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "谜都",
+          "author": "吉满",
+          "category": "科幻灵异",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "罪理谜案",
+          "author": "听书航海",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "画像",
+          "author": "风雨如书2020",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "落城凶案",
+          "author": "夏末橘子",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "凶案追缉",
+          "author": "方小糖",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "凶案追击",
+          "author": "猫咪狗狗你爱谁",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "凶案追击",
+          "author": "莫伊莱",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "凶案背后",
+          "author": "莫伊莱",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "破案现场",
+          "author": "偏执青年",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "破案专家",
+          "author": "长春雪淞",
+          "category": "科幻灵异",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "破案那些事",
+          "author": "三更夜雨",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "尸忆破案局",
+          "author": "秋后的银杏",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "隐形侦探",
+          "author": "唐吉康德",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "瞑瞳侦探",
+          "author": "安六",
+          "category": "科幻灵异",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "心理罪",
+          "author": "不是何阳",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "心理罪",
+          "author": "育在雕琢",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "心理原罪",
+          "author": "子冯",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "特别心理罪",
+          "author": "逢俞",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "罪恶心理",
+          "author": "城末者",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "犯罪心理",
+          "author": "长洱",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "心理罪：悬案迷踪",
+          "author": "三生绝",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "重生之心理罪宗",
+          "author": "姬南绾",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "死亡通碟",
+          "author": "两簇拟墨葬祭凜",
+          "category": "科幻灵异",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "死亡名单",
+          "author": "饕餮居士",
+          "category": "科幻灵异",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "死亡嫁接",
+          "author": "Riser",
+          "category": "科幻灵异",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "死亡列车",
+          "author": "东殇卮.",
+          "category": "科幻灵异",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "颂核长夜",
+          "author": "不懂事的冷宁",
+          "category": "科幻灵异",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "无形之罪",
+          "author": "万道光芒本尊",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "无妄之罪",
+          "author": "幻海半仙",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "无痕之罪",
+          "author": "雁回锋",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "浊世之罪",
+          "author": "0自渡0",
+          "category": "玄幻魔法",
+          "sourceName": "阅读库",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "负神之罪",
+          "author": "凉梦夜婉歌",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "明日之罪",
+          "author": "千为",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "起始之罪",
+          "author": "只爱瞳青青",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "一念之罪",
+          "author": "吴开阳",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "亲密之罪",
+          "author": "安奕",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "清明上河图史记",
+          "author": "竹晴园",
+          "category": "悬疑",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "文明序列密码",
+          "author": "蚊子也知饥",
+          "category": "科幻灵异",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "genre": "古言",
+      "existingSampleCount": 16,
+      "targetSampleCount": 1000,
+      "remainingToTarget": 984,
+      "discoveryKeywords": [
+        "古言",
+        "宅斗",
+        "重生",
+        "吱吱",
+        "千山茶客",
+        "蓬莱客",
+        "白鹭成双",
+        "空留",
+        "西子情",
+        "侧侧轻寒",
+        "侯门",
+        "嫡女",
+        "将门",
+        "王妃",
+        "宫斗",
+        "权谋",
+        "盛宠",
+        "掌家",
+        "贵女",
+        "庶女",
+        "簪中录",
+        "知否",
+        "惜花芷",
+        "春日宴"
+      ],
+      "acceptedCount": 25,
+      "rejectedCount": 57,
+      "booklistPath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\booklists\\curated\\古言-candidates.txt",
+      "accepted": [
+        {
+          "bookName": "嫡女锦",
+          "author": "九凰紫",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "侯门春事",
+          "author": "二月春",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 3
+        },
+        {
+          "bookName": "侯门嫡女",
+          "author": "一枚铜钱",
+          "category": "历史",
+          "sourceName": "书林文学",
+          "score": 3
+        },
+        {
+          "bookName": "侯门闺杀",
+          "author": "九千梦",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "score": 3
+        },
+        {
+          "bookName": "冥王妃",
+          "author": "柒爷7",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "score": 3
+        },
+        {
+          "bookName": "春日迟",
+          "author": "新雨霁",
+          "category": "历史穿越",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "春日局",
+          "author": "歌曲啊",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "春日游",
+          "author": "春溪笛晓",
+          "category": "历史穿越",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "嫡女万福",
+          "author": "九重弦",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "侯门",
+          "author": "希昀",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "侯门凤女",
+          "author": "一个橙子",
+          "category": "历史军事",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "侯门继妻",
+          "author": "peanut",
+          "category": "言情小说",
+          "sourceName": "阅读库",
+          "score": 2
+        },
+        {
+          "bookName": "侯门娇",
+          "author": "一个女人",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "侯门娇",
+          "author": "桃小妖儿",
+          "category": "体育",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "离侯门",
+          "author": "鹊南枝",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "弃侯门",
+          "author": "雨淡风清",
+          "category": "",
+          "sourceName": "香书小说",
+          "score": 2
+        },
+        {
+          "bookName": "权宠嫡女",
+          "author": "会飞的粉红象",
+          "category": "历史穿越",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "盛宠嫡女",
+          "author": "七片禾叶",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "盛宠皇妃",
+          "author": "一沐吖",
+          "category": "历史穿越",
+          "sourceName": "悠久小说网",
+          "score": 2
+        },
+        {
+          "bookName": "庶女安娘",
+          "author": "三岁成妖",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "庶女谋天",
+          "author": "初姒儿",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "宅斗：庶女无敌",
+          "author": "初画",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "长公主宅斗记",
+          "author": "九冬耳",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "score": 2
+        },
+        {
+          "bookName": "掌家婢",
+          "author": "月下兰舟",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        },
+        {
+          "bookName": "重生帝王妃",
+          "author": "姝沐",
+          "category": "青春",
+          "sourceName": "书海阁小说网",
+          "score": 2
+        }
+      ],
+      "rejected": [
+        {
+          "bookName": "碧好（古言）",
+          "author": "念刀刀",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "言憾",
+          "author": "承若水",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "古言杂记",
+          "author": "没区别的咸鱼",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "宅斗你妹",
+          "author": "卫小庄",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "何为宅斗",
+          "author": "曼言",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "宅唐",
+          "author": "码字的尘埃",
+          "category": "历史穿越",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "宅斗这件小事",
+          "author": "乳酸菌",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "叹重生",
+          "author": "赵阙",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "末日重生",
+          "author": "么鱼",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "傲剑重生",
+          "author": "冰冷天子",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "重生心动",
+          "author": "凉小柒",
+          "category": "都市青春",
+          "sourceName": "悠久小说网",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "重生桑榆",
+          "author": "努比亚l",
+          "category": "女生言情",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "武帝重生",
+          "author": "日月入锁",
+          "category": "玄幻奇幻",
+          "sourceName": "悠久小说网",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "村女重生",
+          "author": "月杨梅",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "重生悍妇",
+          "author": "柠檬笑",
+          "category": "女生",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "重生无憾",
+          "author": "树的孤独",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "重生创业",
+          "author": "淬心刀",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "重生：十年",
+          "author": "澹泊宁远",
+          "category": "现言",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "重生回潮",
+          "author": "犀共鸣",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "剑神重生",
+          "author": "用户36029617",
+          "category": "游戏",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "大王重生",
+          "author": "碧海鲲鹏",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "重生大阪",
+          "author": "秒速九光年",
+          "category": "游戏动漫",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "重生商海",
+          "author": "穷四",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "末日重生",
+          "author": "西瓜黄",
+          "category": "科幻灵异",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "地狱重生",
+          "author": "迩本多情",
+          "category": "",
+          "sourceName": "香书小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "重生轶闻",
+          "author": "逆战重生",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "重生凶猛",
+          "author": "重生大魔王",
+          "category": "玄幻奇幻",
+          "sourceName": "悠久小说网",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "重生学概论",
+          "author": "太卡",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "重生掌中娇",
+          "author": "清宜",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "渣夫重生了",
+          "author": "秦皇",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "重生养大佬",
+          "author": "连艺",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "小嘴一瘪，萌宝被四海八荒团宠了",
+          "author": "恻恻轻寒",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "非传统宫斗",
+          "author": "江湖人称带刺玫瑰",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "重生宫斗日常",
+          "author": "紫筠",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "日常宫斗指南",
+          "author": "马苡柠",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "权谋",
+          "author": "战神之魂",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "权谋",
+          "author": "樵夫",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "与权谋",
+          "author": "故宅骑士",
+          "category": "游戏",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "权谋仕途",
+          "author": "丁公子",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "权谋九幽",
+          "author": "云梨小六",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "将心权谋",
+          "author": "佛心魔魂",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "众神权谋",
+          "author": "全是宝藏",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "步步权谋",
+          "author": "凤凌苑",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "权谋世家",
+          "author": "大罗天下",
+          "category": "都市",
+          "sourceName": "书海阁小说网",
+          "reason": "category-excluded",
+          "score": 0
+        },
+        {
+          "bookName": "凰权谋术",
+          "author": "容天下",
+          "category": "",
+          "sourceName": "梦书中文",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "权谋天道",
+          "author": "小梁叔",
+          "category": "",
+          "sourceName": "鸟书网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "无尽权谋",
+          "author": "春晚欲",
+          "category": "历史",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "以权谋妻",
+          "author": "望晨莫及",
+          "category": "",
+          "sourceName": "燃文小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "盛宠令",
+          "author": "夜惠美",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "二嫁盛宠",
+          "author": "一曲良人",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "权臣盛宠",
+          "author": "亦是朝阳",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "掌国",
+          "author": "九城城主",
+          "category": "历史穿越",
+          "sourceName": "悠久小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "贵女谋",
+          "author": "茈茵",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "贵女归辞",
+          "author": "三天路口",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "贵女景昭",
+          "author": "于勺",
+          "category": "古言",
+          "sourceName": "书海阁小说网",
+          "reason": "low-score",
+          "score": 1
+        },
+        {
+          "bookName": "我的内娱穿越之旅",
+          "author": "君知否",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 0
+        },
+        {
+          "bookName": "重生后，她主动扑倒摄政王宠爆天",
+          "author": "南山知否",
+          "category": "[言情小说]",
+          "sourceName": "顶点小说",
+          "reason": "low-score",
+          "score": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "startedAt": "2026-05-21T07:47:18.149Z",
+  "finishedAt": "2026-05-21T07:52:18.085Z",
+  "manifestPath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\genre-collection-manifest.json",
+  "libraryPath": "D:\\ai\\写作\\写作样本库",
+  "bundlePath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints",
+  "reportPath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\latest-collection-report.json",
+  "collectedRuns": [
+    {
+      "genre": "古言",
+      "total": 10,
+      "collected": 5,
+      "skippedExisting": 5,
+      "notFound": 0,
+      "downloadMissing": 0,
+      "errors": 0
+    }
+  ],
+  "errors": [],
+  "fingerprintOverview": [
+    {
+      "genre": "都市",
+      "sampleCount": 7,
+      "chapterCount": 1720,
+      "totalChars": 11083813,
+      "avgChapterChars": 6444,
+      "signalLabel": "都市信号",
+      "signalPer10k": 16.8,
+      "progressionPer10k": 1.7
+    },
+    {
+      "genre": "古言",
+      "sampleCount": 7,
+      "chapterCount": 1552,
+      "totalChars": 7122366,
+      "avgChapterChars": 4589,
+      "signalLabel": "古言信号",
+      "signalPer10k": 25.3,
+      "progressionPer10k": 1.6
+    },
+    {
+      "genre": "网游",
+      "sampleCount": 25,
+      "chapterCount": 6471,
+      "totalChars": 19309025,
+      "avgChapterChars": 2984,
+      "signalLabel": "网游信号",
+      "signalPer10k": 90.8,
+      "progressionPer10k": 13.1
+    },
+    {
+      "genre": "玄幻",
+      "sampleCount": 12,
+      "chapterCount": 3120,
+      "totalChars": 12134010,
+      "avgChapterChars": 3889,
+      "signalLabel": "玄幻信号",
+      "signalPer10k": 13,
+      "progressionPer10k": 3.3
+    },
+    {
+      "genre": "悬疑",
+      "sampleCount": 5,
+      "chapterCount": 630,
+      "totalChars": 1947926,
+      "avgChapterChars": 3092,
+      "signalLabel": "悬疑信号",
+      "signalPer10k": 30.4,
+      "progressionPer10k": 7.3
+    }
+  ]
+}

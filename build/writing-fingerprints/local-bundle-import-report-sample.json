@@ -1,0 +1,92 @@
+{
+  "generatedAt": "2026-05-21T15:41:44.128Z",
+  "manifestPath": "build\\writing-fingerprints\\local-bundle-import-manifest.json",
+  "library": "D:\\ai\\写作\\写作样本库",
+  "total": 12,
+  "processed": [
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\女频言情\\古代言情\\万千宠爱-读读.epub",
+      "genre": "古言",
+      "status": "imported",
+      "targetPath": "D:\\ai\\写作\\写作样本库\\原文样本\\古言\\万千宠爱-读读.txt",
+      "chars": 558431
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\女频言情\\古代言情\\为奴-狂上加狂.epub",
+      "genre": "古言",
+      "status": "imported",
+      "targetPath": "D:\\ai\\写作\\写作样本库\\原文样本\\古言\\为奴-狂上加狂.txt",
+      "chars": 596907
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\女频言情\\古代言情\\侯门继妻-peanut.epub",
+      "genre": "古言",
+      "status": "imported",
+      "targetPath": "D:\\ai\\写作\\写作样本库\\原文样本\\古言\\侯门继妻-peanut.txt",
+      "chars": 1373796
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\女频言情\\古代言情\\农家小地主-郁雨竹.epub",
+      "genre": "古言",
+      "status": "imported",
+      "targetPath": "D:\\ai\\写作\\写作样本库\\原文样本\\古言\\农家小地主-郁雨竹.txt",
+      "chars": 1927136
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\女频言情\\古代言情\\危宫惊梦-狂上加狂.epub",
+      "genre": "古言",
+      "status": "imported",
+      "targetPath": "D:\\ai\\写作\\写作样本库\\原文样本\\古言\\危宫惊梦-狂上加狂.txt",
+      "chars": 565731
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\女频言情\\古代言情\\原始再来-月下桑.epub",
+      "genre": "古言",
+      "status": "imported",
+      "targetPath": "D:\\ai\\写作\\写作样本库\\原文样本\\古言\\原始再来-月下桑.txt",
+      "chars": 460729
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\女频言情\\古代言情\\厨妃之王爷请纳妾-鹦鹉晒月.epub",
+      "genre": "古言",
+      "status": "imported",
+      "targetPath": "D:\\ai\\写作\\写作样本库\\原文样本\\古言\\厨妃之王爷请纳妾-鹦鹉晒月.txt",
+      "chars": 1190154
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\女频言情\\古代言情\\妙偶天成-冬天的柳叶.epub",
+      "genre": "古言",
+      "status": "imported",
+      "targetPath": "D:\\ai\\写作\\写作样本库\\原文样本\\古言\\妙偶天成-冬天的柳叶.txt",
+      "chars": 1441604
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\女频言情\\古代言情\\妾色-唐梦若影.epub",
+      "genre": "古言",
+      "status": "imported",
+      "targetPath": "D:\\ai\\写作\\写作样本库\\原文样本\\古言\\妾色-唐梦若影.txt",
+      "chars": 1716152
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\女频言情\\古代言情\\宠妻荣华-飞翼.epub",
+      "genre": "古言",
+      "status": "imported",
+      "targetPath": "D:\\ai\\写作\\写作样本库\\原文样本\\古言\\宠妻荣华-飞翼.txt",
+      "chars": 787778
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\女频言情\\古代言情\\小丫头空间升级记-幽然雨下.epub",
+      "genre": "古言",
+      "status": "imported",
+      "targetPath": "D:\\ai\\写作\\写作样本库\\原文样本\\古言\\小丫头空间升级记-幽然雨下.txt",
+      "chars": 1352260
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\女频言情\\古代言情\\山水田园-白色它桃花.epub",
+      "genre": "古言",
+      "status": "imported",
+      "targetPath": "D:\\ai\\写作\\写作样本库\\原文样本\\古言\\山水田园-白色它桃花.txt",
+      "chars": 308563
+    }
+  ]
+}

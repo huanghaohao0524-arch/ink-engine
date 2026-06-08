@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-05-21T15:14:34.252Z",
+  "curatedPath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\curated-book-candidates.json",
+  "outputDir": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\booklists\\frozen",
+  "genres": [
+    {
+      "genre": "网游",
+      "acceptedCount": 61,
+      "frozenCount": 40,
+      "filePath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\booklists\\frozen\\网游-frozen.txt"
+    },
+    {
+      "genre": "玄幻",
+      "acceptedCount": 46,
+      "frozenCount": 40,
+      "filePath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\booklists\\frozen\\玄幻-frozen.txt"
+    },
+    {
+      "genre": "悬疑",
+      "acceptedCount": 49,
+      "frozenCount": 40,
+      "filePath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\booklists\\frozen\\悬疑-frozen.txt"
+    }
+  ]
+}

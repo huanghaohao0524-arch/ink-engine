@@ -1,0 +1,3310 @@
+{
+  "generatedAt": "2026-05-22T02:02:57.699Z",
+  "libraryPath": "D:\\ai\\写作\\写作样本库",
+  "sourcePath": "D:\\ai\\写作\\写作样本库\\原文样本",
+  "boundary": "只保存题材统计指纹，不保存原文章节，不把样本原文带入生成上下文。",
+  "genres": [
+    {
+      "genre": "都市",
+      "file": "题材指纹\\都市.md",
+      "rawFileCount": 586,
+      "uniqueHashCount": 586,
+      "duplicateFileCount": 0,
+      "sampleCount": 120,
+      "chapterCount": 30779,
+      "totalChars": 90099629,
+      "avgChapterChars": 2927,
+      "signalLabel": "都市信号",
+      "signalPer10k": 12.4,
+      "progressionPer10k": 2,
+      "sourceFiles": [
+        {
+          "name": "一品圣手(段家二公子).txt",
+          "sha256": "53e64bca6be400cc41f61356fad699a652abb03674a7aafd75b4666e3262d6e5",
+          "chars": 1494047,
+          "chapters": 260
+        },
+        {
+          "name": "一品姐夫(老牛拉破车).txt",
+          "sha256": "ef504b4f345f7df32181c3aad6d6b3f6b6cc696b0a76e297c3d12d64a440d4be",
+          "chars": 3142063,
+          "chapters": 260
+        },
+        {
+          "name": "一夜惊喜(我就是调皮).txt",
+          "sha256": "b67c741ec59cd8b044b6adad878fe7072c6670064c9bf4ff74ecbcdbbfc5e1ec",
+          "chars": 927455,
+          "chapters": 260
+        },
+        {
+          "name": "一顾倾城(仗剑天涯).txt",
+          "sha256": "91fa9d8f49827cca2825fa909acc33283697a60fee05a1ed5537584bda5ce6fb",
+          "chars": 972649,
+          "chapters": 260
+        },
+        {
+          "name": "万族之劫(老鹰吃小鸡).txt",
+          "sha256": "f7eaa99ce908a4e4dde6ede893599b733ac5d9d9cbd5eae0f6c391cf55a42972",
+          "chars": 8342605,
+          "chapters": 260
+        },
+        {
+          "name": "万能场景转换器(赵凰萌猎).txt",
+          "sha256": "ba71bbc8134b22b29b7283f54a5c324b1f29b640ceabbebc141c63e48a43f788",
+          "chars": 1399612,
+          "chapters": 260
+        },
+        {
+          "name": "万能神笔(月下菜花贼).txt",
+          "sha256": "d7dacf11346abf32bcf527737ae29cbf42b30a4ba3465b0d014d56f8192e3588",
+          "chars": 2013561,
+          "chapters": 260
+        },
+        {
+          "name": "三界红包群(小教主).txt",
+          "sha256": "600ed0fd0ada765eaedbd8e994c54e42f277ab089db53e7e79f96ae5a634e485",
+          "chars": 10056708,
+          "chapters": 260
+        },
+        {
+          "name": "东方好莱坞(一品黄山).txt",
+          "sha256": "e7c3fcdb58cb3d45c85839fba0a3b7c2ccccb4bfc2435d5fb49d9dda148fd836",
+          "chars": 2270503,
+          "chapters": 260
+        },
+        {
+          "name": "九转重生(六品菠萝).txt",
+          "sha256": "b6788b86f3a9ce9d6a1537a17eb654dc7f91d756099b1164025f28a21b087f31",
+          "chars": 1993463,
+          "chapters": 260
+        },
+        {
+          "name": "乡村之王(缠绕在指尖的灵感).txt",
+          "sha256": "9bd0b44cd936cd5923c2860d9bfc02587c7836aae62f367ca05e194bedca2561",
+          "chars": 1669820,
+          "chapters": 260
+        },
+        {
+          "name": "乡村首富(白湖湾).txt",
+          "sha256": "a7fcfddfedc5457793b639c49556eff55e9e5806b6c75f93e5d7a85db530969b",
+          "chars": 1934126,
+          "chapters": 260
+        },
+        {
+          "name": "乡间轻曲(醛石).txt",
+          "sha256": "66ba6db2eb3b04fb0408cda4e22890bbe7f93c7ce3a7a68aaf4a38414836a1c2",
+          "chars": 2012099,
+          "chapters": 260
+        },
+        {
+          "name": "乱世佳人(无敌多寂寞).txt",
+          "sha256": "17acc0b01722780f5e5b62034ccaa9a04e5222ec67e39cb88e79d8f554ce5730",
+          "chars": 927646,
+          "chapters": 260
+        },
+        {
+          "name": "二次元公寓(永远的乔帮主).txt",
+          "sha256": "99ff55124d1ab7110b605a5ebe243de04280a607f674d660dc5e0da964ef81fe",
+          "chars": 754560,
+          "chapters": 260
+        },
+        {
+          "name": "人不轻狂枉少年(张少年).txt",
+          "sha256": "ce590fc71ec297eb3e85fc14fabc59a3606f2c29428addbdfce34d50a113be0b",
+          "chars": 1176044,
+          "chapters": 260
+        },
+        {
+          "name": "仙医妙手(周郎羡).txt",
+          "sha256": "727d7181fee30e209b1d75ce420ff8d4816ec14ab3648e8837faa2aea8914bdf",
+          "chars": 2419150,
+          "chapters": 260
+        },
+        {
+          "name": "仙宝(烛).txt",
+          "sha256": "4fcef45b08eae97899503a1441a77547557ac893d28ddcd4cfe44362a1f02855",
+          "chars": 2048008,
+          "chapters": 260
+        },
+        {
+          "name": "修仙高手在校园(魅男).txt",
+          "sha256": "d02ad4a5d41d0bcf7eeaf073aac78301661acabbc052b63edd479440b7337217",
+          "chars": 4203795,
+          "chapters": 260
+        },
+        {
+          "name": "修真聊天群(圣骑士的传说).txt",
+          "sha256": "e43b9c0ac5527fcb8ce4b326fa41ce8762729c4b56add859eeae77d80abf93d5",
+          "chars": 8479659,
+          "chapters": 260
+        },
+        {
+          "name": "全才保镖(万雨千秋).txt",
+          "sha256": "cc2058708189d1e7a9267e032a6e290a1239625387708b1a45cedecd34db5dd5",
+          "chars": 2150629,
+          "chapters": 260
+        },
+        {
+          "name": "全才医王(违章).txt",
+          "sha256": "05126ce75b346acf7cfaf3633aa8ad81039bf3312965078609f1b8a89172d83c",
+          "chars": 1073429,
+          "chapters": 260
+        },
+        {
+          "name": "全才高手(违章).txt",
+          "sha256": "c08af7f1dbead38025a68dd033523b5a31b55cc7c56acfe9e54e9ce1e62c7c8a",
+          "chars": 1466376,
+          "chapters": 260
+        },
+        {
+          "name": "全才高手都市行(普罗).txt",
+          "sha256": "731bb6b1acabb14c44d284d0d577642b98d93f2114256a25eb1717809124aa55",
+          "chars": 2696896,
+          "chapters": 260
+        },
+        {
+          "name": "全能医王(北纬37度).txt",
+          "sha256": "1ee6468c67e05aac27bc4a1334a5083e142d0cfcea6ff57638fbd3658178c649",
+          "chars": 2573562,
+          "chapters": 260
+        },
+        {
+          "name": "全能狂少(临晨破晓).txt",
+          "sha256": "453871487080dbc473d5d4db1cb6b49e3ec483a04cfe5486f57849ff9e813bec",
+          "chars": 1189324,
+          "chapters": 260
+        },
+        {
+          "name": "全能跨界王(咚小鱼).txt",
+          "sha256": "82afe812192b00629f14cfd7a765961f414024fd3539a1c7a2c2d95660be0d02",
+          "chars": 3190707,
+          "chapters": 260
+        },
+        {
+          "name": "全能高手(我是愤怒).txt",
+          "sha256": "fa82438ea3548c8069b888d0d3d60acddbdaec295e19f31ccfb8f6c3a9fad28f",
+          "chars": 3896167,
+          "chapters": 260
+        },
+        {
+          "name": "兵王归来(云十三狼).txt",
+          "sha256": "b71967d25a7db599ce1eb37a58e45bf5a0e590ddb4f7e79aa1467f67befee7fe",
+          "chars": 2415731,
+          "chapters": 260
+        },
+        {
+          "name": "农夫传奇(关汉时).txt",
+          "sha256": "dd04c978fefb1a9bb7676696a7f1ef3671b24934194a9520fb03ec473c67a30c",
+          "chars": 1087846,
+          "chapters": 260
+        },
+        {
+          "name": "功德之主(荒古天帝).txt",
+          "sha256": "ae12e64064851d8948057465f854fb95422ac9a21e2e7fcb351ab19bce1ad2a8",
+          "chars": 1834770,
+          "chapters": 260
+        },
+        {
+          "name": "匹夫的逆袭(骁骑校).txt",
+          "sha256": "4df2b35154f30aaf76bca1c428b84bca498d76e486c26c2212c0ffedd3c64c51",
+          "chars": 2402786,
+          "chapters": 260
+        },
+        {
+          "name": "医毒天下(西瓜黄).txt",
+          "sha256": "4e37d0e021428e83013275fb3a1aef2df3c3d951d1a5977cf1c1fe75e3a9051f",
+          "chars": 1374532,
+          "chapters": 260
+        },
+        {
+          "name": "医道特种兵(西瓜败火).txt",
+          "sha256": "6359bba1a8ca6b4fdfe27f1d272834ab222f532a14df4fc125ea794bdcd4c87c",
+          "chars": 2474612,
+          "chapters": 260
+        },
+        {
+          "name": "华娱之全能天王(久违的伟神).txt",
+          "sha256": "b9f0bcb2dd7a924d20502af838e0f699d4582a690adf1a14d91e3cd9f071214b",
+          "chars": 534737,
+          "chapters": 224
+        },
+        {
+          "name": "变身最强主播(蒙着面的Sama).txt",
+          "sha256": "baf8f1d2649aa87d233878a1eb63906ff57857b5aa851af43cee468c34558408",
+          "chars": 609808,
+          "chapters": 260
+        },
+        {
+          "name": "变身蜘蛛侠(太上布衣).txt",
+          "sha256": "3fe87964e6078d0f66d1356ee9121fa276e1151852ef83c2c80f40b5eec04d63",
+          "chars": 1254357,
+          "chapters": 260
+        },
+        {
+          "name": "可爱女友恋上我(悦夏).txt",
+          "sha256": "e395b54f816316c802c57ab44bc5975f2807ea4363915445fb6cb7f5f278e31d",
+          "chars": 913358,
+          "chapters": 260
+        },
+        {
+          "name": "史上最强终端(暴力快递员).txt",
+          "sha256": "078e4b807a8abbb010d5f75d920c16a1a579a8ebed3832805ed76796cfc2e56a",
+          "chars": 1085214,
+          "chapters": 260
+        },
+        {
+          "name": "史上最牛中介所(东北大狼王).txt",
+          "sha256": "9ce18f2d35fa5e8c304060b35266e9032863b112942d5970649b579346866d31",
+          "chars": 2037320,
+          "chapters": 260
+        },
+        {
+          "name": "同居保镖(阿木).txt",
+          "sha256": "07f4f048b6b205db6877e1024b6f992305fe691a07b129821260c0ff2de79bf9",
+          "chars": 2481964,
+          "chapters": 260
+        },
+        {
+          "name": "名门弃少(南宫沐天).txt",
+          "sha256": "2d80a1e117e844e69d0951064974952450b99c6668cb650fe15a37b1ef4312a2",
+          "chars": 1092141,
+          "chapters": 260
+        },
+        {
+          "name": "商海谍影(常书欣).txt",
+          "sha256": "348d103b7748c0494c4355018e22eda46f80342168daff756b226a2ea787fdff",
+          "chars": 1285311,
+          "chapters": 138
+        },
+        {
+          "name": "回到过去变成鼠(一点不好笑).txt",
+          "sha256": "ff4e887103de74d798f32300941c3b0afabdb72f9766860b0095ed49385f86b0",
+          "chars": 629844,
+          "chapters": 260
+        },
+        {
+          "name": "土豪系统(单纯宅男).txt",
+          "sha256": "0989161e880dd3e410821bdef8e9d13300ea3bef714da3d514fb23087b3d03d0",
+          "chars": 1644117,
+          "chapters": 260
+        },
+        {
+          "name": "圣手之尊(刀锋间影).txt",
+          "sha256": "c48ba2da3f4ed63ae466debf84fbfa4c534e53702466c669bf2b4e7144ffede8",
+          "chars": 1178361,
+          "chapters": 260
+        },
+        {
+          "name": "圣手邪医(贱走偏锋).txt",
+          "sha256": "adf54b692f7a0b9bb2c46dc9b52d6e6f79a1440610c8cedd0d30817cdc9bffe2",
+          "chars": 3059193,
+          "chapters": 260
+        },
+        {
+          "name": "在日本当老师的日子(黑暗骑士殿).txt",
+          "sha256": "3391939438b47db0bd09623c0eb600369d70e28fad72ae04ed9ca321a0dab20f",
+          "chars": 1159849,
+          "chapters": 260
+        },
+        {
+          "name": "地府传承系统(今朝).txt",
+          "sha256": "4312f74ca0c0c5723f0cb723842181cc50e58b0052143d1f013fa88710f0549b",
+          "chars": 1408415,
+          "chapters": 260
+        },
+        {
+          "name": "地府预备役(宝巨要崛起).txt",
+          "sha256": "9c3e830f3593d1d1094c9aff4b366d2e5ea879c480c4401e6afb05a6657561ce",
+          "chars": 1288278,
+          "chapters": 260
+        },
+        {
+          "name": "大医生(疯狂的鼠标).txt",
+          "sha256": "9c3feaf7a6211d1794ff3ba8ed71fb143810baa57b3dffeee276151786adb1a2",
+          "chars": 1135111,
+          "chapters": 260
+        },
+        {
+          "name": "大国工程(和光万物).txt",
+          "sha256": "e6a36c14cb8251ccc3198793a2210b0dbc451dc207b299f3cb176e0af37fb88a",
+          "chars": 2263416,
+          "chapters": 260
+        },
+        {
+          "name": "大宝鉴(罗晓).txt",
+          "sha256": "ced725ebd7af8f193891e86f6c2abd6bbd67d3d21d124ea0273fc2e181628b7a",
+          "chars": 2600317,
+          "chapters": 260
+        },
+        {
+          "name": "大小姐的贴身兵王(月醉).txt",
+          "sha256": "01763b333a192050b25107e7e6eeeb3175d7fd37555f55be74aa481907b818f0",
+          "chars": 2677835,
+          "chapters": 260
+        },
+        {
+          "name": "大小姐的近身神医(禹少少).txt",
+          "sha256": "b3f533642b1a07714036b83cd42357fb8e4ca8194070e52ff46572661ba48872",
+          "chars": 3929139,
+          "chapters": 260
+        },
+        {
+          "name": "大怪医(阴险的悟净).txt",
+          "sha256": "c58b1a2cbdbc970edbd5d6394bf29d31973d0b79f350fe5ddf10f94bbe01430b",
+          "chars": 1551143,
+          "chapters": 260
+        },
+        {
+          "name": "大无限神戒(水木天长).txt",
+          "sha256": "af0454622819299845d2a9adfd278d062a84f2e71bad754946a0e137a782f3f2",
+          "chars": 3218117,
+          "chapters": 260
+        },
+        {
+          "name": "大明星系统(射手座李不二).txt",
+          "sha256": "a1238402a1b8f40229c40fc059f63fa5467a48ebd23ee3a7a1d850f7c237cccb",
+          "chars": 3131251,
+          "chapters": 260
+        },
+        {
+          "name": "大牧场主(陶良辰).txt",
+          "sha256": "e4420e12690867e2791cc71e25bd7cc4dc3ca2f5053d6d7dc0388da883f64122",
+          "chars": 4464033,
+          "chapters": 260
+        },
+        {
+          "name": "大神戒(兔子来了).txt",
+          "sha256": "77f723f79c090401c06f6ab62af478a50c9d483cee54764934e5dbf37bd90ad3",
+          "chars": 2100057,
+          "chapters": 260
+        },
+        {
+          "name": "天启之门(跳舞).txt",
+          "sha256": "e3f1922db136591f2e8ebd1b10bad3591c8e9448cf47dae70307a279114ec969",
+          "chars": 3314412,
+          "chapters": 260
+        },
+        {
+          "name": "天庭值日生(扫尘居).txt",
+          "sha256": "f4dacaa4fb568dd2473cbb2fab9c242b4171da183327a2ff86be83d5742ee919",
+          "chars": 590173,
+          "chapters": 260
+        },
+        {
+          "name": "天才少年(坐怀不乱).txt",
+          "sha256": "acdfbb5707caa8bfe32e62a0b4bfc8fbe7052eefcbc76692b7c3a5ed090d7f84",
+          "chars": 2352516,
+          "chapters": 260
+        },
+        {
+          "name": "天才收藏家(白马神).txt",
+          "sha256": "888395402ebbf6c952374cd474beda4e1ac17f4cd4e941e287e10b8eda076492",
+          "chars": 4062987,
+          "chapters": 260
+        },
+        {
+          "name": "天才纨绔(陌上猪猪).txt",
+          "sha256": "7ff6dbe0fa4e2e94caf37497cc90c0f4025689fa6e042b984f8764138cfcdbb0",
+          "chars": 3396784,
+          "chapters": 260
+        },
+        {
+          "name": "天才透视眼(木元素).txt",
+          "sha256": "037ea9f6ea33e16d40bca10439fb0719bc76d0a2f9556a054f8ebfb903596047",
+          "chars": 2644074,
+          "chapters": 260
+        },
+        {
+          "name": "天才霸主(夜独醉).txt",
+          "sha256": "28be3b3cb7890de2764388f1a0d7a601d2046d73d3bc64b0b94dce87ad689886",
+          "chars": 5066483,
+          "chapters": 260
+        },
+        {
+          "name": "天火大道(唐家三少).txt",
+          "sha256": "3320c7d752572b5a2127a8122ef00e848fe41f66e6191e663128906d9aca8b11",
+          "chars": 2586595,
+          "chapters": 260
+        },
+        {
+          "name": "天生科技狂(九城).txt",
+          "sha256": "6f8fe9c095a34e29fd4c4487e4a951e3a061798979494f0f170a771087b15a2a",
+          "chars": 1120881,
+          "chapters": 260
+        },
+        {
+          "name": "天驱(咆哮的风月).txt",
+          "sha256": "cb46b9b22891e017fb0a3053eec3b216b068031412d22e198c79b005fa81c955",
+          "chars": 946956,
+          "chapters": 260
+        },
+        {
+          "name": "夺命医仙(新影子).txt",
+          "sha256": "5562df03f5e13395078880f56b554185c0f3621c8333ddf4e9f49bb2daa796ad",
+          "chars": 1807680,
+          "chapters": 260
+        },
+        {
+          "name": "奇门圣医(纵马昆仑).txt",
+          "sha256": "e815db96139663add81c062b00b19cac269dfc9079c70cda02a367c67ea5180e",
+          "chars": 1437278,
+          "chapters": 260
+        },
+        {
+          "name": "女总的王牌保镖(老非).txt",
+          "sha256": "b6469839e60840685875a9c37ecf0177af8a8089f4884a52a3ade8b3c4a30f95",
+          "chars": 1278596,
+          "chapters": 260
+        },
+        {
+          "name": "女总裁的近身高手(伊秋枫).txt",
+          "sha256": "925fb3558b71d5562f7d8fa45e7489a06ad8cf33022943006c1b2e677db0e820",
+          "chars": 5531325,
+          "chapters": 260
+        },
+        {
+          "name": "好莱坞制作(白色十三号).txt",
+          "sha256": "cfa4bffde0816b98917936842d7fb100892b9a53c76f27f3177d8232f039c31f",
+          "chars": 2984546,
+          "chapters": 260
+        },
+        {
+          "name": "如何炸掉月球(驾雾).txt",
+          "sha256": "5f0dce0e1f81de30768cc55101f4cbe4e0fc797673636f654c2bd6923c472955",
+          "chars": 518264,
+          "chapters": 175
+        },
+        {
+          "name": "妙手天医在都市(多笑天).txt",
+          "sha256": "91863747d9a55b8e42a246ecc18eefe5307052fd8bb7b9605a0713a59b82af81",
+          "chars": 1882564,
+          "chapters": 260
+        },
+        {
+          "name": "妙手无双(安在天).txt",
+          "sha256": "de04f49f7d834ae6d037ac3ee76c53f05737d1a704f7cb0d9998dd99a8b259ed",
+          "chars": 3941026,
+          "chapters": 260
+        },
+        {
+          "name": "妙手狂医(大肚鱼).txt",
+          "sha256": "b8c6523d16022cc72390778c4c35030aad3eea01529a058260ed492f50f6f421",
+          "chars": 5143785,
+          "chapters": 260
+        },
+        {
+          "name": "娱乐帝国之崛起(码字的).txt",
+          "sha256": "908ed6d3a2552d2c2e9b8ad5116abc9f058c04fccd7edeba562ffbdd7d3a0a13",
+          "chars": 1081967,
+          "chapters": 149
+        },
+        {
+          "name": "娱乐系统大亨(学生奶).txt",
+          "sha256": "a4fd48171d03a4009c02d9ef27aaa77dcc1ef139781ece9636aa0fb7d60f9689",
+          "chars": 640237,
+          "chapters": 260
+        },
+        {
+          "name": "娶个天师做老婆(小小羽).txt",
+          "sha256": "960876b7cecf9942dd94b6e99b8e1794a265c027b9e8544a0f3b1c94112afa5a",
+          "chars": 3887420,
+          "chapters": 260
+        },
+        {
+          "name": "宅在随身空间(明渐).txt",
+          "sha256": "ef9e38e375c3e3733186b4fc2e03f16affe9ae3f377708286012a226965847cf",
+          "chars": 2599429,
+          "chapters": 260
+        },
+        {
+          "name": "宅师(烛).txt",
+          "sha256": "7b490859a568caef66707966a15afe62004d10de549a112435a47d1e15ea5495",
+          "chars": 2966722,
+          "chapters": 260
+        },
+        {
+          "name": "宅男的韩娱(百撕可得骑姐).txt",
+          "sha256": "b3db4ae8557688d768ec944911680be5ff682c75d0d75a5855539ac0b4e9a9f7",
+          "chars": 1147086,
+          "chapters": 260
+        },
+        {
+          "name": "宅男魔王的养成计划(南海无双).txt",
+          "sha256": "303eba82c92856e105ca69f511188f8d8a0a08e0f61f3b4c9ce0dfa3965bc4e2",
+          "chars": 1642493,
+          "chapters": 260
+        },
+        {
+          "name": "完美大明星(沉入太平洋).txt",
+          "sha256": "1452b86a130831a5c83c2e84493197f09871da5becef4a5476d03a83c14ddf8e",
+          "chars": 854700,
+          "chapters": 260
+        },
+        {
+          "name": "完美星光(五千党).txt",
+          "sha256": "2b4515ddb79ce758f8c4304e1b6239baac2925dc9bfde04a37a40d6239994dc8",
+          "chars": 882724,
+          "chapters": 260
+        },
+        {
+          "name": "宗师宝典(夜思清).txt",
+          "sha256": "cff170c9f333c228b77f79fc2be954148f816fc7cb916a3a6f6cbeb0b9f49b44",
+          "chars": 2050787,
+          "chapters": 260
+        },
+        {
+          "name": "宝宝龙的极品奶爸(酉戌).txt",
+          "sha256": "29d170383583e2b9b4e32c1e2099c1ae704f0c01b61e09033d8a38ca887072d8",
+          "chars": 1880409,
+          "chapters": 260
+        },
+        {
+          "name": "宠物系统(烟雨风满西楼).txt",
+          "sha256": "e3bcffc8bb1c5177aeb7acbe2b15f7e4e3a26be514d2db200439b28bb82f4ad5",
+          "chars": 1423299,
+          "chapters": 260
+        },
+        {
+          "name": "寻宝大师(旷海忘湖).txt",
+          "sha256": "54c0b1f0e2e96a44d93c4eacf1df8e279860a2a7e596383b9624cc72bf506224",
+          "chars": 900984,
+          "chapters": 260
+        },
+        {
+          "name": "崛起于科技(麒麟眼).txt",
+          "sha256": "dba1d5796acb1af1d9bf1315347c29ec698e274694a3db69ab4656180e3873ff",
+          "chars": 1192113,
+          "chapters": 260
+        },
+        {
+          "name": "巅峰宝鉴(夜泊人).txt",
+          "sha256": "e846569196c2626c03514629f5a613a2c31ebdcb9400291d6b3d89a6ee2b3cc6",
+          "chars": 1151533,
+          "chapters": 260
+        },
+        {
+          "name": "巅峰对决(沧海一梦).txt",
+          "sha256": "ab022d252ac039d64c39bb276978d2f36915c1a11fb7759c94c9ff2315d442fd",
+          "chars": 646693,
+          "chapters": 260
+        },
+        {
+          "name": "巨星从来没有文艺的(黑车不开了).txt",
+          "sha256": "e0d183b059e8c878f71e42cec88faaa0a7d63ce7d56ed3c1f8d6e91398f74c52",
+          "chars": 2286587,
+          "chapters": 260
+        },
+        {
+          "name": "巨星夫妻(将臣之名).txt",
+          "sha256": "6f14a95a62176e9c8c5bd3e92f81d997a12ec9aa557c83b5308ee233c96ff275",
+          "chars": 1029348,
+          "chapters": 260
+        },
+        {
+          "name": "巫蛊高手(恩赐).txt",
+          "sha256": "e66ddc27136feaabc0e37a9e99007babae19df11122a8c2081f0875528b4db1b",
+          "chars": 2661629,
+          "chapters": 260
+        },
+        {
+          "name": "帝国玩具(周硕).txt",
+          "sha256": "7972a19537f59a72cdcf1861c6762dd36d6b80b2ad9820c3bb47b0b6e4fb9070",
+          "chars": 989079,
+          "chapters": 260
+        },
+        {
+          "name": "帝都弃少(平章事).txt",
+          "sha256": "d8ab4617cda67a04ff2ba16e4508cc576b1641b89f3b5535e34d6b54905ddc34",
+          "chars": 3554050,
+          "chapters": 260
+        },
+        {
+          "name": "异世大豪(最爱吃凉糕).txt",
+          "sha256": "2f341141c70e971d9a609ff36cebef848f56f05cb0af6cff01bdd8e60b5f1bd4",
+          "chars": 907267,
+          "chapters": 260
+        },
+        {
+          "name": "异界开拓系统(喵妖大王).txt",
+          "sha256": "26fe03fcf16fff2ff7ab0cbd6c308ce6cb9eb901f82ab9852397703260cb6ca4",
+          "chars": 2304786,
+          "chapters": 260
+        },
+        {
+          "name": "异类大明星(剩斗士).txt",
+          "sha256": "bbc8a29bdcb2ee25c5365da148db38fe7ad6a11247b7483811f2c2edf647d382",
+          "chars": 996059,
+          "chapters": 260
+        },
+        {
+          "name": "影坛大亨(镔铁).txt",
+          "sha256": "4ffedb5f42672a55cec15ff4ae17d5f8f5417c07d77f07b4877daadb8ffadcde",
+          "chars": 773438,
+          "chapters": 234
+        },
+        {
+          "name": "影视位面抽奖传(平淡就是真).txt",
+          "sha256": "d94798b142cc5b7864fd8338c1d0c7d98a0a74364c1ecd998bf702fa07fb766f",
+          "chars": 1339434,
+          "chapters": 260
+        },
+        {
+          "name": "征战韩娱(三女婿).txt",
+          "sha256": "1a236b085f051a3aecea08a12dfd97352ed01b809384a5fc008f65d2c3c03b3a",
+          "chars": 1777030,
+          "chapters": 260
+        },
+        {
+          "name": "微爱(大大洋洋).txt",
+          "sha256": "f115317e335e17aaae04b0709937d2a94674ca191148eca2f99d12eea0fdbc3e",
+          "chars": 1181428,
+          "chapters": 260
+        },
+        {
+          "name": "恣意人生(醛石).txt",
+          "sha256": "02839a49622387f0cc2ba140c37718cbf0c9d3e01658d7247d58720800a829ca",
+          "chars": 1685923,
+          "chapters": 260
+        },
+        {
+          "name": "恶霸(知白).txt",
+          "sha256": "a85de4c7754d000d54fb2263be081f852c37d20f05bf06d9bf15c6c0af203d0f",
+          "chars": 945070,
+          "chapters": 260
+        },
+        {
+          "name": "我不想做富翁(太师椅).txt",
+          "sha256": "ba73ae06b8f86fb0ded9813fbc6c0f468752b8522b59429f8ccf01759aae3bef",
+          "chars": 1428499,
+          "chapters": 260
+        },
+        {
+          "name": "我什么都懂(俊秀才).txt",
+          "sha256": "d46b7a7b14104c30c484dbcfb8bb9a61213600912ea2c8e56693629b90aef8b6",
+          "chars": 3049787,
+          "chapters": 260
+        },
+        {
+          "name": "我们纯真的青春(一织).txt",
+          "sha256": "cb1a7ed6035d18332ce7b222025927d6df1e96bbb9562f7a1ada7cf9da0e1e06",
+          "chars": 1887666,
+          "chapters": 260
+        },
+        {
+          "name": "我体内有本山海经(暴力快递员).txt",
+          "sha256": "8b403b4ed7509382b401c8ea678e99abbc76c25965dd7286df4cc90186900f81",
+          "chars": 1416405,
+          "chapters": 260
+        },
+        {
+          "name": "我可以升级了(南锅).txt",
+          "sha256": "e49818f4850c5147c66468d63735a11c438215906e73f0525070e7c3f85fe3aa",
+          "chars": 1672284,
+          "chapters": 260
+        },
+        {
+          "name": "我和妹子那些事(24K纯二).txt",
+          "sha256": "42c8e8bf6f4511a4647bff6ca790ae4f1ec4270772e2fbb22c0f3e83e6db8e49",
+          "chars": 1480565,
+          "chapters": 260
+        },
+        {
+          "name": "我和美女上司(西厢少年).txt",
+          "sha256": "3f81d2491ed4c4b0db037abadd360817d36ab1eaf918459de769db71fdaaf009",
+          "chars": 581071,
+          "chapters": 219
+        },
+        {
+          "name": "我在日本的幸福生活(L同学).txt",
+          "sha256": "8e3cb845b27527b07fb7be19305e9090dcd15db69a9d2602d3f79c45fdefa3b4",
+          "chars": 1043865,
+          "chapters": 260
+        },
+        {
+          "name": "我家有妹初长成(L同学).txt",
+          "sha256": "aa685133f3fd0451e0489be4f5366640b8e219b17a9b0bcf0205ea4bf7bf363c",
+          "chars": 795313,
+          "chapters": 260
+        },
+        {
+          "name": "我家果园成了异界垃圾场(金帛火皇).txt",
+          "sha256": "8d90e074f49a4891a3404fc51d11691ab6663863d6f1eb1626ef7b393a745eea",
+          "chars": 1796531,
+          "chapters": 260
+        },
+        {
+          "name": "我家水潭下连着异界海底(归咎).txt",
+          "sha256": "1435d5adb4bfabe7fd1a4d96a4f9a321dbbaf593b53b500774d1c14295206ee1",
+          "chars": 1346823,
+          "chapters": 260
+        }
+      ]
+    },
+    {
+      "genre": "古言",
+      "file": "题材指纹\\古言.md",
+      "rawFileCount": 121,
+      "uniqueHashCount": 109,
+      "duplicateFileCount": 12,
+      "sampleCount": 57,
+      "chapterCount": 11825,
+      "totalChars": 51806070,
+      "avgChapterChars": 4381,
+      "signalLabel": "古言信号",
+      "signalPer10k": 26.8,
+      "progressionPer10k": 2.6,
+      "sourceFiles": [
+        {
+          "name": "一路荣华(悠悠忘忧).txt",
+          "sha256": "7d1a3789546f70677c87b61cc70dd8baa86da850917cfb29e88e72e5dc6f7bd4",
+          "chars": 1180849,
+          "chapters": 260
+        },
+        {
+          "name": "万事如易(三月果).txt",
+          "sha256": "5946415df71ba7e9557253b520080680462df4da098fe98330947b718e0c89e9",
+          "chars": 3390959,
+          "chapters": 260
+        },
+        {
+          "name": "万千宠爱(读读).txt",
+          "sha256": "4315a3a420a563ff3533b6799805e147d7a1b85f1d7a66c458e371a63aa2f6bd",
+          "chars": 545865,
+          "chapters": 144
+        },
+        {
+          "name": "世嫁(木嬴).txt",
+          "sha256": "91c209b2f5123d82dc91626d76940b19308f66b5cd52cfd7d5789c0bf8a2a8cd",
+          "chars": 1500427,
+          "chapters": 260
+        },
+        {
+          "name": "九重紫(吱吱).txt",
+          "sha256": "fc8936a22a1850dd8f92cc7c2da26ae11fadfcda9f42e5eb6342d66e979c8986",
+          "chars": 1694041,
+          "chapters": 260
+        },
+        {
+          "name": "京门风月(西子情).txt",
+          "sha256": "448f15c7049512309a6d35fae90c2279b6ad092fe2728c5366c4f82ba38fc7fd",
+          "chars": 2940865,
+          "chapters": 260
+        },
+        {
+          "name": "侯门继妻(peanut).txt",
+          "sha256": "c85f5c34a4ec22b579247c21dfa74ead9a3cbbc245834aae8c2f37bd47f3a6b3",
+          "chars": 1345039,
+          "chapters": 260
+        },
+        {
+          "name": "农家俏厨娘(月落轻烟).txt",
+          "sha256": "3e16566b82757b502ebce5c4cc372dc4ef39a5f49c8c5b06bc472faef524d879",
+          "chars": 2029513,
+          "chapters": 260
+        },
+        {
+          "name": "千金裘(明月珰).txt",
+          "sha256": "746106db40ff98db4ec00609ec5185d265f490f3f8ad63f96c1ccab21730d67e",
+          "chars": 523420,
+          "chapters": 100
+        },
+        {
+          "name": "原始再来(月下桑).txt",
+          "sha256": "52899d75f3c72d5ea4b66a684d9f2f5f83315d1235a7685051b53ea7dbf2f84c",
+          "chars": 449476,
+          "chapters": 101
+        },
+        {
+          "name": "女帝本色(天下归元).txt",
+          "sha256": "6839579886ed8e90ac16c4e1d6194b9bdf9aef8ff4a7f8130aa9bd7df32830bf",
+          "chars": 2906440,
+          "chapters": 260
+        },
+        {
+          "name": "妙偶天成(冬天的柳叶).txt",
+          "sha256": "299a9ddc1097aea0374cab7520fa27b76703d6102708527d4f2f6cdfeeb1cf55",
+          "chars": 1398168,
+          "chapters": 58
+        },
+        {
+          "name": "妻调令(雾矢翊).txt",
+          "sha256": "3b76f0048a22868b21586b68ad765aff73734b50cc396113655bde4b46f7fb12",
+          "chars": 937072,
+          "chapters": 218
+        },
+        {
+          "name": "嫁嫡(木嬴).txt",
+          "sha256": "07fb490bdd12853459a286e56ddca19d40bdcaa8fc920e3dd89e944912564124",
+          "chars": 2227320,
+          "chapters": 260
+        },
+        {
+          "name": "宠后之路(笑佳人).txt",
+          "sha256": "c1741e081bb56164af3e28b28b89868a96952e0138ad240d7100af35119c5334",
+          "chars": 944805,
+          "chapters": 122
+        },
+        {
+          "name": "宠妻如令(雾矢翊).txt",
+          "sha256": "39e43f6964fc93f6fc70b1dd05817794d2f085a3e2c169be298fae89fca6f4ee",
+          "chars": 962181,
+          "chapters": 212
+        },
+        {
+          "name": "宠妻荣华(飞翼).txt",
+          "sha256": "a951afff579ec3216358cbfe414f967de4cded9c5ac92e6cb855baf09c759111",
+          "chars": 773000,
+          "chapters": 177
+        },
+        {
+          "name": "容华似瑾(寻找失落的爱情).txt",
+          "sha256": "257dbe0c2cf4a7685926113ac384d406ebb9fd738d539b811fd4f95a594911fb",
+          "chars": 993305,
+          "chapters": 260
+        },
+        {
+          "name": "庶女攻略(吱吱).txt",
+          "sha256": "78f44be262db2b0bb787ef78d63d2cfaaaf0942ffa246a0cd482d85e1d1fd7e0",
+          "chars": 2473483,
+          "chapters": 260
+        },
+        {
+          "name": "强夫之上必有勇妻(杀猪刀的温柔).txt",
+          "sha256": "32f9d22b2a1ebf0c89a1f35db5788afb80fbb53d4c1828fd46537224890c734a",
+          "chars": 1069456,
+          "chapters": 260
+        },
+        {
+          "name": "御宠医妃(姒锦).txt",
+          "sha256": "1f7f5605ac84e771fb90069dfdbb6a80a9e6e4b1861f9b7ec3796ef287037f8c",
+          "chars": 2967775,
+          "chapters": 260
+        },
+        {
+          "name": "惜花芷(空留).txt",
+          "sha256": "518f6e9aef92b1ca2135b28a610388db8aec36a0d41e16ece1728169f78dbccc",
+          "chars": 1497649,
+          "chapters": 260
+        },
+        {
+          "name": "慕南枝(吱吱).txt",
+          "sha256": "457d21c56096867d60618a2114c38b24f20e515110f2b44c6534bde3c866a129",
+          "chars": 2468889,
+          "chapters": 260
+        },
+        {
+          "name": "掌家娘子(云霓).txt",
+          "sha256": "e09e86db93f451be2f565928af4bdc9f95965cd159b6ca2fb91dbe045481663a",
+          "chars": 1047992,
+          "chapters": 260
+        },
+        {
+          "name": "春日宴(白鹭成双).txt",
+          "sha256": "b8d87cb43f28c44622960f76337bea91ea46cda8acf63edf1c580129cdaeda29",
+          "chars": 668674,
+          "chapters": 118
+        },
+        {
+          "name": "暮春之令(海青拿天鹅).txt",
+          "sha256": "ab6e819ceae4d605b662642a359d56150ee5e0d4c807a8f83d530103f6c9e327",
+          "chars": 329330,
+          "chapters": 63
+        },
+        {
+          "name": "最强农家媳(良辰一夜).txt",
+          "sha256": "b1e2f1c6ae29b931d64417b0870e5c7957aab268f21899ac6911ff2ae13ebd65",
+          "chars": 1602173,
+          "chapters": 260
+        },
+        {
+          "name": "木兰无长兄(绞刑架下的祈祷).txt",
+          "sha256": "24a458af590a9dd91ec31aced672a0e5c4ecf79f8d86e6b4ad5acb86e7e03285",
+          "chars": 3045592,
+          "chapters": 260
+        },
+        {
+          "name": "未来之全身是宝(决绝).txt",
+          "sha256": "56839437a320f8a6755c933816b41698e50e11f2129c90b21f9494557f8d22ba",
+          "chars": 465194,
+          "chapters": 120
+        },
+        {
+          "name": "每天都在征服情敌(酥脆饼干).txt",
+          "sha256": "f6ac3ec0c64fb1fd8dd45a185ebd676f6ed3d227c17d6daf874bee4aa6f95fef",
+          "chars": 779424,
+          "chapters": 112
+        },
+        {
+          "name": "深闺(弱颜).txt",
+          "sha256": "59ae97fff7ce78988c3cc16af3768dcef1cf99c3f31ad25e5b9d3b4b75193c7f",
+          "chars": 1341733,
+          "chapters": 260
+        },
+        {
+          "name": "王府小媳妇(笑佳人).txt",
+          "sha256": "8740dc15a7463a42c72402593ee5fe5285dee35dd3b14b0ed3156f17ef24bbfc",
+          "chars": 752534,
+          "chapters": 220
+        },
+        {
+          "name": "田缘(乡村原野).txt",
+          "sha256": "a53fada0aedd6882c8d69c8276163e26a7f2e7f4c3d05a50bb9d701b577b5d65",
+          "chars": 1739482,
+          "chapters": 260
+        },
+        {
+          "name": "盛世芳华(15端木景晨).txt",
+          "sha256": "66bbc1d9976643218e82508e90c6584028688e86cfd8c9d8c652fde7b59120af",
+          "chars": 1672754,
+          "chapters": 260
+        },
+        {
+          "name": "盛宠(寒武记).txt",
+          "sha256": "a5a197eea80ee1b4b01aa64d748080e313fe887163c0df970c094dc3ea95c06a",
+          "chars": 2385174,
+          "chapters": 260
+        },
+        {
+          "name": "盛宠如意(飞翼).txt",
+          "sha256": "ed4dcd0e6e276f947f3bf0a79722d2a6da32c16e3b981a01838ce826b60d373b",
+          "chars": 991344,
+          "chapters": 225
+        },
+        {
+          "name": "盛宠庶妃(凝望的沧桑眼眸).txt",
+          "sha256": "3cd057e01e3bdd8e75993cc54435e2890975e71d33f448ec0e3af2fb4f4a3faa",
+          "chars": 2623735,
+          "chapters": 260
+        },
+        {
+          "name": "直男的女神系统(龙柒).txt",
+          "sha256": "4d06baad510e8ba301bc6fd7aa70117f758f05d64c2d4bf3954318d9d8397f3c",
+          "chars": 393880,
+          "chapters": 102
+        },
+        {
+          "name": "相府贵女(浅浅的心).txt",
+          "sha256": "c00d2c1b18d45ccfb4bdb7e6961ac5ff4d326930146999a220ec605ea4be360f",
+          "chars": 1760598,
+          "chapters": 260
+        },
+        {
+          "name": "神木挠不尽(绿野千鹤).txt",
+          "sha256": "b0af7610416317ca28a3ee0ad1c1e1f41a0c7e68a514a04e2e25d75fe6e8e875",
+          "chars": 381974,
+          "chapters": 125
+        },
+        {
+          "name": "秦姝的东宫生活(阿狸小妃).txt",
+          "sha256": "ccf29d686d25b41e4eed723d6a7a8f31aa5c3c8fc0a6e776e4e9ad21d8179409",
+          "chars": 557439,
+          "chapters": 177
+        },
+        {
+          "name": "纸上人(脂肪颗粒).txt",
+          "sha256": "130925e45b02792dd4b366e158b231a0bcba7ef1754565fc0ef7bce3838fff01",
+          "chars": 382169,
+          "chapters": 116
+        },
+        {
+          "name": "腹黑嫡女(皇邪儿).txt",
+          "sha256": "7edd5ba81210694ec028f685277329651d734c06ebd37e87098a6f829e3d5f74",
+          "chars": 1891367,
+          "chapters": 199
+        },
+        {
+          "name": "良陈美锦(沉香灰烬).txt",
+          "sha256": "32e1814e249bc313ab843fd57318a64d9eccfe8b8cdbf0e6ae0c7a3d33da7b6d",
+          "chars": 1078096,
+          "chapters": 260
+        },
+        {
+          "name": "花娇(吱吱).txt",
+          "sha256": "6f04d143d2d4f258e66855db69585895a71bb2d364ab742152da42ef330437de",
+          "chars": 1285742,
+          "chapters": 260
+        },
+        {
+          "name": "萌宠皇后(金大).txt",
+          "sha256": "0ee459e5834cefa9d00c116b3c68f21be7eeaa4e0afbdd3a33dfca885aa5e2b0",
+          "chars": 415177,
+          "chapters": 117
+        },
+        {
+          "name": "邵家有女(薄慕颜).txt",
+          "sha256": "6b4f4f5e926f11b6d7acdf39096d0885b965bea649a1ba0e7cf3c08473a9c140",
+          "chars": 604584,
+          "chapters": 109
+        },
+        {
+          "name": "重生之宠妻(月非娆).txt",
+          "sha256": "58c495846f7b820da6d128e445a475ea9938896fc609abc24a84e1164e1e0496",
+          "chars": 833017,
+          "chapters": 155
+        },
+        {
+          "name": "重生之将门庶女(叶小紫).txt",
+          "sha256": "123e0c8f8749dc8eb71230641f6ebb31bf313a8ba1c77242ef64ea7df46fa5c9",
+          "chars": 873911,
+          "chapters": 236
+        },
+        {
+          "name": "重生成不入流小导演(superpanda).txt",
+          "sha256": "c1cac822fb0cb38a50c875f2aa666285de16a242bc0b88c8ca9570ced048f5d2",
+          "chars": 398646,
+          "chapters": 28
+        },
+        {
+          "name": "重生算什么(天堂放逐者).txt",
+          "sha256": "b7f5d16122d93fdea1d3d2d56f0d862fd4987dd3f3d89db696d23525f763fd54",
+          "chars": 1378118,
+          "chapters": 260
+        },
+        {
+          "name": "金陵春(吱吱).txt",
+          "sha256": "4a4066d820b4e6e63f6120477fd9efb535b2df2abf082473804f6a40e81b6ec1",
+          "chars": 1874208,
+          "chapters": 260
+        },
+        {
+          "name": "锦谋(总小悟).txt",
+          "sha256": "f589f7b72da6d77d1344f3a404dd4b69e442791ac13ee219fa0cbe6ff80edc3c",
+          "chars": 1684649,
+          "chapters": 260
+        },
+        {
+          "name": "闺娇(夜惠美).txt",
+          "sha256": "cba0f7f280e853f8fbd3ef50ced464b6db7c36ed2b5f389d09ccaef12bf8e788",
+          "chars": 1134041,
+          "chapters": 260
+        },
+        {
+          "name": "闺宁(意迟迟).txt",
+          "sha256": "21fef7721619f193fe1d3e6d29c79fb5e41e5ac1609086f509bcf3e2860286ad",
+          "chars": 1419467,
+          "chapters": 260
+        },
+        {
+          "name": "陆家小媳妇(笑佳人).txt",
+          "sha256": "d5c5c5b4254b390a1523be69221f3a3a4f04e507c743dd0019b1631455412432",
+          "chars": 749287,
+          "chapters": 214
+        },
+        {
+          "name": "首辅养成手册(闻檀).txt",
+          "sha256": "363ad6b15247b05131f3f45343406a362923da4a6a8f46266d3e4a6040470e66",
+          "chars": 853999,
+          "chapters": 197
+        }
+      ]
+    },
+    {
+      "genre": "网游",
+      "file": "题材指纹\\网游.md",
+      "rawFileCount": 304,
+      "uniqueHashCount": 202,
+      "duplicateFileCount": 102,
+      "sampleCount": 120,
+      "chapterCount": 28777,
+      "totalChars": 80926227,
+      "avgChapterChars": 2812,
+      "signalLabel": "网游信号",
+      "signalPer10k": 62.1,
+      "progressionPer10k": 10,
+      "sourceFiles": [
+        {
+          "name": "DNF之狂神(月落歌不落(1)).txt",
+          "sha256": "26318d6d679c29a8d179cc2657ff8ecd3ee95ca621d32b393ba7ee2ee0852ac4",
+          "chars": 3407870,
+          "chapters": 260
+        },
+        {
+          "name": "dnf之百万逆袭(河童咻咻(1)).txt",
+          "sha256": "3b8711907352a47bbe26157492984ab397f46d8a9af47a266bba965136ca4dc6",
+          "chars": 2561386,
+          "chapters": 260
+        },
+        {
+          "name": "DNF之神级高手(斗寇(1)).txt",
+          "sha256": "d33537597d29b0ce978c8428a91c2c4c2ea037aa1ceb4565542123d370cdfed7",
+          "chars": 2038518,
+          "chapters": 260
+        },
+        {
+          "name": "Dota之国士无双(大鱼人(1)).txt",
+          "sha256": "7d8f1ff8f2478aa4fdf2837f5a9f8e9f7c895301c4ab48721e9a30eb618f4e25",
+          "chars": 1192698,
+          "chapters": 260
+        },
+        {
+          "name": "一代球神张铁汉(XX神(1)).txt",
+          "sha256": "77bc045625ed699ab75870e1d8c84bef4874747890fa2211ef5ec608d3b49829",
+          "chars": 2038290,
+          "chapters": 260
+        },
+        {
+          "name": "三国美人志(最后的茄子(1)).txt",
+          "sha256": "0c4c1368a438b3b9555f6bcb9aef1cf1183711059fa1362d2f6eecd777cf1635",
+          "chars": 1033398,
+          "chapters": 260
+        },
+        {
+          "name": "中场主宰(惊艳一脚(1)).txt",
+          "sha256": "cdc95858c96da3828395ce8cd10899016a63f27e5067dbb3a398f27fa5bcce82",
+          "chars": 2010847,
+          "chapters": 134
+        },
+        {
+          "name": "丹师当自强(买鱼的虾仁(1)).txt",
+          "sha256": "c4289aec655c35286a604a657489466847ae57601c3378fc2bfa213f29449e7a",
+          "chars": 1009102,
+          "chapters": 260
+        },
+        {
+          "name": "九星(果味喵(1)).txt",
+          "sha256": "8c33989f5fc0868ea7a72c3b68cc1bcdc7ace4adc173a29b7a2f6985a118fe34",
+          "chars": 1774949,
+          "chapters": 260
+        },
+        {
+          "name": "传奇大英雄(墨乡(1)).txt",
+          "sha256": "c09495dc456ce265302b56f6ed6e3f4511ec885ab2bc7a999568db1520b3b9dd",
+          "chars": 2547760,
+          "chapters": 260
+        },
+        {
+          "name": "伪主神空间(无底深渊(1)).txt",
+          "sha256": "da351eb7bf50dc2c0803c4a6f6cb9c8c379c9fd8bf63b59e0fc236c854820226",
+          "chars": 643625,
+          "chapters": 260
+        },
+        {
+          "name": "全息网游之幻境(爆发药).txt",
+          "sha256": "75cfc01639822bb5e81742c981ca58b71ac87daaf4b6c415f03371138e7549b9",
+          "chars": 205328,
+          "chapters": 90
+        },
+        {
+          "name": "全息网游之独宠(夜风花落).txt",
+          "sha256": "ec80469b27348685fd52a4343312135382eca3ca02d2442a48db91ffcce14004",
+          "chars": 171478,
+          "chapters": 56
+        },
+        {
+          "name": "全球之英雄联盟(魔道弟子(1)).txt",
+          "sha256": "7f9a1edf51bd615cba35d5495e35412bb107f685f2e4b017b683dd7d0c8ceb1f",
+          "chars": 1820913,
+          "chapters": 260
+        },
+        {
+          "name": "全球刷副本(倔强草履虫).txt",
+          "sha256": "75ce569e4cb996ac35d40aeb5e126ff7eaa6ed23d107405d38a352fe0c2c32cf",
+          "chars": 290247,
+          "chapters": 114
+        },
+        {
+          "name": "全球至尊(信狩(1)).txt",
+          "sha256": "8f292b610ded40b3040d7209a8131bcd98da7548c626dd97de80e73c541a60af",
+          "chars": 603583,
+          "chapters": 178
+        },
+        {
+          "name": "全职无双(黑马行空(1)).txt",
+          "sha256": "7ce2764bfcab60a54e35230a9ccb530cbfd76a9b9f62bf6fb8e1b0e8f7043e4b",
+          "chars": 1022739,
+          "chapters": 260
+        },
+        {
+          "name": "全职高手(蝴蝶蓝).txt",
+          "sha256": "9ee596d7876714c6822ac83c74749ab7e3f205d1637f4fe895ce2ba38a90353b",
+          "chars": 5400584,
+          "chapters": 260
+        },
+        {
+          "name": "冠军之光(林海听涛(1)).txt",
+          "sha256": "d37eea8ca6a0458e89ab1c737aaae913e25ae9f649e274cc2ebf3579f7b2ed9c",
+          "chars": 4489445,
+          "chapters": 260
+        },
+        {
+          "name": "刀塔死亡学院(奥丁信使(1)).txt",
+          "sha256": "e7933ebb11d58e5bb99c9f8413a6b5d49f95b64de5cbf7f2ddac412564051fae",
+          "chars": 3677588,
+          "chapters": 260
+        },
+        {
+          "name": "副本掌控者(凯塔).txt",
+          "sha256": "7c9eb60f920729d01f0d24b1669fdb762e9e7ae74f53458bf48772a503c59edd",
+          "chars": 1183658,
+          "chapters": 260
+        },
+        {
+          "name": "圣堂之心(南瓜火车(1)).txt",
+          "sha256": "9c5f109a1d83b8c432db7c63efb3601b9d8e4881d6a1915119904ec20cbb5eaf",
+          "chars": 821210,
+          "chapters": 260
+        },
+        {
+          "name": "大网游时代(孤雨随风(1)).txt",
+          "sha256": "fc968159ef3e502dc74fd1fc62e67ff1b6a297c543a855e09bb1d5765de8f65a",
+          "chars": 1265667,
+          "chapters": 260
+        },
+        {
+          "name": "大贤者成长日记(暗黑芒果(1)).txt",
+          "sha256": "8ba2aabccfc1beb45351da0a08ff5349736444f5b360940679e138f98a94c4d8",
+          "chars": 1212921,
+          "chapters": 260
+        },
+        {
+          "name": "天下无职(单纯宅男).txt",
+          "sha256": "f6b803e0f7808c5d3c78242fd014241f0dcb982ec0e99a7817330701f45b848e",
+          "chars": 965666,
+          "chapters": 260
+        },
+        {
+          "name": "奥术主宰(祈求者哀鸣(1)).txt",
+          "sha256": "577ce2db69660c03fa735a8943d9fc4f85c99df24e8b95514251f37cccbeb15f",
+          "chars": 1621749,
+          "chapters": 260
+        },
+        {
+          "name": "子弹世界(东城飘雨).txt",
+          "sha256": "f21ff47720b0c0b37f63671b75250b1417c50317f7f69597149b3bef6ac263a2",
+          "chars": 4065376,
+          "chapters": 260
+        },
+        {
+          "name": "巫妖生存指南(璀璨石头(1)).txt",
+          "sha256": "22cd2492053645efcaa6449e727c26e1800c5663751d4c9c009385049a8ae63f",
+          "chars": 285598,
+          "chapters": 116
+        },
+        {
+          "name": "带着公会穿越(沐日海洋).txt",
+          "sha256": "1d83279968f336795be3d10e016079fcd7cbd4550add14f91ce610d1ff6f1fbf",
+          "chars": 588864,
+          "chapters": 252
+        },
+        {
+          "name": "带着历史名将闯三国(唯我墨黑(1)).txt",
+          "sha256": "4efccc3180e53586d5ab39797ff11cb35842be2a53293d727a8f44600e6e2562",
+          "chars": 1671491,
+          "chapters": 260
+        },
+        {
+          "name": "开挂(牛笔(1)).txt",
+          "sha256": "837a1d4efacfced053893e3457d201395b4b0a13e0f64f2a3b085acb3be7eb44",
+          "chars": 1099009,
+          "chapters": 260
+        },
+        {
+          "name": "异界的悠闲生活(黑暗骑士殿(1)).txt",
+          "sha256": "b5bd743d22418d39ae3884d146e0d87c3d52ad47ff59005347cfde6ee1da4666",
+          "chars": 328794,
+          "chapters": 144
+        },
+        {
+          "name": "御兽游侠(一念红尘(1)).txt",
+          "sha256": "e6e57e652a5aa524319945b11083952b56238a631c3e0982c8bbab32a1689aca",
+          "chars": 2706188,
+          "chapters": 260
+        },
+        {
+          "name": "恶魔超正义(诶呦喂(1)).txt",
+          "sha256": "c5ca630cf22a81746b2e6bde799a82afdd2e1a665d5c767e4a47f46eb6e06c6e",
+          "chars": 2135266,
+          "chapters": 260
+        },
+        {
+          "name": "惊悚乐园(三天两觉).txt",
+          "sha256": "6b9db1a3f4d80b84aa133e597630c4588ca3b3141fd41151c636c3d109b45318",
+          "chars": 4810852,
+          "chapters": 260
+        },
+        {
+          "name": "我的要塞(无聊了(1)).txt",
+          "sha256": "5cb840ab3e2b71873419b0ffce8f39c1498710cfb87d83d95fbecf90ed1b875a",
+          "chars": 1759510,
+          "chapters": 260
+        },
+        {
+          "name": "数据大魔王(笔下惊魔神(1)).txt",
+          "sha256": "35a0da6d890c9bf05053d46794bc8045321eccea5aa96d356a765ce2c30526e4",
+          "chars": 689435,
+          "chapters": 260
+        },
+        {
+          "name": "斩龙(失落叶(1)).txt",
+          "sha256": "28ab8292374c929a17bbbd0700f398bc6d1110fba51232fda3e1fdbdb90984b0",
+          "chars": 4497697,
+          "chapters": 260
+        },
+        {
+          "name": "斩龙(失落叶).txt",
+          "sha256": "e85243c5d2932a469abfb9be0f43337d172a0e4ee92ed14e793292c6f4e77b97",
+          "chars": 4437025,
+          "chapters": 260
+        },
+        {
+          "name": "暗夜游侠(深蓝椰子汁(1)).txt",
+          "sha256": "77890a04917a4e746edfcded7c67ee3e009f3ca38804d47065b442ad6731dea6",
+          "chars": 2067850,
+          "chapters": 260
+        },
+        {
+          "name": "暗影神座(余云飞(1)).txt",
+          "sha256": "451d8fff9e5169a6c1c6684cfbd4cc2e5683c5ede193df8e54cca50e412ae81d",
+          "chars": 2756439,
+          "chapters": 260
+        },
+        {
+          "name": "最强掌门兑换系统(船长不吃鱼(1)).txt",
+          "sha256": "73920d4943576c713811e3e29bd9aea60273a22cab84a2842abf510b1f5dca6d",
+          "chars": 1996887,
+          "chapters": 260
+        },
+        {
+          "name": "最强文圣(天火散人).txt",
+          "sha256": "c6153a1296d93d43aa0c65ed9adbca24a68ca3701f0b0a3dc60c7b363c1b9253",
+          "chars": 1870635,
+          "chapters": 260
+        },
+        {
+          "name": "最江湖(四时江雨).txt",
+          "sha256": "432a0dd19b63594102894a76336bbde6a5a730e1831e2f7bb86f86b223537e80",
+          "chars": 340820,
+          "chapters": 125
+        },
+        {
+          "name": "未来之树(穿过红尘).txt",
+          "sha256": "b0a85f8657f039f3238cb62d02ca13dca7b3f47327c9c13792aeb5a076a415d4",
+          "chars": 968194,
+          "chapters": 260
+        },
+        {
+          "name": "武侠世界逍遥行(微笑啊微笑(1)).txt",
+          "sha256": "fddc3971ca5f821f86f6faddcda9ce08225ec6d3d3fab846ec7cb3992acbd5bb",
+          "chars": 1622896,
+          "chapters": 260
+        },
+        {
+          "name": "武侠之旅(王吾).txt",
+          "sha256": "f67d8df394f1635ca9c909406eaf549a54e6eacef79801f651a5baaf27b16a76",
+          "chars": 2205748,
+          "chapters": 260
+        },
+        {
+          "name": "武侠鬼道士(人氐言周(1)).txt",
+          "sha256": "83c428838d8f861c3bf16efb80ef4e56c850bd97114e1addecf9cf544e9ee306",
+          "chars": 1120114,
+          "chapters": 260
+        },
+        {
+          "name": "武林半侠传(文抄公(1)).txt",
+          "sha256": "de30165785b1b92b9ba5170b1accecf4c9bcecdaa0be28fa2fc2bac35cae4bde",
+          "chars": 1997041,
+          "chapters": 260
+        },
+        {
+          "name": "武道进化系统(冬雪华阳(1)).txt",
+          "sha256": "ea292b39e62dd9b328740a4a3809c57e91740bcad9bcd87c5836e0e8896b1ac9",
+          "chars": 251778,
+          "chapters": 117
+        },
+        {
+          "name": "死亡神座(羽民(1)).txt",
+          "sha256": "8884c79e8bab933f6c6c6aba360687b977daea3ca9c77bd981ec410358ab6edf",
+          "chars": 3159391,
+          "chapters": 260
+        },
+        {
+          "name": "氪金联盟(山下竹狸).txt",
+          "sha256": "0281e80e01cc6fa167670ecd2a476d9565dff34d019d42eb6c31436f7b85e5f7",
+          "chars": 959820,
+          "chapters": 260
+        },
+        {
+          "name": "水银之血(不祈十弦(1)).txt",
+          "sha256": "a8e33341fc98e421060d34b3091315f4652f01ca3c0720117d08a103b629667e",
+          "chars": 1492331,
+          "chapters": 260
+        },
+        {
+          "name": "深渊主宰(诸生浮屠).txt",
+          "sha256": "07737b116dfe9f949a8a7a84d367cbeaf8b4e4946fda25ba2600ea6f3b615198",
+          "chars": 2732569,
+          "chapters": 260
+        },
+        {
+          "name": "电竞人生(HJ).txt",
+          "sha256": "84d0d5d9c557ed592a593945e5113240a5f5161642c9e92d06aa74c17f6f536e",
+          "chars": 425229,
+          "chapters": 164
+        },
+        {
+          "name": "电竞先锋(七星少将).txt",
+          "sha256": "318221f3aa5640eb89f6a138813fbad2f4ccf9a8de371a75335e3d97c941f338",
+          "chars": 110534,
+          "chapters": 51
+        },
+        {
+          "name": "电竞我为王(无敌飞天猫).txt",
+          "sha256": "9d340660f55f6b026463d74769f804a00844543d9bd1cf3808cc2fda8ab6cdd9",
+          "chars": 482120,
+          "chapters": 175
+        },
+        {
+          "name": "百变妖锋(不如踢球(1)).txt",
+          "sha256": "de1acc3b1a13057a947349628f3e895f6ea478eb73164919ac50600046e48180",
+          "chars": 4587412,
+          "chapters": 260
+        },
+        {
+          "name": "神级召唤师(蝶之灵(1)).txt",
+          "sha256": "b3226effa564591339480ff5ec2b6c87e05840153947d76b91206751350e3f6a",
+          "chars": 1281201,
+          "chapters": 260
+        },
+        {
+          "name": "神级尸王(十八拉古(1)).txt",
+          "sha256": "6aba7e753408a337566178ea8f1cd7f2ec1731cce77f7b612071e97f4d97e439",
+          "chars": 1192801,
+          "chapters": 260
+        },
+        {
+          "name": "神级牛魔王(胡射(1)).txt",
+          "sha256": "d61bc6da11cc495b0319889eff37e53f3757bf9c259caafa11122208c0fff321",
+          "chars": 840206,
+          "chapters": 260
+        },
+        {
+          "name": "神级矿工帽(夏夜如瞳(1)).txt",
+          "sha256": "12f29064bd7753b2a2603b04fdaacd922a67b158cf28e21ad22a0a173ffb68ac",
+          "chars": 1226693,
+          "chapters": 260
+        },
+        {
+          "name": "称雄天下之猛将如云(嗳吃熊的鱼(1)).txt",
+          "sha256": "b13642d60a2dd1df291b5fa69b413aa2ba5a39ec13ebd64831ba89a4b2ec0073",
+          "chars": 1370230,
+          "chapters": 260
+        },
+        {
+          "name": "穿越火线之兵行天下(纯阳金丹(1)).txt",
+          "sha256": "5658de0eea81f2432e620e170cb03ff0b2e62cbfd94ca265db3aabde44e97653",
+          "chars": 2673388,
+          "chapters": 260
+        },
+        {
+          "name": "绝命游戏(画梦心(1)).txt",
+          "sha256": "1486e5c979730ed96ec7ceefb54b746b6003fa0c3dbea5403ac2a1579698cc47",
+          "chars": 2297121,
+          "chapters": 260
+        },
+        {
+          "name": "绝对暴力(边城 浪子(1)).txt",
+          "sha256": "16efe051b5ff4ac614c84cbe6906a8961f9bddefcd99830eda828538e8ae2524",
+          "chars": 2815450,
+          "chapters": 260
+        },
+        {
+          "name": "网游之三国谋士(人上王下).txt",
+          "sha256": "4ac01874a87c418914dcc6cd513ee56d6107f4a8288dd086645f9ba069cd2c81",
+          "chars": 1710076,
+          "chapters": 260
+        },
+        {
+          "name": "网游之亡灵执政(半城烟雨).txt",
+          "sha256": "53d59f10f3ca40f742b7a2cdf46fc28c7e430b4776337ca6ad8e7e003bee5ebd",
+          "chars": 1048486,
+          "chapters": 260
+        },
+        {
+          "name": "网游之修罗传说(火星引力).txt",
+          "sha256": "9c9d1d284b6f8f85a189ceaca12242d7243fd4d416de1291bd1f8734fbe648f4",
+          "chars": 2071952,
+          "chapters": 260
+        },
+        {
+          "name": "网游之修罗剑神(梦知寒).txt",
+          "sha256": "3a2a3e8786f33bdfbcd9637e878f03307d73bce25eb85a60e947d09f8a10f872",
+          "chars": 1221766,
+          "chapters": 260
+        },
+        {
+          "name": "网游之全球在线(笙箫剑客).txt",
+          "sha256": "1d9792e999818070b9e6ec421cb064637f59cd4dc14884bc88dfc36ae825e23f",
+          "chars": 3907547,
+          "chapters": 260
+        },
+        {
+          "name": "网游之全球问道(逍遥胡).txt",
+          "sha256": "dc12c98ac6a84db43b87dec9c8fbe9dd3345419fbca9ec6ea16ce6efa9ba90b1",
+          "chars": 317709,
+          "chapters": 150
+        },
+        {
+          "name": "网游之冰法辉煌(阴霾月夜).txt",
+          "sha256": "8cd58c25d4af7c1c58c7ec53eea96558a2e777f67d68ac005fa21556ccd8b637",
+          "chars": 776371,
+          "chapters": 258
+        },
+        {
+          "name": "网游之剑噬苍穹(弘扬赵).txt",
+          "sha256": "c8319e8b827f9ef661bd9cadbfd5ea1668643f98ae669f7427c60914b9e990b6",
+          "chars": 184088,
+          "chapters": 86
+        },
+        {
+          "name": "网游之剑震天下(零想).txt",
+          "sha256": "a69fabf40fde35e19a65e37398f711756c32b524cbd708cfc8f2a48fd9f4b012",
+          "chars": 2091227,
+          "chapters": 260
+        },
+        {
+          "name": "网游之副职至高(七颗蓝莓).txt",
+          "sha256": "e7dbfff93487e89758bf33465fb9a1336b8c74a344ab834d4b8047c3eb99b260",
+          "chars": 1751228,
+          "chapters": 260
+        },
+        {
+          "name": "网游之天下大势(紫龙大人).txt",
+          "sha256": "b30b75735749991972e3e4043eb51104f355faeea2756dc7d167da4b10eae2bc",
+          "chars": 283266,
+          "chapters": 236
+        },
+        {
+          "name": "网游之天下无双(失落叶).txt",
+          "sha256": "ed86ec7ec8c487af68f96ec7efd6ba6dae86f0e14e00e0135059e28aa96e365c",
+          "chars": 5164166,
+          "chapters": 260
+        },
+        {
+          "name": "网游之天下第一(火神).txt",
+          "sha256": "e2049c39b603c14d8a7ac90016d4eff1d6a2e013bf429504cc4e039233d32045",
+          "chars": 4828814,
+          "chapters": 260
+        },
+        {
+          "name": "网游之射破苍穹(龙大人来了).txt",
+          "sha256": "f304c04357cadb5d028a6cd306b65aa977a426e9f3b9b78371ecef8d4a5559fa",
+          "chars": 2868018,
+          "chapters": 260
+        },
+        {
+          "name": "网游之屠神(辣椒雪碧).txt",
+          "sha256": "4232d666664cfb6b4683aeeb381351f917367efb9ea07289b68d93da3c17d069",
+          "chars": 1501012,
+          "chapters": 260
+        },
+        {
+          "name": "网游之我是武学家(铁牛仙).txt",
+          "sha256": "4d9d585fc251b2901d4b4d18aa7b8a719cdb6771c0cb20ebc24a2e4cd1d982d8",
+          "chars": 3997343,
+          "chapters": 260
+        },
+        {
+          "name": "网游之我是终极大BOSS(何道长).txt",
+          "sha256": "3ffc6ee9f19f9c1c13d9cf11c47edc68ce2e9e863c434757e222d1afe56b3551",
+          "chars": 1659430,
+          "chapters": 260
+        },
+        {
+          "name": "网游之战御天下(孤单地飞).txt",
+          "sha256": "57e4a4b83e4f95aedf1d1f3d40f2c823ecede029ef86df4fbd9d97290865acfc",
+          "chars": 2863683,
+          "chapters": 260
+        },
+        {
+          "name": "网游之暗影僧侣(四不相).txt",
+          "sha256": "bde1d6e2d6c092cc0b1d0e98449cd0192a54fece8fa1923c03c6139b632be42d",
+          "chars": 1464826,
+          "chapters": 260
+        },
+        {
+          "name": "网游之极度冰封(宁默).txt",
+          "sha256": "5bb6990657372ff14a67074d5ba6daa9c035964aa59bdfb2d03bc6d752244c5b",
+          "chars": 700567,
+          "chapters": 248
+        },
+        {
+          "name": "网游之死神传说(北派疯子).txt",
+          "sha256": "2104297e41bf9e147249915fb18913a962ec453ad8e5917d771ab5d4495e03b8",
+          "chars": 1439892,
+          "chapters": 260
+        },
+        {
+          "name": "网游之游戏始祖(罪君子).txt",
+          "sha256": "59657df8fb57b13c5edd4ceedce090f130d55de8c26da49e3be2e40407309105",
+          "chars": 1973241,
+          "chapters": 260
+        },
+        {
+          "name": "网游之牧神(常羲).txt",
+          "sha256": "9b2a27cc4281533bd0adb6015e29dfdf80f889b117fb5fccfb7b7b1978fcf9a9",
+          "chars": 1160004,
+          "chapters": 260
+        },
+        {
+          "name": "网游之王者无敌(孤雨随风).txt",
+          "sha256": "956691a37543e93b9a5962ee033f124d6e321e69aaeb2e6fba0d816eeb4dd153",
+          "chars": 3251053,
+          "chapters": 260
+        },
+        {
+          "name": "网游之盗版神话(失落叶).txt",
+          "sha256": "c58248c56691bce460c33b61c307c296f80fa457ac3754737d5c4dfa99c5aec2",
+          "chars": 2671254,
+          "chapters": 260
+        },
+        {
+          "name": "网游之神级土豪(极目天狗).txt",
+          "sha256": "25138339723f67b52dce56696a621df46a8b07cac959898ea27b0b4f864e6199",
+          "chars": 3125269,
+          "chapters": 260
+        },
+        {
+          "name": "网游之神级机械猎人(逆袭的马里奥).txt",
+          "sha256": "2a54d9452ef8c0ced67e6a49bbbe8c86677167cb3f679694566c29569cd36bbb",
+          "chars": 1101225,
+          "chapters": 260
+        },
+        {
+          "name": "网游之神道传说(好冷).txt",
+          "sha256": "948dd0542607b015e56bd1dc9ee62a6bdb0e8389231e1335e9e80add75c27b43",
+          "chars": 889541,
+          "chapters": 260
+        },
+        {
+          "name": "网游之第一杀神(大写的狂).txt",
+          "sha256": "129427fabfde9038b430c7ab3afe00ba56eafa1a0129de9aab28bc4fa1bfaeea",
+          "chars": 908881,
+          "chapters": 260
+        },
+        {
+          "name": "网游之第一符咒师(冷君仪).txt",
+          "sha256": "f3fe02597c3fb23861bbfb822578193819719880ac6dc9c26e6a56d67e2deb19",
+          "chars": 283146,
+          "chapters": 138
+        },
+        {
+          "name": "网游之系统重生(一杰凡人).txt",
+          "sha256": "958490b2d5064b69271d7558a42ce7d4ca0ec0bf73cbc6d8003bd989560817cd",
+          "chars": 1616681,
+          "chapters": 260
+        },
+        {
+          "name": "网游之纵横天下(失落叶).txt",
+          "sha256": "1d54fdc8c6aaa9332fa0fc42a744be3a69f9a57a444a03abc3cd946c380307c0",
+          "chars": 4373022,
+          "chapters": 260
+        },
+        {
+          "name": "网游之终极盾皇(一念红尘).txt",
+          "sha256": "e3f9652897d6f176d67a0c072068638c38d60f92bae4dee8ad36246179128583",
+          "chars": 2836745,
+          "chapters": 260
+        },
+        {
+          "name": "网游之绝对巅峰(轩疯狂).txt",
+          "sha256": "722406405007157b64525b39595b30ff0a0219a0d861e048abe6c18f4c420046",
+          "chars": 2394354,
+          "chapters": 260
+        },
+        {
+          "name": "网游之至尊菜鸟(漫游者).txt",
+          "sha256": "9f2e6005deb0495f1439da5ecda800dce5807f0998b7c32a400fec131521ffca",
+          "chars": 1459706,
+          "chapters": 260
+        },
+        {
+          "name": "网游之苍莽天下(动不懂).txt",
+          "sha256": "a9394b2ed1cb802f319b4d97a43c59757622d5e18ef3b0892fcf045fdd76b978",
+          "chars": 1631260,
+          "chapters": 260
+        },
+        {
+          "name": "网游之血杀天下(膝盖中剑).txt",
+          "sha256": "6fc66cc12d8e2f90aed2dcf6c3dee52f01bad9303bdaf10d9d54b145cf911d5a",
+          "chars": 986909,
+          "chapters": 260
+        },
+        {
+          "name": "网游之超级傀儡军团(咱的小刀).txt",
+          "sha256": "7aac09b72a4bb7b3739bd48a1f1414e13cd2f4744016c80310d5c79c7900585b",
+          "chars": 636820,
+          "chapters": 211
+        },
+        {
+          "name": "网游之重生贼神(无名灬).txt",
+          "sha256": "24bc06a5fb7b00e2a3c00c498263c9c695d376fefc1690a2efe8ddef2930b53b",
+          "chars": 974393,
+          "chapters": 260
+        },
+        {
+          "name": "网游之霸王传说(名楚).txt",
+          "sha256": "280551958ed500c60ee05a63415070437d2ac2ca0ba74295545297302fa472bd",
+          "chars": 1705594,
+          "chapters": 260
+        },
+        {
+          "name": "网游之黑暗道士(神夜121(1)).txt",
+          "sha256": "083a3b48c5bc8288c1b8c65de9844375da5d035122af7005356a303a25d677b7",
+          "chars": 1364753,
+          "chapters": 260
+        },
+        {
+          "name": "网游日记(一路平凡).txt",
+          "sha256": "7c495a1e79235080c8c3c57190d7ce96313ce5229996618c272f506781c408c5",
+          "chars": 451369,
+          "chapters": 231
+        },
+        {
+          "name": "网金之古墓大师兄(葛鲍).txt",
+          "sha256": "b4a01a3914b2320934e58e2dd05daa4585d174d735763a599ff17f2d074ee41e",
+          "chars": 768245,
+          "chapters": 23
+        },
+        {
+          "name": "翡翠之塔(颓废龙(1)).txt",
+          "sha256": "4eabde41aa2e40624f597a1c529686a9297d09969feefe96bd88844ca5347e30",
+          "chars": 3325351,
+          "chapters": 260
+        },
+        {
+          "name": "职业修仙高手(铁重(1)).txt",
+          "sha256": "71e8d9f8e2617fbc92d13b12856b27f58983cefe1cc26eef3e932ee736a5c1ef",
+          "chars": 657824,
+          "chapters": 260
+        },
+        {
+          "name": "英雄联盟之中单荣光(爱开小差(1)).txt",
+          "sha256": "5bd3c7d06e2dd4e70722515f82ea8e3a268092ac9426f3bc2693a4cfc96c357f",
+          "chars": 1214382,
+          "chapters": 260
+        },
+        {
+          "name": "英雄联盟之众神之王(滴血花神(1)).txt",
+          "sha256": "7711d7787b960a1965f29a9887f764e9d1095daba0e039d2c9f468e2265f7616",
+          "chars": 2155073,
+          "chapters": 260
+        },
+        {
+          "name": "英雄联盟之传奇正盛(魅影(1)).txt",
+          "sha256": "f6a47e8890c85078f873b12ea310469baa52ef02dbbcc036d1cf41aa872aadad",
+          "chars": 1038788,
+          "chapters": 260
+        },
+        {
+          "name": "英雄联盟之凌驾一切(无敌飞天猫(1)).txt",
+          "sha256": "01d8de8f2c52bec7bc68025438fc55fb5be98834918b07c40c77e074a0af3abe",
+          "chars": 1112724,
+          "chapters": 260
+        },
+        {
+          "name": "英雄联盟之国士无双(八月初八(1)).txt",
+          "sha256": "8a659124650ccea9fa694f6b4f3e5c72ad71c994ddbe3f7c61ccde8bafbcf5c4",
+          "chars": 1290429,
+          "chapters": 260
+        },
+        {
+          "name": "英雄联盟之无敌召唤(君莫愁(1)).txt",
+          "sha256": "b041c28e84b3131c6cf8c81cf7b598b76e9de93fdddacf3eb45a81ec1def6c9e",
+          "chars": 1723175,
+          "chapters": 260
+        },
+        {
+          "name": "英雄联盟之极品天才(小木不是小暮(1)).txt",
+          "sha256": "2ec5c9e5c2d0ff865989b81597acc7caa0b15023497721e905f2105ad4904c5b",
+          "chars": 2330978,
+          "chapters": 260
+        },
+        {
+          "name": "英雄联盟之王者(帅到掉渣(1)).txt",
+          "sha256": "09bd48b1a7bc15bd3cb697054ceaca2e2114c82aaf0a3a25817eed38fbbfca10",
+          "chars": 2771016,
+          "chapters": 260
+        },
+        {
+          "name": "英雄联盟之王者军团(千万度(1)).txt",
+          "sha256": "d5558e6a7a89ebc698cbc57ebbf30b00ba760e0dc1f7a881233f99ae821ebcb5",
+          "chars": 2242672,
+          "chapters": 260
+        }
+      ]
+    },
+    {
+      "genre": "玄幻",
+      "file": "题材指纹\\玄幻.md",
+      "rawFileCount": 764,
+      "uniqueHashCount": 684,
+      "duplicateFileCount": 80,
+      "sampleCount": 120,
+      "chapterCount": 30197,
+      "totalChars": 85873182,
+      "avgChapterChars": 2844,
+      "signalLabel": "玄幻信号",
+      "signalPer10k": 24.6,
+      "progressionPer10k": 7.3,
+      "sourceFiles": [
+        {
+          "name": "《诡秘之主》V2.txt",
+          "sha256": "81688cb0ed1fb85218cf1b45988a996926fd8bff3c3636e872e7b8859e1e84a3",
+          "chars": 4435201,
+          "chapters": 260
+        },
+        {
+          "name": "一书封神(可笑书仙).txt",
+          "sha256": "40ff18d95ce233f441bf16547a72e7311e57b9293046c87c3c610eaf6d53fa42",
+          "chars": 1573357,
+          "chapters": 260
+        },
+        {
+          "name": "一剑斩破九重天(流浪的蛤蟆).txt",
+          "sha256": "e8a5dcdc6f01f81ff29ca6909cf19424a92d575379047594be7079528b1e3787",
+          "chars": 2031612,
+          "chapters": 260
+        },
+        {
+          "name": "一品武神(谢庄十三少).txt",
+          "sha256": "b8b396cf86a49b2f2a396bd6ad59f45dd3d23f80c8ed061d09588c139cb47c1b",
+          "chars": 5031607,
+          "chapters": 260
+        },
+        {
+          "name": "一头龙(42K纯二).txt",
+          "sha256": "17135b32a6b965b50d5c318afc20dd573f4b572533e3060dd17542d01c57e380",
+          "chars": 768837,
+          "chapters": 260
+        },
+        {
+          "name": "七界剑皇(邵小白).txt",
+          "sha256": "c23966d1d7811988d43fcdc17af990f2b5906c06ae0f355ec6508b422b65805a",
+          "chars": 2813229,
+          "chapters": 260
+        },
+        {
+          "name": "七界战仙(弹指帅哥).txt",
+          "sha256": "6e883e3aa431a32674623b3cce588ebc244fb74913e7ebbcb8a5969e248a1694",
+          "chars": 2010831,
+          "chapters": 260
+        },
+        {
+          "name": "七脉神尊(鹤旷).txt",
+          "sha256": "fd4ccdde31dbacd8ace4027c9e368693f85127ce41dd8edbbbcec6599ce7c00b",
+          "chars": 1694891,
+          "chapters": 260
+        },
+        {
+          "name": "万仙之王(王袍).txt",
+          "sha256": "42a6122325aa5a9f0d0ecf784a16138f6e31a3be0558a2a5c48a8860f079ebc7",
+          "chars": 2294770,
+          "chapters": 260
+        },
+        {
+          "name": "万兽王座(剑西来(1)).txt",
+          "sha256": "e7016ba22adf304299d93a5f58c7b4906180c23b1971fdd02e91e7ea0c8e1f5f",
+          "chars": 1066583,
+          "chapters": 260
+        },
+        {
+          "name": "万劫武尊(御剑仙流(1)).txt",
+          "sha256": "50ef067032bdf3b4427938ba0d069d5bca4c75a5c02d81bad92e04d74236563f",
+          "chars": 1880722,
+          "chapters": 260
+        },
+        {
+          "name": "万华仙道(小龙卷风).txt",
+          "sha256": "3039b056b995d5e7b4918f280685bccc781a05368b386fc966fdffeedc065f6e",
+          "chars": 2939927,
+          "chapters": 260
+        },
+        {
+          "name": "万古剑尊(江离).txt",
+          "sha256": "00e46986a01f4cc45371322c2e1f365bdad92f4cab43c7c89c5f9e0c50964448",
+          "chars": 1774959,
+          "chapters": 260
+        },
+        {
+          "name": "万古尸王(红小白(1)).txt",
+          "sha256": "788cd17bd8542d06e56d49072ca2051e9a402a6521fd16c74846f9192d370a52",
+          "chars": 1570937,
+          "chapters": 260
+        },
+        {
+          "name": "万古神王(流水曲觞).txt",
+          "sha256": "42f41b80aafc164444b7b1c42aff4ed7f8d7871019e5cd498916b174df8a6248",
+          "chars": 1035842,
+          "chapters": 260
+        },
+        {
+          "name": "万古魔尊(天狼).txt",
+          "sha256": "68b3ccdd44f8e055298e99ab57b1b054f3644efdb61adb29e49c178d26627990",
+          "chars": 2341263,
+          "chapters": 260
+        },
+        {
+          "name": "万古龙皇(疯狂燃烧).txt",
+          "sha256": "b3ade692fc9851edaf67c418c69b6ea9ca15db6df0f70024da4106fe2c25bf38",
+          "chars": 1049334,
+          "chapters": 260
+        },
+        {
+          "name": "万界帝尊(御意).txt",
+          "sha256": "a8dc4615dffff6fcfeccfcabe02ce4562ab587b50da7f3a2d67922d99a3f7fb2",
+          "chars": 2517487,
+          "chapters": 260
+        },
+        {
+          "name": "万界杀神(月夜幽影).txt",
+          "sha256": "afa2088ccf7d6e92bff63f18b97dd08b7d8f6cb9ea24293a669a75a3390dc00c",
+          "chars": 1539261,
+          "chapters": 260
+        },
+        {
+          "name": "万界魔帝(墨五).txt",
+          "sha256": "5f4f352702a021a2c806306c8e6010bcdc69443ed3b845654edf301b4efdaaf6",
+          "chars": 1335654,
+          "chapters": 191
+        },
+        {
+          "name": "万道神尊(无为秀才).txt",
+          "sha256": "e4f596a4934f19ef7605e162a71f055e4e0a74d5feebe4c136d8d44e459d9ddb",
+          "chars": 3085864,
+          "chapters": 260
+        },
+        {
+          "name": "万鬼之祖(孤独漂流(1)).txt",
+          "sha256": "ea01d6532fe3e455b9d98561c8ef2bcdcf9827fb09d93fdd3854051f15aa6d56",
+          "chars": 1507993,
+          "chapters": 260
+        },
+        {
+          "name": "三修奇仙(泛东流(1)).txt",
+          "sha256": "c06e05b535d07f8b85557af4c4691d69992909dc4227c340eb051f535ea97bc0",
+          "chars": 919182,
+          "chapters": 260
+        },
+        {
+          "name": "三界劳改局(一梦黄粱(1)).txt",
+          "sha256": "67d5dd39ce7c93e404b66eda5bdf9a1cd23585705ec8bb765c01c892a9ff40ee",
+          "chars": 1398509,
+          "chapters": 260
+        },
+        {
+          "name": "不合格的大魔王(一梦黄粱(1)).txt",
+          "sha256": "d3a0726978d91513b51bc3438917db4caa3a0d6e70fb828d7605af4d7fd11744",
+          "chars": 1980076,
+          "chapters": 260
+        },
+        {
+          "name": "不朽剑神(雪满弓刀(1)).txt",
+          "sha256": "16735cf6edd514257473531215eef7a68a67af7d4371faa3b5ad5edd469e6c03",
+          "chars": 4566966,
+          "chapters": 260
+        },
+        {
+          "name": "不朽王庭(斑驳的徽章).txt",
+          "sha256": "140cb390bc282414c6616355867bff2223e5b96095c6efb92e7d50d1ad5c780e",
+          "chars": 611492,
+          "chapters": 201
+        },
+        {
+          "name": "不死剑神(龙腾万里).txt",
+          "sha256": "2a538a82568ae529b5400e9005e0a68c773c5a06826cb8d31e57675782e1d43d",
+          "chars": 1672797,
+          "chapters": 260
+        },
+        {
+          "name": "不死天尊(皖北天狼).txt",
+          "sha256": "f3c5cae48ee3ae71f4aaed4d97b9a5d16362b3fb5efea9069ec0cba2763fda7c",
+          "chars": 4439245,
+          "chapters": 260
+        },
+        {
+          "name": "不死武神(忧郁的毛毛).txt",
+          "sha256": "3407601d256975bc00787e52ddbe1e7bdd03bf493d410b3d0db3f65b0010fc3f",
+          "chars": 3577813,
+          "chapters": 260
+        },
+        {
+          "name": "不死神皇(茶山杨梅).txt",
+          "sha256": "3fc688276353b710c0683bab95d3edb4b66fb177e22ac1a9b7dcf8b5c8d23778",
+          "chars": 4609191,
+          "chapters": 260
+        },
+        {
+          "name": "不灭剑主(零号知了).txt",
+          "sha256": "d11d5ea34c60e1e421b9044430ee29f935b7fa96455157994140b80250a9be17",
+          "chars": 2988212,
+          "chapters": 260
+        },
+        {
+          "name": "不灭剑尊(我的小苹果).txt",
+          "sha256": "6cc20651010d051ef704ea94601d3671b9b830e4cf61109cc7fd2e5fcfe3fa93",
+          "chars": 2898710,
+          "chapters": 260
+        },
+        {
+          "name": "不灭召唤(我吃大老虎).txt",
+          "sha256": "4d9aeb2c1c77a9b5b9f21512ba549095f7c6252e017b92df7cdf518933b8764c",
+          "chars": 3423489,
+          "chapters": 260
+        },
+        {
+          "name": "不灭圣灵(紫木万军).txt",
+          "sha256": "6b5ac96697275b4e4090e6a49a897369e20de194eeb64b56bcbe98147dbd4c91",
+          "chars": 1062921,
+          "chapters": 260
+        },
+        {
+          "name": "不灭大帝(刺桐).txt",
+          "sha256": "d2136fabb2c59f6903af6abf3dd8f5bfb46304f2b4221781052cc7dbd22c8f0a",
+          "chars": 1159004,
+          "chapters": 260
+        },
+        {
+          "name": "不灭神王(昨日清风).txt",
+          "sha256": "8532862d4d2bfe3442febca8e397ee425d96964972249fe325edaec44ad5a54b",
+          "chars": 1253374,
+          "chapters": 260
+        },
+        {
+          "name": "不败丹皇(醉不乖).txt",
+          "sha256": "7097af78f1c681f386ec13ac0abe6e1d660bf26bd7c334cfe10001acf1bac317",
+          "chars": 973431,
+          "chapters": 260
+        },
+        {
+          "name": "不败战神(方想).txt",
+          "sha256": "fea1e6c0be99c4b5d3192731abe04a23949fe166db92d6348f18a220f351cbd9",
+          "chars": 3009596,
+          "chapters": 260
+        },
+        {
+          "name": "不败武神(开心侯爷府).txt",
+          "sha256": "849898395d0ebee8499a67fa43884bbfbbdb89f1016c53e783150efcf11c69e7",
+          "chars": 2220506,
+          "chapters": 260
+        },
+        {
+          "name": "业余修真(一水寒江(1)).txt",
+          "sha256": "94fa8c47326d0a6622a8d70a1037bfbc5114695e791eb78f456e105af197e7f5",
+          "chars": 1446175,
+          "chapters": 260
+        },
+        {
+          "name": "东京道士(明月子时(1)).txt",
+          "sha256": "5114da7ee518846e3b7ec95718550a01289032bfceba911bbbc45999e8ff1343",
+          "chars": 2012682,
+          "chapters": 260
+        },
+        {
+          "name": "东方仙府(东方大王).txt",
+          "sha256": "752b7bab02f38ec0b3186539403d25ef5e240d86c2960c6acc01429025f0a121",
+          "chars": 199520,
+          "chapters": 66
+        },
+        {
+          "name": "丹修有点田(盗天书生(1)).txt",
+          "sha256": "777a3511c200278b9644ddbb66aa70e2962527bd60e8f2e51f920cc1d92ae0ab",
+          "chars": 568377,
+          "chapters": 249
+        },
+        {
+          "name": "丹武无敌(司徒浩劫).txt",
+          "sha256": "448adf86cf33958493a36677fd435b8ac13460d2f43189bbc479b0cbeb3d7a3e",
+          "chars": 1004681,
+          "chapters": 260
+        },
+        {
+          "name": "主宰之王(快餐店).txt",
+          "sha256": "8ca2ea2daa4a5a0af215d27da51c62e5f5682be7b3c88538a5826c3a93f42e54",
+          "chars": 5050902,
+          "chapters": 260
+        },
+        {
+          "name": "乐尊(鬼谷仙师).txt",
+          "sha256": "73829a089ebcdcaafe525d1291a5566e335f994065d80b5f1baa71444e34f85d",
+          "chars": 1607832,
+          "chapters": 260
+        },
+        {
+          "name": "九劫神诀(子舟).txt",
+          "sha256": "8ca928867a66ddab0a7673248026996c53f9d75d629a3de054fd2048f55a32c7",
+          "chars": 1161054,
+          "chapters": 260
+        },
+        {
+          "name": "九天剑圣(诸葛小花).txt",
+          "sha256": "8e41508bd6fb582534ac397f849eb549cbe5c7a60471b112c558b9eb89fdaca9",
+          "chars": 626060,
+          "chapters": 246
+        },
+        {
+          "name": "九天剑皇(七月雪仙人).txt",
+          "sha256": "e0c2ac879724f22fbf210f2afe93a2e1a962f1d30afc5fb68b9f52bddd8a5ea0",
+          "chars": 1207074,
+          "chapters": 260
+        },
+        {
+          "name": "九天神帝(傲天无痕).txt",
+          "sha256": "48fe9a7b3d6bc5981fcb99155b6c67cf159eabf1b3f7de9b84453dd00789de66",
+          "chars": 3022147,
+          "chapters": 260
+        },
+        {
+          "name": "九界神帝(肥勒).txt",
+          "sha256": "a21eedb95165cda8ce0c79436bfe9fcda57e6cb16ef1d11feb47e90f5fdaf2f9",
+          "chars": 1853872,
+          "chapters": 260
+        },
+        {
+          "name": "九阳丹神(一骑绝尘).txt",
+          "sha256": "cbc8f9df50ac1ad61c60af91d74bec57b95635ffa27e7b898028b80631a78b94",
+          "chars": 1700384,
+          "chapters": 260
+        },
+        {
+          "name": "九阳剑圣(沉默的糕点).txt",
+          "sha256": "e75d518d773ca85e519348705b5243ad4c72b7f493c4fec09e66695d454bb868",
+          "chars": 5434162,
+          "chapters": 260
+        },
+        {
+          "name": "九鼎神皇(池边人(1)).txt",
+          "sha256": "f6c4526d5097891c23c75706dc301fab23f3c732d5dede41e9eee948f14f81b4",
+          "chars": 4026448,
+          "chapters": 260
+        },
+        {
+          "name": "书剑仙(三七开).txt",
+          "sha256": "3d00ce1eb4f9b200030f4b5559ce4d84193d3aaba88e5935ec4a1c27c53d8899",
+          "chars": 700968,
+          "chapters": 260
+        },
+        {
+          "name": "乾坤传奇(林辉荣).txt",
+          "sha256": "a4a791306368bf2bec108bbbfee38f008e1a108635b76740ceb4dd822db4f1ee",
+          "chars": 428515,
+          "chapters": 175
+        },
+        {
+          "name": "二十四小尸(老告(1)).txt",
+          "sha256": "cba1f5b27cf0d8c8c2393a61502d9ce20db0894a234db782ecd3a4dfba753f6e",
+          "chars": 2305127,
+          "chapters": 260
+        },
+        {
+          "name": "从武侠到玄幻(头痛的没法).txt",
+          "sha256": "b069aaa157c4bfa2eb063d25fc389094e04347329dae439c3437ccb401f90b0c",
+          "chars": 2258542,
+          "chapters": 260
+        },
+        {
+          "name": "仙寇(罗玛(1)).txt",
+          "sha256": "20061818b2b97bad73dd8b8bb276135f4216bf35a25138514e0f9e5671dda9e7",
+          "chars": 2304153,
+          "chapters": 260
+        },
+        {
+          "name": "仙徊(笛沃).txt",
+          "sha256": "d8b672a4bd1862d2963b288fafc45d29f0f7513dc70e2f730e5ae36103fca2d8",
+          "chars": 965519,
+          "chapters": 260
+        },
+        {
+          "name": "仙王(寂寞读南华(1)).txt",
+          "sha256": "456dee035ce1710b89f41f79365128d7a996299936bf8145566419be8a23a478",
+          "chars": 3273720,
+          "chapters": 260
+        },
+        {
+          "name": "仙缘五行(问天翁(1)).txt",
+          "sha256": "7f6c6cc07402b1b040e713bfbf3445f6eb81daadcb86e7536e1cb7236d14ac42",
+          "chars": 2487652,
+          "chapters": 260
+        },
+        {
+          "name": "仙路争锋(缘分0(1)).txt",
+          "sha256": "747639aa200b4a4c169f0ca3d5fa22c4122642705b7b558fec21d855f7c4a43e",
+          "chars": 4765054,
+          "chapters": 260
+        },
+        {
+          "name": "仙运无双(洛雷(1)).txt",
+          "sha256": "1a9d731ecd28941ef76b28714d062f1f8c17457a859154d32124fb4a9e2f58ff",
+          "chars": 2522150,
+          "chapters": 260
+        },
+        {
+          "name": "仙道之主(雾外江山(1)).txt",
+          "sha256": "6694eea0903108a21c2421a4defce6057dbc30bb4e23fffe1840c331eb735804",
+          "chars": 1158559,
+          "chapters": 260
+        },
+        {
+          "name": "仙门弃少(鸿蒙树(1)).txt",
+          "sha256": "5c4073d40f5fc4a52d2b0d0985c8b1369beba2196f77f32eaacf0739a4d5f54f",
+          "chars": 2035648,
+          "chapters": 260
+        },
+        {
+          "name": "仙魔同修(化十).txt",
+          "sha256": "7ded2d10646e87777adc631aea78249c28038f7a92fb04bcd900ce83c6c627f4",
+          "chars": 5796872,
+          "chapters": 260
+        },
+        {
+          "name": "仙鼎煅神(飘风虎牙).txt",
+          "sha256": "3c388b4f66f8ecc4ac071b79a54e7a0cdb878f15a5c88f2834af1b56c4afea08",
+          "chars": 2463863,
+          "chapters": 260
+        },
+        {
+          "name": "传道大千(猛虎道长).txt",
+          "sha256": "71cafcc63c77b1ea7d3b5ba7007d97e0922f76deda278573c900996e5ad4d553",
+          "chars": 2114523,
+          "chapters": 260
+        },
+        {
+          "name": "修仙大霸主(炎哥(1)).txt",
+          "sha256": "78b2ed4a15413ad059b489784438b7735828997e7cfe2ebfb80f27564f020b44",
+          "chars": 1485078,
+          "chapters": 260
+        },
+        {
+          "name": "修仙界移民(蓝色胡子(1)).txt",
+          "sha256": "b1d0378a86ce04f1753e0efdca9d2b750ac45c933fa5d4d37c59994a5b6c6c58",
+          "chars": 1805324,
+          "chapters": 260
+        },
+        {
+          "name": "修仙高手在都市(执剑长老(1)).txt",
+          "sha256": "278790a991865cd5cac7a37e9314c81d3f0121303cc4cdf1671d85c86d14c081",
+          "chars": 3090692,
+          "chapters": 260
+        },
+        {
+          "name": "修真外挂(凌乱紫零落(1)).txt",
+          "sha256": "cfe4a81fa21418f06190d38c7ad097caa83947554ee9bbb4c5c77ae028220926",
+          "chars": 2059255,
+          "chapters": 260
+        },
+        {
+          "name": "修真狂少在校园(流水曲觞(1)).txt",
+          "sha256": "7236d64f1536775b3f9267c3ab12ab4b7c18054fd6ee3ca6b3e8e6ae50901aca",
+          "chars": 1134103,
+          "chapters": 260
+        },
+        {
+          "name": "修真老师在都市(落尘(1)).txt",
+          "sha256": "9cbf1ca105e074732e9b65b7c054479f3d80a67116828cc826239b50bd5bfe0a",
+          "chars": 2015175,
+          "chapters": 260
+        },
+        {
+          "name": "修神(风起闲云).txt",
+          "sha256": "ba18f0a38f2893bb58487568a1d8e8a1dd9c28e2579553c7a2fb975edc6ad9db",
+          "chars": 2847133,
+          "chapters": 260
+        },
+        {
+          "name": "傲世丹神(寂小贼(1)).txt",
+          "sha256": "51355fbac7c60ec626ebb74514b517f302c50aeb1f4ba92d990d67681786c649",
+          "chars": 5242704,
+          "chapters": 260
+        },
+        {
+          "name": "傲世九重天(风凌天下).txt",
+          "sha256": "f85b183ab260af519400cc96f590c303f60f5438b2b104d0b4264198cf29e8b0",
+          "chars": 8497909,
+          "chapters": 260
+        },
+        {
+          "name": "傲世傀儡师(永寂山河).txt",
+          "sha256": "9aa047c0184c859cd2bc17620d6de5cc6a6104b642418701976c148d9f731ad8",
+          "chars": 2458671,
+          "chapters": 260
+        },
+        {
+          "name": "傲世天宫(林海罗文(1)).txt",
+          "sha256": "30c537fa347a7859c0e2410c1f62d857fdf0056c0147e31b512d0d4a4dca3f7a",
+          "chars": 1070994,
+          "chapters": 260
+        },
+        {
+          "name": "傲世武皇(曾经拥有的方向感).txt",
+          "sha256": "51d7897682a1f9162e770301e3c6ff7abab8659a10d890bf8c8c0d46703b1831",
+          "chars": 2979932,
+          "chapters": 260
+        },
+        {
+          "name": "傲世狂仙(赤金).txt",
+          "sha256": "db5c8de97839b8e1ffa4614e66adb3937f61ff4eee8ed46602fb095425ffe32d",
+          "chars": 1603216,
+          "chapters": 260
+        },
+        {
+          "name": "傲剑天穹(小刀锋利).txt",
+          "sha256": "a6022f839d55fd09aa84bd82717a234d6c8ce3026b2ac388601fbf6b63cc57b1",
+          "chars": 4828141,
+          "chapters": 260
+        },
+        {
+          "name": "傲立苍穹(弓辰).txt",
+          "sha256": "57d71f81e0b9cb7b883b2076e33951f501280492d68d8f6d0669aab1fd38a83e",
+          "chars": 1465865,
+          "chapters": 260
+        },
+        {
+          "name": "元仙(我在你身后(1)).txt",
+          "sha256": "e6ce39eec1b9816b5b86e93234b12b69457db3eaa3a84ef675c3a6ba37f4c65c",
+          "chars": 2117873,
+          "chapters": 260
+        },
+        {
+          "name": "入天庭(幻庸(1)).txt",
+          "sha256": "9ad15a1d4f64c4c44b62ea3961c7d05120d4fb1eb64ac68634781feb9c6b5e78",
+          "chars": 2667439,
+          "chapters": 260
+        },
+        {
+          "name": "全职业武神(笑南风).txt",
+          "sha256": "c0614e34d72b8a5c62b58f4ba571d2ed5217889188d2edbcdd5908cea6100fc7",
+          "chars": 1489195,
+          "chapters": 260
+        },
+        {
+          "name": "全职仙师(天佑健儿(1)).txt",
+          "sha256": "d1571a418c5cf2fd9523c28fee964a5763bc5a1e9b07f79637dcedbdf0a6ac25",
+          "chars": 1146466,
+          "chapters": 260
+        },
+        {
+          "name": "全能修仙系统(秋风揽月).txt",
+          "sha256": "2f201a0d67f7a526e8e72a4ce74f50181779e4a5b9b0207bf4c705f69ce3722e",
+          "chars": 2081545,
+          "chapters": 260
+        },
+        {
+          "name": "全能武神(天天方便面).txt",
+          "sha256": "d9a60c4c297076d4183c33441d010a31896de8dae47da6f41423ba1cc21f019d",
+          "chars": 2869023,
+          "chapters": 260
+        },
+        {
+          "name": "全能法神(狂财神).txt",
+          "sha256": "65540ccbaccc0cc99351147ea9e5cc7ad59580f628d7840e402baf3a11b13912",
+          "chars": 869199,
+          "chapters": 260
+        },
+        {
+          "name": "八荒武神(张牧之).txt",
+          "sha256": "e582ef9f204045a832d8dcfd867b1eb3bc9fc6d225313fb8c6cb11088fa25675",
+          "chars": 3524240,
+          "chapters": 260
+        },
+        {
+          "name": "六朝时空神仙传(雪满林中(1)).txt",
+          "sha256": "93870e64b3f7cb4dfc58d916c7597071618cb1e2a66525a7d147c15c5ae38537",
+          "chars": 2523305,
+          "chapters": 260
+        },
+        {
+          "name": "六道武神(午夜幽魂(1)).txt",
+          "sha256": "3037c1333ce552d0f8a03ae4ffcdc79af073894cfc40211a7965b838dab39418",
+          "chars": 2364871,
+          "chapters": 260
+        },
+        {
+          "name": "养妖记(君不见(1)).txt",
+          "sha256": "c3ce38e34ad1befaa940a3e44c0a691160033213038c5bb11a3e0c98d96b6b6e",
+          "chars": 3012416,
+          "chapters": 260
+        },
+        {
+          "name": "冥夫惹不起(观江汪(1)).txt",
+          "sha256": "0102d4178b4faf15a4496db922a90982fe2c14ea4c81139f37c00c64471ea12f",
+          "chars": 759118,
+          "chapters": 260
+        },
+        {
+          "name": "冰火武神(海角七号).txt",
+          "sha256": "fee6f676c772e742db7825169718bc692f68a9296f2b0a4240bb693ee3089fb4",
+          "chars": 3748970,
+          "chapters": 260
+        },
+        {
+          "name": "凡人修仙之仙界篇（凡人修仙传仙界篇）(忘语).txt",
+          "sha256": "114e3dfa651df470c372591f857031c8cd60e451320caa8a95aa9a717f51fbed",
+          "chars": 225359,
+          "chapters": 79
+        },
+        {
+          "name": "凡人修仙传.txt",
+          "sha256": "41f0e2230e04327d29f4ae9f03a2e443d5fb1e68f84be30c2391881f6c5fbd45",
+          "chars": 4603356,
+          "chapters": 260
+        },
+        {
+          "name": "凡人修仙传奇(风之言).txt",
+          "sha256": "63339197509bb6c4a597d578616bca9e4b80f5e0e924dc13fb1a994d950ce9f9",
+          "chars": 38728,
+          "chapters": 27
+        },
+        {
+          "name": "凡人修仙传百度百科(忘语).txt",
+          "sha256": "a1e6e25566b3b57be01640056eafad0ef3d87e8422053413eb255edc9ceb8d3e",
+          "chars": 573714,
+          "chapters": 244
+        },
+        {
+          "name": "凡人修仙录(笑看云烟).txt",
+          "sha256": "b284b9d3b3a548df26b9dbd373e73f7ddf362abb59e7dcaef8e69f87231e963e",
+          "chars": 645321,
+          "chapters": 260
+        },
+        {
+          "name": "凡人修仙路(南里有木).txt",
+          "sha256": "43212d9224cc36f396219d3b5bb6f71ff538f4447c43885714a68b83fb317a6b",
+          "chars": 202088,
+          "chapters": 119
+        },
+        {
+          "name": "剑之帝皇(竹林之大贤).txt",
+          "sha256": "b9bc767d53140538ec83c01f388f286398b59974010566cb46d16e2eda31f884",
+          "chars": 4077509,
+          "chapters": 260
+        },
+        {
+          "name": "剑域(落寞客(1)).txt",
+          "sha256": "9d6049432800c146301b7c3e295b4d93986c8b5e7f331538911caed363427cf2",
+          "chars": 1776278,
+          "chapters": 260
+        },
+        {
+          "name": "剑来(烽火戏诸侯).txt",
+          "sha256": "689ba4e67a40f2212d16e2283655858051a33c28db8f274e3d81fd2d24a3118d",
+          "chars": 12984955,
+          "chapters": 260
+        },
+        {
+          "name": "剑葬神灵(铁手追命).txt",
+          "sha256": "adeba089fc0c2df05153eaa6250bc532f2462797a89da889bd051945e5295943",
+          "chars": 1958854,
+          "chapters": 260
+        },
+        {
+          "name": "剑诛天道(太上布衣(1)).txt",
+          "sha256": "74352c393325ddb3631083d2f0925bc9462589391183756fdce58ac17510b7bd",
+          "chars": 1915017,
+          "chapters": 260
+        },
+        {
+          "name": "剑道邪尊(残剑).txt",
+          "sha256": "fd962572ef34d57d39a2cee23f0430240424cdf43a8f1a29a19683fff4e851a4",
+          "chars": 5018312,
+          "chapters": 260
+        },
+        {
+          "name": "北冥神剑(池衡水榭).txt",
+          "sha256": "8c4844e5b2063076cd53df8837d32fadedb9c86408b661a77645964a18a0844a",
+          "chars": 4439053,
+          "chapters": 260
+        },
+        {
+          "name": "十二大陆(石榴裙下).txt",
+          "sha256": "15954a051a3fdaad9df2c11fead24785e10bce0d4ea55d1276b0aa888bc2df84",
+          "chars": 2575254,
+          "chapters": 260
+        },
+        {
+          "name": "十方天帝(梁园月).txt",
+          "sha256": "4ee996b6db8252f2276d3a8515c8b96daebdc42934d685dd9fb9bf09121bff3f",
+          "chars": 2376329,
+          "chapters": 260
+        },
+        {
+          "name": "原始战记(陈词懒调).txt",
+          "sha256": "1db638a4777a159f6584aba2e380b6e2b5f30586a9374233a108d0f0063199b6",
+          "chars": 2485745,
+          "chapters": 260
+        },
+        {
+          "name": "可以修仙(梦的赞美诗(1)).txt",
+          "sha256": "094888123b8be8d5b7b809aa74272915e3492bedf89d97f5c7e39d27d9ac2ee7",
+          "chars": 1323074,
+          "chapters": 260
+        },
+        {
+          "name": "史上最强宗主(八两烧刀子).txt",
+          "sha256": "787798b29baa763e412e6a2cec81b9edbfb03e5a3ecb4e908dc92e6196498a86",
+          "chars": 980699,
+          "chapters": 260
+        },
+        {
+          "name": "史上最强方丈(无敌皇上).txt",
+          "sha256": "d32a982073ab3fd5e4ac290aa7be7e330f0327cdfd09ac85114c177d258530d3",
+          "chars": 985906,
+          "chapters": 260
+        },
+        {
+          "name": "史上最强祖师(书生吃包子).txt",
+          "sha256": "3ad0cee585c37c83a57f50e82ff7b8f7181cb8e349b02980a15e0503460146d6",
+          "chars": 2224299,
+          "chapters": 260
+        },
+        {
+          "name": "史上最强肉体(北斗小七).txt",
+          "sha256": "0c93fd862c3a9e675d49968f67190974222a00114a12916d46b81f34cf652bb5",
+          "chars": 2214797,
+          "chapters": 260
+        },
+        {
+          "name": "史上第一大魔神(神魔巫仙妖鬼人(1)).txt",
+          "sha256": "1f9f7de5580d2484320a0a411fbbcb8f9647afbc9a2e8cde3df65910e43f47ac",
+          "chars": 1625667,
+          "chapters": 260
+        }
+      ]
+    },
+    {
+      "genre": "悬疑",
+      "file": "题材指纹\\悬疑.md",
+      "rawFileCount": 474,
+      "uniqueHashCount": 474,
+      "duplicateFileCount": 0,
+      "sampleCount": 120,
+      "chapterCount": 29005,
+      "totalChars": 82798706,
+      "avgChapterChars": 2855,
+      "signalLabel": "悬疑信号",
+      "signalPer10k": 4.5,
+      "progressionPer10k": 5.7,
+      "sourceFiles": [
+        {
+          "name": "GT病毒进化者(吃小孩啦).txt",
+          "sha256": "ebd85a9a1cec9b1e6921dcb5af602fd29c98997f3392252c4c69f873552f41a7",
+          "chars": 2864516,
+          "chapters": 260
+        },
+        {
+          "name": "[悬疑微恐]暗恋(一山钩月).txt",
+          "sha256": "6108c52b049e6e4df5f3e329a4c5a40a39441037a89ec6d94a5020d250f39f10",
+          "chars": 64464,
+          "chapters": 56
+        },
+        {
+          "name": "一击魔法师(隐语者).txt",
+          "sha256": "e528a40fba3692b197332e924b8e9413cbc169b01c822766bb9e38ebffc63b65",
+          "chars": 1445387,
+          "chapters": 260
+        },
+        {
+          "name": "不朽星空(废稿三千).txt",
+          "sha256": "29636f988fba32847539c80cb374b2086199d4a1419cd89e7463954e4c3525b2",
+          "chars": 2005059,
+          "chapters": 260
+        },
+        {
+          "name": "与病毒同行(沐日海洋).txt",
+          "sha256": "e6c8ca8f73a36cb49cf89fc80f1030ff2bd906d207783f555f68c72d93042e1c",
+          "chars": 1592710,
+          "chapters": 260
+        },
+        {
+          "name": "东北马仙(通天道清高).txt",
+          "sha256": "6250bc264521a729dd2e83a98a50f68ca825706dce4562404f6171b923b98e5a",
+          "chars": 1307319,
+          "chapters": 260
+        },
+        {
+          "name": "丧尸世界之生存日记(知行天下).txt",
+          "sha256": "e68a2a79c56f7629bc9eec87967ed5e6cd7de283a411d92a5f29b5a7180b5c4a",
+          "chars": 1549409,
+          "chapters": 260
+        },
+        {
+          "name": "丧尸之末日的背叛(中州老九).txt",
+          "sha256": "08e63b2d1367ea5dde6a0f26837c88a6bcc282622bc9ea8ea8c33073f73293b1",
+          "chars": 1983346,
+          "chapters": 260
+        },
+        {
+          "name": "九零后阴阳先生(坐山刁).txt",
+          "sha256": "ee0f94564ef770ef836db4525e9de60094b1cc3b12d5c127f27384edf8d9174d",
+          "chars": 1046475,
+          "chapters": 260
+        },
+        {
+          "name": "二次元抽奖(喜欢排骨).txt",
+          "sha256": "f1626e2f6e2b7c176dd6d7c08c85a755ce6849bc0f573ccda04d085724000538",
+          "chars": 1149571,
+          "chapters": 260
+        },
+        {
+          "name": "五行虫师(九道泉水).txt",
+          "sha256": "6d453c5be5a749bd742b36e9977020e36abec8ba3b677fee396e17b0c29b3240",
+          "chars": 1576265,
+          "chapters": 260
+        },
+        {
+          "name": "人皮嫁衣(罗樵森).txt",
+          "sha256": "467c7e99b1dcfdb1f0f35c8f729115525764d7a1c83683df80698d41a31c6988",
+          "chars": 929800,
+          "chapters": 260
+        },
+        {
+          "name": "仙武世界冒险记(人氐言周).txt",
+          "sha256": "afc1d27766ee23a2d0fcf501395d2f0199ffcf5c99b89724630b58020d5f69f8",
+          "chars": 416633,
+          "chapters": 199
+        },
+        {
+          "name": "位面之幻想世界(宅男村村民).txt",
+          "sha256": "7b3452aa86064121ffcae282ad9e3a835f133e252113f87a4e61800df90cc03f",
+          "chars": 1000878,
+          "chapters": 260
+        },
+        {
+          "name": "位面之最强绿巨人(我奶霸也).txt",
+          "sha256": "e4c32f85e5d068230e34bacbc41efa96dc1db5617fe6b78ddba095bdb6ad8a06",
+          "chars": 511018,
+          "chapters": 233
+        },
+        {
+          "name": "位面冒险之旅(清空物理).txt",
+          "sha256": "6889c1223768d18a08864a3be1a3eee51e7afbe356cd53211a2f4442c32dd710",
+          "chars": 1561549,
+          "chapters": 260
+        },
+        {
+          "name": "位面时空指南(王写意).txt",
+          "sha256": "feae8a1847ba6cf5defca08efbadd8843e6ab6c1bea19076c988e273450e4b45",
+          "chars": 1091629,
+          "chapters": 260
+        },
+        {
+          "name": "你的香尸她的魂(掰着脚丫数太阳).txt",
+          "sha256": "aa11a45e1a17b62c7f4d366126051c987b1c43ff411c3adb6e1e98ab6e047713",
+          "chars": 1034242,
+          "chapters": 260
+        },
+        {
+          "name": "保家半仙儿(箫狸).txt",
+          "sha256": "bfa43cd7562cae635ce2db8748fd11a08cdd9c2b891d7d3903dc1c7e5ac5c038",
+          "chars": 736486,
+          "chapters": 201
+        },
+        {
+          "name": "借尸填魂(长耳朵的兔子).txt",
+          "sha256": "09df750690d259ab2ad9dd31bbc72cabc76f5e0f879bc6ece3bf09014042e25f",
+          "chars": 1106079,
+          "chapters": 260
+        },
+        {
+          "name": "兑换世界(寒夜诗音).txt",
+          "sha256": "057acf5231cdc7916fff0a941c9775379c42075e054628ea7e01963381ee91da",
+          "chars": 600168,
+          "chapters": 235
+        },
+        {
+          "name": "入侵型月(我是唐僧我不骑白马).txt",
+          "sha256": "865145a76d677853d28f465ed503f11870aba5cac0fb4508120b60b6476273c5",
+          "chars": 2272640,
+          "chapters": 164
+        },
+        {
+          "name": "入侵漫威(钟离江河).txt",
+          "sha256": "e182dc551108becd34c69c9fece4b54b39fe3829a85a3088a753085b43ff2c66",
+          "chars": 434305,
+          "chapters": 176
+        },
+        {
+          "name": "全球怪物在线(再来一支大雪茄).txt",
+          "sha256": "74bf6b3d5927712e10de1245a9bf7e1c5f8c6fe68cc71bed0f54a4488b956305",
+          "chars": 4902165,
+          "chapters": 260
+        },
+        {
+          "name": "八云家的大少爷(八云家的夜鸦).txt",
+          "sha256": "820f5b7eaa8b50e0d534535b925955e739c7191f3922f8a8b89784e9706705f8",
+          "chars": 2010946,
+          "chapters": 260
+        },
+        {
+          "name": "冥媒正娶(过江卿).txt",
+          "sha256": "254da5c2dd04a8d34698b895f5fbba2c8041de26b21f6708745cc82bbcaf9e29",
+          "chars": 656688,
+          "chapters": 243
+        },
+        {
+          "name": "十二天劫(马六甲).txt",
+          "sha256": "b30e974590f9ea75d6445c6530a35fbd77d115af56c84e7535f979689d991c3a",
+          "chars": 3204826,
+          "chapters": 260
+        },
+        {
+          "name": "十宗罪4(蜘蛛).txt",
+          "sha256": "8b6b4ad0137e4005f3576641cfebf92526e6864d7d058d44424f453827db2776",
+          "chars": 162959,
+          "chapters": 50
+        },
+        {
+          "name": "半夜鬼敲门(囡囡御喜).txt",
+          "sha256": "bfb29eaa0e7a08c72750e0e22bea8b20c378139585456d49c4e3bf998e1d9a80",
+          "chars": 1520627,
+          "chapters": 260
+        },
+        {
+          "name": "吾为主神(夏水长天).txt",
+          "sha256": "9991cf3231d187b71aba18cac03e4cce7851fdb5b0656342dcfb5aa307d0cf03",
+          "chars": 1611320,
+          "chapters": 260
+        },
+        {
+          "name": "吾当道(耗这口).txt",
+          "sha256": "d8918c2e19c184c8ba6c646bbf9e58101fa44c11f5bca397f69c0596203ee2a4",
+          "chars": 3079714,
+          "chapters": 260
+        },
+        {
+          "name": "地球新手村(大花你好吗).txt",
+          "sha256": "75afe64010e273c210f6b7b9c11dd9dfe8bc582151863494b45c51a8743bf858",
+          "chars": 1817143,
+          "chapters": 260
+        },
+        {
+          "name": "地球试炼场(梦狂风).txt",
+          "sha256": "b192d0144cc9eea805081fa9c03b007c749601cbd7897ce769a82433d02bd622",
+          "chars": 481544,
+          "chapters": 177
+        },
+        {
+          "name": "地铁诡事(夜黑羽).txt",
+          "sha256": "d5b8b46967880633042124f43a9dee4bfa5049bca2a00d59ba29f644b7b2c464",
+          "chars": 3396290,
+          "chapters": 260
+        },
+        {
+          "name": "复仇者联盟里的剑仙(倾城蓝夜).txt",
+          "sha256": "6f3f3c0bbe187ff382532f7e36bafb6648ab505ece80e53c3b49589f7f3f9caf",
+          "chars": 2297355,
+          "chapters": 260
+        },
+        {
+          "name": "大圣王系统(天满哥哥).txt",
+          "sha256": "062036bcd7d423b777fffcb44ba26aa3bca1d7b792c13292f40c56c1ab8415ef",
+          "chars": 1466485,
+          "chapters": 260
+        },
+        {
+          "name": "大红棺材铺(乱世小松).txt",
+          "sha256": "2d042970430de5726a75fd364a7acf2fbde2a5620161819805e13e00fdf5d9c7",
+          "chars": 1997288,
+          "chapters": 260
+        },
+        {
+          "name": "天外寄生(迷路的鱼).txt",
+          "sha256": "783db067b9de7fc10768830a4f7afc3e591fa2fa1df8eebff1af433a901d5b9d",
+          "chars": 1464038,
+          "chapters": 260
+        },
+        {
+          "name": "天黑请闭眼(大四喜十八罗汉).txt",
+          "sha256": "7a5cd95aa2a7413a377c057be73a3b12e558b0b582acc1d095b27346b007d7ba",
+          "chars": 339608,
+          "chapters": 125
+        },
+        {
+          "name": "太初战神(温酒煮花生).txt",
+          "sha256": "928494767522c8216d337a12dd8739127d493e559ce23a2abe644f171d04baab",
+          "chars": 472211,
+          "chapters": 174
+        },
+        {
+          "name": "失落封印(酥油饼).txt",
+          "sha256": "7ea7256acf14d281c13d52f5e91d58ac984fc36204927c3acba33071a72e490b",
+          "chars": 225573,
+          "chapters": 71
+        },
+        {
+          "name": "奇门术师(雪冷凝霜).txt",
+          "sha256": "066a769d8bd6125f100a2dcb873e9d490346de582d8f91f9f48abc2e73393c3d",
+          "chars": 1573698,
+          "chapters": 260
+        },
+        {
+          "name": "妖孽武神(吉风冰).txt",
+          "sha256": "6f5a5e7a9a7da188a012f7505bb0327f197113a8f8c53d23029f99d15f024df0",
+          "chars": 1843746,
+          "chapters": 260
+        },
+        {
+          "name": "威战天下(白菜牛肉包子).txt",
+          "sha256": "110f79dc522c2968eeddb9e68d42d2c82ec287814c4447bb58c0099a0704f98d",
+          "chars": 2192514,
+          "chapters": 260
+        },
+        {
+          "name": "寂静杀戮(熊狼狗).txt",
+          "sha256": "cfe54da9bc811235e5458c5cac20f1857069709a45e00ff5b02027a1532d8597",
+          "chars": 2110566,
+          "chapters": 260
+        },
+        {
+          "name": "尸身尖叫(灰小猪).txt",
+          "sha256": "138d4c50c31fb72ce9d62ebe2db6256985807d1bfbac0ffd64d141947c22729a",
+          "chars": 2022585,
+          "chapters": 260
+        },
+        {
+          "name": "岛主的次元穿梭(风雨微凉).txt",
+          "sha256": "5d83e027b4b4116892eb8c1db7c5ccdc2c2638d4b50aea594f6fc06932618067",
+          "chars": 757039,
+          "chapters": 260
+        },
+        {
+          "name": "带着妹妹去抓鬼(道士).txt",
+          "sha256": "c454f41e38136fd0997a874215e6150f48f3f498f26cb3c095529df9836ab178",
+          "chars": 831140,
+          "chapters": 260
+        },
+        {
+          "name": "带着超市去末世(三舍堂).txt",
+          "sha256": "511a2d3ad52d87dde4be7629f449b2435f7f246849e4f9bde87015bf19f55818",
+          "chars": 1143803,
+          "chapters": 260
+        },
+        {
+          "name": "异界最强杂役(右眼有泪).txt",
+          "sha256": "6059a5c5ebd633bbeecc5651d929f62b80717b975a63359c1622904156dfb88b",
+          "chars": 779337,
+          "chapters": 260
+        },
+        {
+          "name": "心理防线(左耳).txt",
+          "sha256": "a91c84c8d91e4d6bff6d98db52df4308509a6f8db931d16115216d9e774dd5d3",
+          "chars": 929603,
+          "chapters": 260
+        },
+        {
+          "name": "恐怖微博(过水看娇).txt",
+          "sha256": "f81c2eeceea1a6666477bf50e4bb919d55648b274d9b31eb4ffd7395629d94e9",
+          "chars": 1040429,
+          "chapters": 260
+        },
+        {
+          "name": "恐怖网文(纯洁滴小龙).txt",
+          "sha256": "86210d6a40901d0329cc2d229da2607350cd06384666e1b42121f6649ebf5cc1",
+          "chars": 3020401,
+          "chapters": 260
+        },
+        {
+          "name": "悬案组(独孤求剩).txt",
+          "sha256": "cce144a6492c56f8053ca8a4020e834e8b0f7bd568f981bb5855185e937cf357",
+          "chars": 2184943,
+          "chapters": 260
+        },
+        {
+          "name": "悬疑片导演(妄鸦).txt",
+          "sha256": "7b41ebd6c1363560c081cddc21ef42c05d9db0915341eb43c69dca92d9b7c0d0",
+          "chars": 473049,
+          "chapters": 131
+        },
+        {
+          "name": "惊恐世界(兮木叶).txt",
+          "sha256": "a44db2e02947409abe55aad531df3c55d02fb51428d05213ee411a87fb9d3485",
+          "chars": 1253942,
+          "chapters": 260
+        },
+        {
+          "name": "我在广西养小鬼(火炎焱).txt",
+          "sha256": "e702b13e6969716d1b3260ea1586c5a4b18275511626a9fd119a113b5d82f3f4",
+          "chars": 994974,
+          "chapters": 260
+        },
+        {
+          "name": "我家的飞碟(机器人十八号).txt",
+          "sha256": "a667e1d71f5a7ade6adc5e475217b13565b5df5c829c511d1ab4fdc69d0ded6f",
+          "chars": 1803727,
+          "chapters": 260
+        },
+        {
+          "name": "我是圣光骑士(笔尖魂).txt",
+          "sha256": "c60735367321d85fc41abc816f6c0cea52b399e82d27aa72cdfb785dec1563a4",
+          "chars": 1242338,
+          "chapters": 260
+        },
+        {
+          "name": "我是棺材女(渴雨).txt",
+          "sha256": "a9979ada2a8f41405b8f8ddc7a01ac007e22443fcab1ad56d64be8d63f3c571e",
+          "chars": 1443566,
+          "chapters": 260
+        },
+        {
+          "name": "我是鬼捕(龙雅人).txt",
+          "sha256": "573a327eea3e07916678acbd1a8a01fa871f3f02e75751f6aa0f034f435e82c9",
+          "chars": 4279264,
+          "chapters": 260
+        },
+        {
+          "name": "我有个末世世界(詹步).txt",
+          "sha256": "81f11da5dacf60972a184deee258f1f26b8ff89dd0c4f0550e2b5e0fdcecad3e",
+          "chars": 1456968,
+          "chapters": 260
+        },
+        {
+          "name": "我的主神是团长(生活盖浇).txt",
+          "sha256": "245e3a186e22cfbbde7498c864b748e43929804e0a7719610380ccb9721eaaa9",
+          "chars": 1087219,
+          "chapters": 260
+        },
+        {
+          "name": "我的初恋是女鬼(古明月夜).txt",
+          "sha256": "06f73b303c771d5b948040d943d5d8cbaa1f28e1a51851f14cf69bdd51939ef4",
+          "chars": 1600947,
+          "chapters": 260
+        },
+        {
+          "name": "我的女友是丧尸(黑暗荔枝).txt",
+          "sha256": "0ed3d59921a294d49bae3dd76e425935cfa805c0ebd0b970ff83b2ff66166eba",
+          "chars": 3622593,
+          "chapters": 260
+        },
+        {
+          "name": "我的女友是冥王(最终浣熊).txt",
+          "sha256": "753a6e0f22e8ae1bdb4c8f17e5128ae6220c7ecf27d55a3b3640f15ca746b208",
+          "chars": 2166157,
+          "chapters": 260
+        },
+        {
+          "name": "我的学姐是丧尸(扫雷大师).txt",
+          "sha256": "46d63cbfdacbac6722ec0e2d21480457a1e4987cfb15cc0ff513acd87fa951fa",
+          "chars": 2015352,
+          "chapters": 260
+        },
+        {
+          "name": "我的盗墓生涯(道门老九).txt",
+          "sha256": "a8afa6510bd394ed6ffaca606fbc1559503156649b8892ec41543462ef6a4345",
+          "chars": 3924658,
+          "chapters": 260
+        },
+        {
+          "name": "我的穿越异能(伤心的小丑).txt",
+          "sha256": "04226b018c26af6c9bc0e6b1ce6da9568be52b6e5ece50bbd47e2857d605b58e",
+          "chars": 539273,
+          "chapters": 228
+        },
+        {
+          "name": "我的老婆不是人(老虾).txt",
+          "sha256": "6cf7dabfac4dfe6aae086c0d731b8d822b15637e504be4335259f7bf38254d58",
+          "chars": 755058,
+          "chapters": 260
+        },
+        {
+          "name": "我的诡异女友(孙铭苑).txt",
+          "sha256": "0c3422ca6864d4f24d714bb24f2c79b73425d0e2f45c8426512b2307c5a61bd1",
+          "chars": 679505,
+          "chapters": 250
+        },
+        {
+          "name": "我的阴灵女友(爱吃炒鸡蛋).txt",
+          "sha256": "53757d15337219d6dcdf1e3c2a91066a2aa640004925aa3a337ff9e05fdcf30f",
+          "chars": 1160714,
+          "chapters": 260
+        },
+        {
+          "name": "我的阴阳笔记(郭家).txt",
+          "sha256": "988654b88c0804a677d09c69e2ac8964dc07673053952133703b5d29c4e4eba6",
+          "chars": 1085090,
+          "chapters": 260
+        },
+        {
+          "name": "拿无限当单机(不带电).txt",
+          "sha256": "2848a3795bb5107fe1a5ed23ce57e6c0d031920526adc6e546f8a55075a29535",
+          "chars": 5081386,
+          "chapters": 260
+        },
+        {
+          "name": "捉蛊记(南无袈裟理科佛).txt",
+          "sha256": "5b8b4ad22b31cfea9121e665a73411b4193a18bdab74e161a2586920c3a4a6a5",
+          "chars": 2912118,
+          "chapters": 260
+        },
+        {
+          "name": "捉鬼记(潘海根).txt",
+          "sha256": "3c694885826bdd9d61966495b1f0d0a48d3bbb6e78c406937f892cf01c87df45",
+          "chars": 798283,
+          "chapters": 260
+        },
+        {
+          "name": "探案刑侦(小海鲜凉拌多多鱼).txt",
+          "sha256": "f2a86bff770f25d708cb5adfc22ea7cfead8844fdb25a0ad2a8ebacac0ce9c1f",
+          "chars": 118165,
+          "chapters": 44
+        },
+        {
+          "name": "接阴婆(道门老九本尊).txt",
+          "sha256": "efde1639f45262aee58d3ad9acd5687d3d409a03c4de9c25bec705912b02dc75",
+          "chars": 1443846,
+          "chapters": 260
+        },
+        {
+          "name": "数字传奇(伤贤梦魂).txt",
+          "sha256": "16778747eb77d20a7314eee5e1d3358371288a6d9673499cdc7c9ff1d439ecfc",
+          "chars": 2026331,
+          "chapters": 260
+        },
+        {
+          "name": "文化抵抗最前线(黄狗身上白).txt",
+          "sha256": "4ef517d38a1cec0c8593be1f27f4462b50a945f8bc45e454194fe4a49b3c30cd",
+          "chars": 816749,
+          "chapters": 260
+        },
+        {
+          "name": "新闪电侠漫威重生(迷途陌客).txt",
+          "sha256": "a04fc3db834fab32dd77183f0880ee0de53641984af78fafdee062a4a75d4ed3",
+          "chars": 787271,
+          "chapters": 260
+        },
+        {
+          "name": "无双剑圣(桃次郎).txt",
+          "sha256": "4e28f4de7365eea0d69722f91492feff9bdeca6ba5ebdaa668e5e4d6f7e4ec8b",
+          "chars": 4666356,
+          "chapters": 260
+        },
+        {
+          "name": "无双轮回(兴霸天).txt",
+          "sha256": "3975380d1bf6022cdbae6d5a35e8ccfff66392879630c97ce48eba7a0e376a65",
+          "chars": 3401579,
+          "chapters": 260
+        },
+        {
+          "name": "无尽天择(烟山客).txt",
+          "sha256": "76133c5e32c26c21b5eba5a113ac92e0966a5fd8ea099129746688ebee6e6ec0",
+          "chars": 2059328,
+          "chapters": 260
+        },
+        {
+          "name": "无尽武道世界(虎万行).txt",
+          "sha256": "e1862c23f58c9070cd127cfa9fc304215da0b3608446475a14efccc3f7d12e32",
+          "chars": 1186825,
+          "chapters": 260
+        },
+        {
+          "name": "无尽沉沦(黑米饭).txt",
+          "sha256": "ac09a0da522fb8faa21f47bf642a41eecd5fe16a7b10081992cfd2e858ea3d92",
+          "chars": 1142077,
+          "chapters": 260
+        },
+        {
+          "name": "无证之罪(紫金陈).txt",
+          "sha256": "1d9949222cd4dd132af72828b8d4e2adab754fca8d6a39e7ef4506e85ee305af",
+          "chars": 157776,
+          "chapters": 60
+        },
+        {
+          "name": "无限之分裂(醉宅).txt",
+          "sha256": "690351e1c93a569d51ac86d68f4b5b6f0beee1d2f8466e2c314f096b8214c2e6",
+          "chars": 646872,
+          "chapters": 236
+        },
+        {
+          "name": "无限之升级系统(东东是个胆小鬼).txt",
+          "sha256": "cf8a99210b865264f02b482cf4bb29af5e1bdfbe8d1ef6a9a28c83ce916debdf",
+          "chars": 4171141,
+          "chapters": 260
+        },
+        {
+          "name": "无限之另类进化(烈日吹冰).txt",
+          "sha256": "9375b6e167d403fe92900f7ebc651f4f1d62e8131e6d2d3f4b3e4d9276f8d24e",
+          "chars": 1721533,
+          "chapters": 260
+        },
+        {
+          "name": "无限之地球人的逆袭(干煸鱿鱼须).txt",
+          "sha256": "c8bce021d971f6c664ee6072a41576f0d126bf3dd55c4ac81b00b5d52af38489",
+          "chars": 4327024,
+          "chapters": 260
+        },
+        {
+          "name": "无限之给天道打工(黯夜魔导师).txt",
+          "sha256": "60a268ac6189964923037d4d83e9d1c3bba7406c4b030f9a6d211e0982064a30",
+          "chars": 3532940,
+          "chapters": 260
+        },
+        {
+          "name": "无限之虫族降临(不吐泡泡鱼).txt",
+          "sha256": "a026334fe985fe5d06b071c9c62299ff6f4423a0f7c6bbd89ec0cab1c1f3a0a0",
+          "chars": 2774997,
+          "chapters": 260
+        },
+        {
+          "name": "无限之角色扮演(悲伤的但丁).txt",
+          "sha256": "b5aff89780d546736870ded596832d1610d4c147fc2d58e259afb6fa037ca39c",
+          "chars": 796857,
+          "chapters": 260
+        },
+        {
+          "name": "无限从漫威开始(乌鸦的马甲).txt",
+          "sha256": "ebf01c30cb39cf1f167c457e8725f8035a8e59694ebf0a907043205c17441c6e",
+          "chars": 775006,
+          "chapters": 222
+        },
+        {
+          "name": "无限从童话开始(东神天少).txt",
+          "sha256": "4d66b7c21bae5d6b8940c8e111d40b5ac533a831aec981519d0c48a25ddd6ed9",
+          "chars": 296173,
+          "chapters": 112
+        },
+        {
+          "name": "无限典狱长(伊腾甜橙).txt",
+          "sha256": "77ea6f88bb609f31386113cfac58a624bd55ae20022ea869684de7339cb75985",
+          "chars": 1418624,
+          "chapters": 260
+        },
+        {
+          "name": "无限动漫之天才系统(醉酒喵).txt",
+          "sha256": "f8c2829a328782f13e9585fd7ffe71760d9e9b986816120e496e3be1e2a3058f",
+          "chars": 1017752,
+          "chapters": 260
+        },
+        {
+          "name": "无限斩杀(娇蛮斩杀).txt",
+          "sha256": "11958aab8847f9c9b54dc2a956821c786f51db6af2af0fc19a1247a46d2f6a50",
+          "chars": 1204772,
+          "chapters": 260
+        },
+        {
+          "name": "无限星戒(天命修罗).txt",
+          "sha256": "44c6a7220584be4b9fb5d504d84b609486a9d4ff7dcd601f74fc4008bdf3cb41",
+          "chars": 675845,
+          "chapters": 260
+        },
+        {
+          "name": "无限杯花样作死大赛(虚幻漫步).txt",
+          "sha256": "1f01ee6b53dc8e8212ff1db8b81c6d49c27f990fcfeb74029386e4bf655503b9",
+          "chars": 1700309,
+          "chapters": 260
+        },
+        {
+          "name": "无限欲望之门(剑扼虚空).txt",
+          "sha256": "8ee035b4661f8c5e0c969f712f229edbaefab3909ce341b5d52c464939f32dc6",
+          "chars": 1975046,
+          "chapters": 260
+        },
+        {
+          "name": "无限规划局(剑若生).txt",
+          "sha256": "b3c982d7daebb93d77b124a4630ee2c416287df1cf4c87167aa948485dcc8832",
+          "chars": 1283676,
+          "chapters": 260
+        },
+        {
+          "name": "无限重生录(夜里封侯).txt",
+          "sha256": "90a44c6320da37e880a9a5d94e786b1865db1ad96e82afa87b31e33da5a630d4",
+          "chars": 760860,
+          "chapters": 260
+        },
+        {
+          "name": "时空武者道(天藏风).txt",
+          "sha256": "25619f3d37920baeaa04bc9616e0f776977b6c905822a56ff9e14f4430def973",
+          "chars": 1507386,
+          "chapters": 260
+        },
+        {
+          "name": "时空行走者(夜雨天启).txt",
+          "sha256": "af6433f822e0a623e11f7b085c10c27b24bb24a016b093da64199b21aa94ccea",
+          "chars": 968425,
+          "chapters": 260
+        },
+        {
+          "name": "星域之物语(妖怪闲者).txt",
+          "sha256": "f16e573f8c2240e715a448be66c255ee986e53c5eeb95f32581d9ed481769779",
+          "chars": 4602071,
+          "chapters": 260
+        },
+        {
+          "name": "星战风暴(骷髅精灵).txt",
+          "sha256": "1bd8ada5dbbc73e54db2dedd54bd8414dd6992ed04ec0650938f65c279b260f0",
+          "chars": 3859344,
+          "chapters": 260
+        },
+        {
+          "name": "星河大时代(石径荒芜).txt",
+          "sha256": "9b8cf58fe9af6e2ade91ca7df21c5fc7e5a55ef12e4365b67207906643a481d4",
+          "chars": 4636326,
+          "chapters": 260
+        },
+        {
+          "name": "星河巫妖(情终流水).txt",
+          "sha256": "7d4f219462ea13f701d5fbf0deac8694843fabb050863d2ae8d6cacf64f575b2",
+          "chars": 1340275,
+          "chapters": 260
+        },
+        {
+          "name": "星河至圣(作死的螃蟹).txt",
+          "sha256": "f931ee983d1b40fa7414a18fa3b56027a410ebc9237c46437bf226da24430331",
+          "chars": 2500760,
+          "chapters": 260
+        },
+        {
+          "name": "星河霸血(王袍).txt",
+          "sha256": "d5a57b5f2a3de19f8cfbc9bb8df1c746d6d80610e2d9ec79a2dbc558092f379b",
+          "chars": 2550340,
+          "chapters": 260
+        },
+        {
+          "name": "星球逃亡(爱打斗地主).txt",
+          "sha256": "ef897525b3dab452852f1b589e9e78228c9967a7113aee12a580b4db60589f4b",
+          "chars": 2052867,
+          "chapters": 260
+        },
+        {
+          "name": "星空霸神(铭言).txt",
+          "sha256": "b308a207402baacda674a2ec8f4f1807e1ee9b4568363d0614efdbc959a6b24e",
+          "chars": 1467960,
+          "chapters": 260
+        },
+        {
+          "name": "星际之最强霸主(金沙流水).txt",
+          "sha256": "2d0d6f76f008cd68a012c8e49e70de9bafe3ac3d5b99ba8d5b0190a9e616c7e7",
+          "chars": 359728,
+          "chapters": 147
+        },
+        {
+          "name": "星际之死神传奇(金沙流水).txt",
+          "sha256": "4370977073124b94c9d69bb8cfff9229755f3f912d7a1104bcec258dfdd052b0",
+          "chars": 4535164,
+          "chapters": 260
+        },
+        {
+          "name": "星际大地主(范无救).txt",
+          "sha256": "f3621890a137a9482f2e44ea9801a335be005d798c55a0ed8ca22920d4079c5a",
+          "chars": 898027,
+          "chapters": 260
+        },
+        {
+          "name": "星际神权(键盘华尔兹).txt",
+          "sha256": "dd4764c2bb05eadab194625ab245ae3e1817d451da71a0c6e27ba757f4c0044f",
+          "chars": 524391,
+          "chapters": 251
+        },
+        {
+          "name": "最后一个阴阳先生(巫九).txt",
+          "sha256": "2334e5bf54b7e56e7963d5ea9dc3466c1b9e7c10676068ba077be79b48ac9c6f",
+          "chars": 1665136,
+          "chapters": 260
+        },
+        {
+          "name": "最强控电(七重墨).txt",
+          "sha256": "77ea6819f7762075568fb43af22a9b5ac8228223ef0d5c5120243c5070e13154",
+          "chars": 2060698,
+          "chapters": 260
+        }
+      ]
+    }
+  ]
+}

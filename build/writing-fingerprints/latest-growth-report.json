@@ -1,0 +1,358 @@
+{
+  "generatedAt": "2026-05-22T02:02:58.044Z",
+  "genreTargetSampleCount": 1000,
+  "subgenreTargetSampleCount": 30,
+  "genres": [
+    {
+      "genre": "网游",
+      "targetSampleCount": 1000,
+      "currentSampleCount": 304,
+      "remainingToGenreTarget": 696,
+      "fingerprint": {
+        "sampleCount": 120,
+        "chapterCount": 28777,
+        "signalLabel": "网游信号",
+        "signalPer10k": 62.1,
+        "progressionPer10k": 10,
+        "uniqueHashCount": 202,
+        "duplicateFileCount": 102
+      },
+      "subgenres": [
+        {
+          "name": "传统升级流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 8,
+          "remainingToTarget": 22,
+          "matchedSamples": [
+            "网游之修罗传说(火星引力).txt",
+            "网游之天下无双(失落叶).txt",
+            "网游之天谴修罗(火星引力).txt",
+            "网游之射破苍穹(龙大人来了).txt",
+            "网游之战御天下(孤单地飞).txt",
+            "网游之盗版神话(失落叶).txt",
+            "网游之纵横天下(失落叶).txt",
+            "网游之练级专家(发飙的蜗牛).txt"
+          ]
+        },
+        {
+          "name": "重生网游流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 3,
+          "remainingToTarget": 27,
+          "matchedSamples": [
+            "网游之倒行逆施(张扬的五月).txt",
+            "网游之神级土豪(极目天狗).txt",
+            "重生之贼行天下(发飙的蜗牛).txt"
+          ]
+        },
+        {
+          "name": "竞技电竞流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 2,
+          "remainingToTarget": 28,
+          "matchedSamples": [
+            "全职高手(蝴蝶蓝).txt",
+            "英雄联盟之谁与争锋(乱).txt"
+          ]
+        },
+        {
+          "name": "国战公会流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 3,
+          "remainingToTarget": 27,
+          "matchedSamples": [
+            "网游之三国王者(想枕头的瞌睡).txt",
+            "网游之全球在线(笙箫剑客).txt",
+            "网游之天下第一(火神).txt"
+          ]
+        },
+        {
+          "name": "现实融合流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 5,
+          "remainingToTarget": 25,
+          "matchedSamples": [
+            "惊悚乐园(三天两觉).txt",
+            "深渊主宰(诸生浮屠).txt",
+            "网游之我是武学家(铁牛仙).txt",
+            "网游之近战法师(尐說話╮).txt",
+            "网游之近战法师(蝴蝶蓝).txt"
+          ]
+        }
+      ]
+    },
+    {
+      "genre": "都市",
+      "targetSampleCount": 1000,
+      "currentSampleCount": 586,
+      "remainingToGenreTarget": 414,
+      "fingerprint": {
+        "sampleCount": 120,
+        "chapterCount": 30779,
+        "signalLabel": "都市信号",
+        "signalPer10k": 12.4,
+        "progressionPer10k": 2,
+        "uniqueHashCount": 586,
+        "duplicateFileCount": 0
+      },
+      "subgenres": [
+        {
+          "name": "神豪败家流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 2,
+          "remainingToTarget": 28,
+          "matchedSamples": [
+            "神级幸运星(辰机唐红豆).txt",
+            "重生之神级败家子(辰机唐红豆).txt"
+          ]
+        },
+        {
+          "name": "官场权谋流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 2,
+          "remainingToTarget": 28,
+          "matchedSamples": [
+            "医道官途(石章鱼).txt",
+            "官神(何常在).txt"
+          ]
+        },
+        {
+          "name": "都市修仙流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 1,
+          "remainingToTarget": 29,
+          "matchedSamples": [
+            "重生之都市修仙(十里剑神).txt"
+          ]
+        },
+        {
+          "name": "都市兵王流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 2,
+          "remainingToTarget": 28,
+          "matchedSamples": [
+            "特种兵在都市(夜十三).txt",
+            "超级兵王在校园(洪七).txt"
+          ]
+        },
+        {
+          "name": "鉴宝相术流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 1,
+          "remainingToTarget": 29,
+          "matchedSamples": [
+            "黄金瞳(打眼).txt"
+          ]
+        },
+        {
+          "name": "校园暧昧流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 1,
+          "remainingToTarget": 29,
+          "matchedSamples": [
+            "很纯很暧昧(鱼人二代).txt"
+          ]
+        }
+      ]
+    },
+    {
+      "genre": "玄幻",
+      "targetSampleCount": 1000,
+      "currentSampleCount": 764,
+      "remainingToGenreTarget": 236,
+      "fingerprint": {
+        "sampleCount": 120,
+        "chapterCount": 30197,
+        "signalLabel": "玄幻信号",
+        "signalPer10k": 24.6,
+        "progressionPer10k": 7.3,
+        "uniqueHashCount": 684,
+        "duplicateFileCount": 80
+      },
+      "subgenres": [
+        {
+          "name": "废柴逆袭流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 3,
+          "remainingToTarget": 27,
+          "matchedSamples": [
+            "斗破苍穹(天蚕土豆).txt",
+            "斗破苍穹（精制精排）.txt",
+            "武动乾坤(天蚕土豆).txt"
+          ]
+        },
+        {
+          "name": "宗门成长流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 2,
+          "remainingToTarget": 28,
+          "matchedSamples": [
+            "大主宰(天蚕土豆).txt",
+            "完美世界(辰东).txt"
+          ]
+        },
+        {
+          "name": "天命热血流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 7,
+          "remainingToTarget": 23,
+          "matchedSamples": [
+            "[多看]《遮天》辰东 著 V1.2.txt",
+            "傲世九重天(风凌天下).txt",
+            "圣墟(辰东).txt",
+            "异世邪君(风凌天下).txt",
+            "遮天(辰东).txt",
+            "遮天.txt",
+            "霸气遮天(梦月升).txt"
+          ]
+        },
+        {
+          "name": "文青权谋流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 5,
+          "remainingToTarget": 25,
+          "matchedSamples": [
+            "《雪中悍刀行》插图版（含番外）.txt",
+            "剑来(烽火戏诸侯).txt",
+            "将夜(猫腻).txt",
+            "间客(猫腻).txt",
+            "雪中悍刀行(烽火戏诸侯).txt"
+          ]
+        }
+      ]
+    },
+    {
+      "genre": "悬疑",
+      "targetSampleCount": 1000,
+      "currentSampleCount": 474,
+      "remainingToGenreTarget": 526,
+      "fingerprint": {
+        "sampleCount": 120,
+        "chapterCount": 29005,
+        "signalLabel": "悬疑信号",
+        "signalPer10k": 4.5,
+        "progressionPer10k": 5.7,
+        "uniqueHashCount": 474,
+        "duplicateFileCount": 0
+      },
+      "subgenres": [
+        {
+          "name": "社会派推理",
+          "targetSampleCount": 30,
+          "currentSampleCount": 2,
+          "remainingToTarget": 28,
+          "matchedSamples": [
+            "无证之罪(紫金陈).txt",
+            "长夜难明(紫金陈).txt"
+          ]
+        },
+        {
+          "name": "刑侦法医流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 10,
+          "remainingToTarget": 20,
+          "matchedSamples": [
+            "十宗罪4(蜘蛛).txt",
+            "尸语者（法医秦明系列1）(法医秦明).txt",
+            "无声的证词（法医秦明系列2）(法医秦明).txt",
+            "死亡通知单(周浩晖).txt",
+            "法医秦明·白卷(法医秦明).txt",
+            "法医秦明系列第二卷：众生卷1天谴者(法医秦明).txt",
+            "法医秦明：天谴者(法医秦明).txt",
+            "法医秦明：尸语者（第一季）(法医秦明).txt",
+            "法医秦明：遗忘者(法医秦明).txt",
+            "第十一根手指（法医秦明系列3）(法医秦明).txt"
+          ]
+        },
+        {
+          "name": "心理画像流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 2,
+          "remainingToTarget": 28,
+          "matchedSamples": [
+            "他来了，请闭眼(丁墨).txt",
+            "心理罪(不是何阳).txt"
+          ]
+        },
+        {
+          "name": "群像谜案流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 3,
+          "remainingToTarget": 27,
+          "matchedSamples": [
+            "清明上河图密码(冶文彪).txt",
+            "清明上河图密码（1、2）(冶文彪).txt",
+            "默读(priest).txt"
+          ]
+        }
+      ]
+    },
+    {
+      "genre": "古言",
+      "targetSampleCount": 1000,
+      "currentSampleCount": 121,
+      "remainingToGenreTarget": 879,
+      "fingerprint": {
+        "sampleCount": 57,
+        "chapterCount": 11825,
+        "signalLabel": "古言信号",
+        "signalPer10k": 26.8,
+        "progressionPer10k": 2.6,
+        "uniqueHashCount": 109,
+        "duplicateFileCount": 12
+      },
+      "subgenres": [
+        {
+          "name": "宅斗掌家流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 3,
+          "remainingToTarget": 27,
+          "matchedSamples": [
+            "庶女攻略(吱吱).txt",
+            "知否？知否？应是绿肥红瘦(关心则乱).txt",
+            "表妹万福(蓬莱客).txt"
+          ]
+        },
+        {
+          "name": "重生复仇流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 2,
+          "remainingToTarget": 28,
+          "matchedSamples": [
+            "嫡嫁千金(千山茶客).txt",
+            "重生之将门毒后(千山茶客).txt"
+          ]
+        },
+        {
+          "name": "权谋宫廷流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 2,
+          "remainingToTarget": 28,
+          "matchedSamples": [
+            "且试天下(倾泠月).txt",
+            "京门风月(西子情).txt"
+          ]
+        },
+        {
+          "name": "古言悬疑流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 1,
+          "remainingToTarget": 29,
+          "matchedSamples": [
+            "簪中录(侧侧轻寒).txt"
+          ]
+        },
+        {
+          "name": "成长治家流",
+          "targetSampleCount": 30,
+          "currentSampleCount": 2,
+          "remainingToTarget": 28,
+          "matchedSamples": [
+            "惜花芷(空留).txt",
+            "春日宴(白鹭成双).txt"
+          ]
+        }
+      ]
+    }
+  ]
+}

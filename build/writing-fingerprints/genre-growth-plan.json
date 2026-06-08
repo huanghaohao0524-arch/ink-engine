@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "genreTargetSampleCount": 1000,
+  "subgenreTargetSampleCount": 30,
+  "genres": [
+    {
+      "genre": "网游",
+      "bookFile": "build/writing-fingerprints/booklists/web-game.txt",
+      "discoveryKeywords": ["网游", "失落叶", "蝴蝶蓝", "发飙的蜗牛", "火星引力", "铁牛仙", "笙箫剑客", "乱", "孤单地飞", "张扬的五月", "网游之", "游戏", "电竞", "联盟", "虚拟网游", "国战", "公会", "副本", "职业玩家", "重生网游", "网游重生", "全息网游", "MMORPG", "三国网游"],
+      "subgenres": [
+        {
+          "name": "传统升级流",
+          "sampleTitlePatterns": ["网游之天下无双", "网游之纵横天下", "网游之盗版神话", "网游之战御天下", "网游之射破苍穹", "网游之练级专家", "网游之修罗传说", "网游之天谴修罗"]
+        },
+        {
+          "name": "重生网游流",
+          "sampleTitlePatterns": ["重生之贼行天下", "网游之神级土豪", "网游之倒行逆施"]
+        },
+        {
+          "name": "竞技电竞流",
+          "sampleTitlePatterns": ["全职高手", "英雄联盟之谁与争锋"]
+        },
+        {
+          "name": "国战公会流",
+          "sampleTitlePatterns": ["网游之全球在线", "网游之三国王者", "网游之天下第一"]
+        },
+        {
+          "name": "现实融合流",
+          "sampleTitlePatterns": ["惊悚乐园", "深渊主宰", "网游之我是武学家", "网游之近战法师"]
+        }
+      ]
+    },
+    {
+      "genre": "都市",
+      "bookFile": "build/writing-fingerprints/booklists/city.txt",
+      "discoveryKeywords": ["都市", "打眼", "鱼人二代", "十里剑神", "石章鱼", "何常在", "夜十三", "辰机唐红豆", "官场", "神豪", "都市重生", "都市修仙", "都市兵王", "鉴宝", "校花", "神医", "首席", "赘婿", "相师", "商战", "娱乐圈", "官途", "败家", "暧昧"],
+      "subgenres": [
+        {
+          "name": "神豪败家流",
+          "sampleTitlePatterns": ["神级幸运星", "重生之神级败家子"]
+        },
+        {
+          "name": "官场权谋流",
+          "sampleTitlePatterns": ["官神", "医道官途"]
+        },
+        {
+          "name": "都市修仙流",
+          "sampleTitlePatterns": ["重生之都市修仙"]
+        },
+        {
+          "name": "都市兵王流",
+          "sampleTitlePatterns": ["特种兵在都市", "超级兵王"]
+        },
+        {
+          "name": "鉴宝相术流",
+          "sampleTitlePatterns": ["黄金瞳", "天才相师"]
+        },
+        {
+          "name": "校园暧昧流",
+          "sampleTitlePatterns": ["很纯很暧昧", "校花的贴身高手"]
+        }
+      ]
+    },
+    {
+      "genre": "玄幻",
+      "bookFile": "build/writing-fingerprints/booklists/fantasy.txt",
+      "discoveryKeywords": ["玄幻", "天蚕土豆", "辰东", "风凌天下", "猫腻", "烽火戏诸侯", "我吃西红柿", "耳根", "忘语", "东方玄幻", "奇幻", "修真", "修仙", "仙侠", "异界", "宗门", "天命", "废柴", "逆袭", "圣墟", "遮天", "剑来", "凡人修仙传", "一念永恒"],
+      "subgenres": [
+        {
+          "name": "废柴逆袭流",
+          "sampleTitlePatterns": ["斗破苍穹", "武动乾坤"]
+        },
+        {
+          "name": "宗门成长流",
+          "sampleTitlePatterns": ["大主宰", "完美世界"]
+        },
+        {
+          "name": "天命热血流",
+          "sampleTitlePatterns": ["遮天", "圣墟", "傲世九重天", "异世邪君"]
+        },
+        {
+          "name": "文青权谋流",
+          "sampleTitlePatterns": ["将夜", "剑来", "雪中悍刀行", "间客"]
+        }
+      ]
+    },
+    {
+      "genre": "悬疑",
+      "bookFile": "build/writing-fingerprints/booklists/suspense.txt",
+      "discoveryKeywords": ["悬疑", "推理", "刑侦", "紫金陈", "秦明", "雷米", "周浩晖", "冶文彪", "丁墨", "priest", "法医", "罪", "谜案", "画像", "凶案", "破案", "侦探", "心理罪", "死亡通知单", "长夜难明", "无证之罪", "清明上河图密码"],
+      "subgenres": [
+        {
+          "name": "社会派推理",
+          "sampleTitlePatterns": ["无证之罪", "长夜难明", "坏小孩"]
+        },
+        {
+          "name": "刑侦法医流",
+          "sampleTitlePatterns": ["十宗罪", "死亡通知单", "法医秦明"]
+        },
+        {
+          "name": "心理画像流",
+          "sampleTitlePatterns": ["他来了，请闭眼", "心理罪"]
+        },
+        {
+          "name": "群像谜案流",
+          "sampleTitlePatterns": ["清明上河图密码", "默读"]
+        }
+      ]
+    },
+    {
+      "genre": "古言",
+      "bookFile": "build/writing-fingerprints/booklists/ancient-romance.txt",
+      "discoveryKeywords": ["古言", "宅斗", "重生", "吱吱", "千山茶客", "蓬莱客", "白鹭成双", "空留", "西子情", "侧侧轻寒", "侯门", "嫡女", "将门", "王妃", "宫斗", "权谋", "盛宠", "掌家", "贵女", "庶女", "簪中录", "知否", "惜花芷", "春日宴"],
+      "subgenres": [
+        {
+          "name": "宅斗掌家流",
+          "sampleTitlePatterns": ["知否？知否？应是绿肥红瘦", "庶女攻略", "表妹万福"]
+        },
+        {
+          "name": "重生复仇流",
+          "sampleTitlePatterns": ["嫡嫁千金", "重生之将门毒后"]
+        },
+        {
+          "name": "权谋宫廷流",
+          "sampleTitlePatterns": ["京门风月", "且试天下"]
+        },
+        {
+          "name": "古言悬疑流",
+          "sampleTitlePatterns": ["簪中录"]
+        },
+        {
+          "name": "成长治家流",
+          "sampleTitlePatterns": ["惜花芷", "春日宴"]
+        }
+      ]
+    }
+  ]
+}

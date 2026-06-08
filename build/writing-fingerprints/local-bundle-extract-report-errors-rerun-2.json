@@ -1,0 +1,224 @@
+{
+  "generatedAt": "2026-05-21T15:51:16.219Z",
+  "manifestPath": "build\\writing-fingerprints\\local-bundle-import-manifest-errors.json",
+  "library": "D:\\ai\\写作\\写作样本库",
+  "total": 36,
+  "processed": [
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\书剑恩仇录.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\侠客行.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\倚天屠龙记.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\天龙八部.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\射雕英雄传.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\无忧公主.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\白马啸西风.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\碧血剑.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\神雕侠侣.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\笑傲江湖.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\越女剑.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\连城诀.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\雪山飞狐.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\飞狐外传.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\鸳鸯刀.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\武侠仙侠\\古典仙侠\\鹿鼎记.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\《诡秘之主》插图版（含番外）.epub",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "\"There is no item named 'OEBPS/Styles/main.css' in the archive\""
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\《诡秘之主》插图视频版（含番外）.epub",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "\"There is no item named 'OEBPS/Styles/main.css' in the archive\""
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\仙炼之路.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\佛本是道.epub",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "'NoneType' object has no attribute 'nsmap'"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\古国奇缘(1)：穿越千年诅咒的异世界情缘.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\大唐双龙传.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\完美世界.epub",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "\"There is no item named 'OEBPS/Images/cover0001.jpg' in the archive\""
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\完美世界.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\梦回大清.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\武侠，从牛A到牛C.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\穿越之天雷一部.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\穿越之太乙仙隐.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\穿越佤邦.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\穿越泰姬陵.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\穿越玛雅.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\穿越真情的疗伤处方：问问李子勋.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\绿红妆之军营穿越（上）.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\绿红妆之军营穿越（下）.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\萨特，穿越1960.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    },
+    {
+      "sourcePath": "F:\\BaiduNetdiskDownload\\起点爆款小说汇总+小说超级合集 11.8G\\玄幻奇幻\\东方玄幻\\谁说穿越好.mobi",
+      "genre": "玄幻",
+      "status": "error",
+      "error": "extracted text too short"
+    }
+  ]
+}

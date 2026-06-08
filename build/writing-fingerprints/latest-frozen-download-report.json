@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-05-21T15:14:34.470Z",
+  "manifestPath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\frozen-booklists-manifest.json",
+  "perGenreLimit": 10,
+  "searchTimeoutMs": 22000,
+  "fetchTimeoutMs": 55000,
+  "runs": [
+    {
+      "genre": "网游",
+      "filePath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\booklists\\frozen\\网游-frozen.txt",
+      "frozenCount": 40,
+      "summary": {
+        "genre": "网游",
+        "total": 10,
+        "collected": 1,
+        "skippedExisting": 7,
+        "notFound": 1,
+        "downloadMissing": 0,
+        "errors": 1
+      }
+    },
+    {
+      "genre": "悬疑",
+      "filePath": "D:\\ai\\写作\\写作软件\\build\\writing-fingerprints\\booklists\\frozen\\悬疑-frozen.txt",
+      "frozenCount": 40,
+      "summary": {
+        "genre": "悬疑",
+        "total": 10,
+        "collected": 1,
+        "skippedExisting": 3,
+        "notFound": 4,
+        "downloadMissing": 2,
+        "errors": 0
+      }
+    }
+  ]
+}

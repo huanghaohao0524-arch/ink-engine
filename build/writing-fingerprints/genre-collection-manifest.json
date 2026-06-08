@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "genres": [
+    {
+      "genre": "网游",
+      "bookFile": "build/writing-fingerprints/booklists/web-game.txt",
+      "enabled": true,
+      "searchTimeoutMs": 90000,
+      "fetchTimeoutMs": 240000
+    },
+    {
+      "genre": "都市",
+      "bookFile": "build/writing-fingerprints/booklists/city.txt",
+      "enabled": true,
+      "searchTimeoutMs": 45000,
+      "fetchTimeoutMs": 150000
+    },
+    {
+      "genre": "玄幻",
+      "bookFile": "build/writing-fingerprints/booklists/fantasy.txt",
+      "enabled": true,
+      "searchTimeoutMs": 90000,
+      "fetchTimeoutMs": 240000
+    },
+    {
+      "genre": "悬疑",
+      "bookFile": "build/writing-fingerprints/booklists/suspense.txt",
+      "enabled": true,
+      "searchTimeoutMs": 45000,
+      "fetchTimeoutMs": 150000
+    },
+    {
+      "genre": "古言",
+      "bookFile": "build/writing-fingerprints/booklists/ancient-romance.txt",
+      "enabled": true,
+      "searchTimeoutMs": 45000,
+      "fetchTimeoutMs": 150000
+    }
+  ]
+}
