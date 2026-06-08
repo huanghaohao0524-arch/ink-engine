@@ -223,10 +223,14 @@ const text = {
   generatingSelfCheck: '姝ｅ湪鑷鍒濈',
   checkAndSync: '\u68c0\u67e5\u5e76\u540c\u6b65',
   aiSettings: '\u0041\u0049 \u8bbe\u7f6e',
-  apiKey: 'OpenAI API Key',
+  apiKey: 'API Key',
   baseUrl: 'Base URL',
   proxyUrl: '\u4ee3\u7406\u5730\u5740',
   model: '\u6a21\u578b',
+  providerPreset: '\u5feb\u901f\u586b\u5165',
+  deepSeekPreset: 'DeepSeek',
+  openAiPreset: 'OpenAI',
+  aiSettingsHint: '\u5148\u586b API Key\uff0c\u518d\u4fdd\u5b58\u6216\u6d4b\u8bd5\u8fde\u63a5\u3002DeepSeek \u8bf7\u7528 https://api.deepseek.com/v1 \u548c deepseek-chat\u3002',
   configured: '\u5df2\u914d\u7f6e',
   notConfigured: '\u672a\u914d\u7f6e',
   saveSettings: '\u4fdd\u5b58\u8bbe\u7f6e',
@@ -1069,6 +1073,28 @@ function App() {
   const candidatePanelRef = useRef<HTMLElement | null>(null)
 
   const api = window.writingWorkbench
+
+  const isAiSettingsSubmitDisabled = isAiBusy || (!aiSettings.configured && !aiForm.apiKey.trim())
+
+  function updateAiForm(patch: Partial<SaveAiSettingsInput>) {
+    setAiForm((current) => ({ ...current, ...patch }))
+    setAiMessage(null)
+  }
+
+  function applyAiProviderPreset(provider: 'deepseek' | 'openai') {
+    if (provider === 'deepseek') {
+      updateAiForm({
+        baseUrl: 'https://api.deepseek.com/v1',
+        model: 'deepseek-chat',
+      })
+      return
+    }
+
+    updateAiForm({
+      baseUrl: 'https://api.openai.com/v1',
+      model: 'gpt-4.1',
+    })
+  }
 
   useEffect(() => {
     let isMounted = true
@@ -3136,31 +3162,41 @@ function App() {
                 {text.close}
               </button>
             </div>
+            <div className="ai-provider-presets">
+              <span>{text.providerPreset}</span>
+              <button className="secondary-button" type="button" onClick={() => applyAiProviderPreset('deepseek')}>
+                {text.deepSeekPreset}
+              </button>
+              <button className="secondary-button" type="button" onClick={() => applyAiProviderPreset('openai')}>
+                {text.openAiPreset}
+              </button>
+              <small>{text.aiSettingsHint}</small>
+            </div>
             <div className="form-grid">
               <label>
                 <span>{text.apiKey}</span>
-                <input type="password" value={aiForm.apiKey} placeholder={text.apiKeyPlaceholder} onChange={(event) => setAiForm({ ...aiForm, apiKey: event.target.value })} />
+                <input autoComplete="off" type="password" value={aiForm.apiKey} placeholder={text.apiKeyPlaceholder} onChange={(event) => updateAiForm({ apiKey: event.target.value })} />
               </label>
               <label>
                 <span>{text.baseUrl}</span>
-                <input value={aiForm.baseUrl} placeholder={text.baseUrlPlaceholder} onChange={(event) => setAiForm({ ...aiForm, baseUrl: event.target.value })} />
+                <input value={aiForm.baseUrl} placeholder={text.baseUrlPlaceholder} onChange={(event) => updateAiForm({ baseUrl: event.target.value })} />
               </label>
               <label>
                 <span>{text.proxyUrl}</span>
-                <input value={aiForm.proxyUrl} placeholder={text.proxyUrlPlaceholder} onChange={(event) => setAiForm({ ...aiForm, proxyUrl: event.target.value })} />
+                <input value={aiForm.proxyUrl} placeholder={text.proxyUrlPlaceholder} onChange={(event) => updateAiForm({ proxyUrl: event.target.value })} />
               </label>
               <label>
                 <span>{text.model}</span>
-                <input value={aiForm.model} onChange={(event) => setAiForm({ ...aiForm, model: event.target.value })} />
+                <input value={aiForm.model} onChange={(event) => updateAiForm({ model: event.target.value })} />
               </label>
             </div>
             <div className="panel-actions split-actions">
               <span>{aiMessage}</span>
               <div>
-                <button className="secondary-button" type="button" onClick={testAiConnection} disabled={isAiBusy || (!aiSettings.configured && !aiForm.apiKey.trim())}>
+                <button className="secondary-button" type="button" onClick={testAiConnection} disabled={isAiSettingsSubmitDisabled}>
                   {text.testConnection}
                 </button>
-                <button className="primary-button" type="button" onClick={saveAiSettings} disabled={isAiBusy || (!aiSettings.configured && !aiForm.apiKey.trim())}>
+                <button className="primary-button" type="button" onClick={saveAiSettings} disabled={isAiSettingsSubmitDisabled}>
                   {text.saveSettings}
                 </button>
               </div>
@@ -4044,31 +4080,41 @@ function App() {
                 {text.close}
               </button>
             </div>
+            <div className="ai-provider-presets">
+              <span>{text.providerPreset}</span>
+              <button className="secondary-button" type="button" onClick={() => applyAiProviderPreset('deepseek')}>
+                {text.deepSeekPreset}
+              </button>
+              <button className="secondary-button" type="button" onClick={() => applyAiProviderPreset('openai')}>
+                {text.openAiPreset}
+              </button>
+              <small>{text.aiSettingsHint}</small>
+            </div>
             <div className="form-grid">
               <label>
                 <span>{text.apiKey}</span>
-                <input type="password" value={aiForm.apiKey} placeholder={text.apiKeyPlaceholder} onChange={(event) => setAiForm({ ...aiForm, apiKey: event.target.value })} />
+                <input autoComplete="off" type="password" value={aiForm.apiKey} placeholder={text.apiKeyPlaceholder} onChange={(event) => updateAiForm({ apiKey: event.target.value })} />
               </label>
               <label>
                 <span>{text.baseUrl}</span>
-                <input value={aiForm.baseUrl} placeholder={text.baseUrlPlaceholder} onChange={(event) => setAiForm({ ...aiForm, baseUrl: event.target.value })} />
+                <input value={aiForm.baseUrl} placeholder={text.baseUrlPlaceholder} onChange={(event) => updateAiForm({ baseUrl: event.target.value })} />
               </label>
               <label>
                 <span>{text.proxyUrl}</span>
-                <input value={aiForm.proxyUrl} placeholder={text.proxyUrlPlaceholder} onChange={(event) => setAiForm({ ...aiForm, proxyUrl: event.target.value })} />
+                <input value={aiForm.proxyUrl} placeholder={text.proxyUrlPlaceholder} onChange={(event) => updateAiForm({ proxyUrl: event.target.value })} />
               </label>
               <label>
                 <span>{text.model}</span>
-                <input value={aiForm.model} onChange={(event) => setAiForm({ ...aiForm, model: event.target.value })} />
+                <input value={aiForm.model} onChange={(event) => updateAiForm({ model: event.target.value })} />
               </label>
             </div>
             <div className="panel-actions split-actions">
               <span>{aiMessage}</span>
               <div>
-                <button className="secondary-button" type="button" onClick={testAiConnection} disabled={isAiBusy || (!aiSettings.configured && !aiForm.apiKey.trim())}>
+                <button className="secondary-button" type="button" onClick={testAiConnection} disabled={isAiSettingsSubmitDisabled}>
                   {text.testConnection}
                 </button>
-                <button className="primary-button" type="button" onClick={saveAiSettings} disabled={isAiBusy || (!aiSettings.configured && !aiForm.apiKey.trim())}>
+                <button className="primary-button" type="button" onClick={saveAiSettings} disabled={isAiSettingsSubmitDisabled}>
                   {text.saveSettings}
                 </button>
               </div>
@@ -4249,31 +4295,41 @@ function App() {
               {text.close}
             </button>
           </div>
+          <div className="ai-provider-presets">
+            <span>{text.providerPreset}</span>
+            <button className="secondary-button" type="button" onClick={() => applyAiProviderPreset('deepseek')}>
+              {text.deepSeekPreset}
+            </button>
+            <button className="secondary-button" type="button" onClick={() => applyAiProviderPreset('openai')}>
+              {text.openAiPreset}
+            </button>
+            <small>{text.aiSettingsHint}</small>
+          </div>
           <div className="form-grid">
             <label>
               <span>{text.apiKey}</span>
-              <input type="password" value={aiForm.apiKey} placeholder={text.apiKeyPlaceholder} onChange={(event) => setAiForm({ ...aiForm, apiKey: event.target.value })} />
+              <input autoComplete="off" type="password" value={aiForm.apiKey} placeholder={text.apiKeyPlaceholder} onChange={(event) => updateAiForm({ apiKey: event.target.value })} />
             </label>
             <label>
               <span>{text.baseUrl}</span>
-              <input value={aiForm.baseUrl} placeholder={text.baseUrlPlaceholder} onChange={(event) => setAiForm({ ...aiForm, baseUrl: event.target.value })} />
+              <input value={aiForm.baseUrl} placeholder={text.baseUrlPlaceholder} onChange={(event) => updateAiForm({ baseUrl: event.target.value })} />
             </label>
             <label>
               <span>{text.proxyUrl}</span>
-              <input value={aiForm.proxyUrl} placeholder={text.proxyUrlPlaceholder} onChange={(event) => setAiForm({ ...aiForm, proxyUrl: event.target.value })} />
+              <input value={aiForm.proxyUrl} placeholder={text.proxyUrlPlaceholder} onChange={(event) => updateAiForm({ proxyUrl: event.target.value })} />
             </label>
             <label>
               <span>{text.model}</span>
-              <input value={aiForm.model} onChange={(event) => setAiForm({ ...aiForm, model: event.target.value })} />
+              <input value={aiForm.model} onChange={(event) => updateAiForm({ model: event.target.value })} />
             </label>
           </div>
           <div className="panel-actions split-actions">
             <span>{aiMessage}</span>
             <div>
-              <button className="secondary-button" type="button" onClick={testAiConnection} disabled={isAiBusy || (!aiSettings.configured && !aiForm.apiKey.trim())}>
+              <button className="secondary-button" type="button" onClick={testAiConnection} disabled={isAiSettingsSubmitDisabled}>
                 {text.testConnection}
               </button>
-              <button className="primary-button" type="button" onClick={saveAiSettings} disabled={isAiBusy || (!aiSettings.configured && !aiForm.apiKey.trim())}>
+              <button className="primary-button" type="button" onClick={saveAiSettings} disabled={isAiSettingsSubmitDisabled}>
                 {text.saveSettings}
               </button>
             </div>

@@ -1,6 +1,8 @@
 import fs from 'node:fs'
 
 const main = fs.readFileSync('electron/main.mjs', 'utf8')
+const app = fs.readFileSync('src/App.tsx', 'utf8')
+const enhancer = fs.readFileSync('public/bookshelf-enhancer.js', 'utf8')
 const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'))
 
 const checks = [
@@ -9,6 +11,11 @@ const checks = [
   ['deepseek model is detected', main.includes("model.startsWith('deepseek')")],
   ['deepseek base url is detected', main.includes("baseUrl.includes('deepseek.')")],
   ['callOpenAiText routes chat-only providers to chat text', main.includes('isChatCompletionsOnlyProvider({ model, baseUrl })') && main.includes('return callOpenAiChatText({ input, temperature, maxOutputTokens, signal, settings: { ...settings, apiKey, model, baseUrl, proxyUrl } })')],
+  ['deepseek preset fills editable settings form', app.includes("applyAiProviderPreset('deepseek')") && app.includes("baseUrl: 'https://api.deepseek.com/v1'") && app.includes("model: 'deepseek-chat'")],
+  ['deepseek preset is injected into legacy runtime settings panel', enhancer.includes('ai-provider-preset-row') && enhancer.includes('https://api.deepseek.com/v1') && enhancer.includes('deepseek-chat')],
+  ['legacy runtime preset uses React-compatible input events', enhancer.includes('setReactInputValue(inputs.baseUrl') && enhancer.includes("new Event('input', { bubbles: true })")],
+  ['AI settings inputs use stable updater', app.includes('function updateAiForm') && app.includes('onChange={(event) => updateAiForm({ apiKey: event.target.value })}') && app.includes('onChange={(event) => updateAiForm({ baseUrl: event.target.value })}')],
+  ['AI settings submit disabled state is explicit', app.includes('isAiSettingsSubmitDisabled') && app.includes('disabled={isAiSettingsSubmitDisabled}')],
   ['deepseek smoke script is registered', pkg.scripts?.['smoke:deepseek-chat-provider'] === 'node scripts/smoke-deepseek-chat-provider.mjs'],
 ]
 

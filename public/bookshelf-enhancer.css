@@ -919,6 +919,36 @@ body:has(.outline-cockpit-modal-backdrop:not([hidden])) .chapter-sidebar {
   grid-column: 1 / -1;
 }
 
+.ai-provider-preset-row {
+  align-items: center;
+  background: oklch(0.98 0.012 92);
+  border: 1px solid var(--shelf-line);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 14px;
+  padding: 10px 12px;
+}
+
+.ai-provider-preset-row strong {
+  color: var(--shelf-muted);
+  font-size: 12px;
+  margin-right: 2px;
+}
+
+.ai-provider-preset-row button {
+  min-height: 32px;
+  padding: 0 10px;
+}
+
+.ai-provider-preset-row small {
+  color: var(--shelf-muted);
+  flex: 1 1 360px;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
 .ai-stream-progress-panel {
   background: rgba(255, 255, 255, 0.96);
   border: 1px solid var(--shelf-line);

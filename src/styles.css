@@ -233,6 +233,36 @@ h3 {
   margin: 6px 0 0;
 }
 
+.ai-provider-presets {
+  align-items: center;
+  background: #f7f4ed;
+  border: 1px solid #ebe3d6;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 10px;
+}
+
+.ai-provider-presets span {
+  color: #4d5765;
+  font-size: 13px;
+  font-weight: 800;
+  margin-right: 2px;
+}
+
+.ai-provider-presets button {
+  min-height: 32px;
+  padding: 0 10px;
+}
+
+.ai-provider-presets small {
+  color: #667085;
+  flex: 1 1 360px;
+  line-height: 1.45;
+}
+
 .form-grid {
   display: grid;
   gap: 14px;

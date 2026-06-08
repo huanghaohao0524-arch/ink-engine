@@ -888,6 +888,22 @@ async function applyAiProfileToPanel(panel, profileId) {
   panel.querySelector('.ai-profile-status').textContent = '已切换到保存配置'
 }
 
+function applyAiProviderPresetToPanel(panel, provider) {
+  const inputs = findAiSettingsInputs(panel)
+  if (provider === 'deepseek') {
+    setReactInputValue(inputs.baseUrl, 'https://api.deepseek.com/v1')
+    setReactInputValue(inputs.model, 'deepseek-chat')
+    inputs.apiKey?.focus()
+    panel.querySelector('.ai-provider-preset-status').textContent = '已填入 DeepSeek 地址和模型，请粘贴 API Key 后保存。'
+    return
+  }
+
+  setReactInputValue(inputs.baseUrl, 'https://api.openai.com/v1')
+  setReactInputValue(inputs.model, 'gpt-4.1')
+  inputs.apiKey?.focus()
+  panel.querySelector('.ai-provider-preset-status').textContent = '已切换为 OpenAI 默认地址和模型。'
+}
+
 async function deleteAiProfileFromPanel(panel, profileId) {
   const api = window.writingWorkbench
   if (!api?.deleteAiProfile || !profileId) {
@@ -900,14 +916,32 @@ async function deleteAiProfileFromPanel(panel, profileId) {
 
 async function enhanceAiSettingsProfiles() {
   const api = window.writingWorkbench
-  if (!api?.listAiProfiles) {
-    return
-  }
-
   const panels = Array.from(document.querySelectorAll('.ai-settings-panel'))
   for (const panel of panels) {
     panel.dataset.aiProfileEnhanced = 'true'
     Array.from(panel.querySelectorAll('.ai-profile-row')).forEach((row) => row.remove())
+    Array.from(panel.querySelectorAll('.ai-provider-preset-row')).forEach((row) => row.remove())
+
+    const formGrid = panel.querySelector('.form-grid')
+    if (!formGrid) {
+      continue
+    }
+
+    const presetRow = document.createElement('div')
+    presetRow.className = 'ai-provider-preset-row'
+    presetRow.innerHTML = `
+      <strong>快速填入</strong>
+      <button type="button" class="secondary-button ai-preset-deepseek">DeepSeek</button>
+      <button type="button" class="secondary-button ai-preset-openai">OpenAI</button>
+      <small class="ai-provider-preset-status">点 DeepSeek 会自动填写 Base URL 和模型，API Key 仍需手动粘贴。</small>
+    `
+    panel.insertBefore(presetRow, formGrid)
+    presetRow.querySelector('.ai-preset-deepseek').addEventListener('click', () => applyAiProviderPresetToPanel(panel, 'deepseek'))
+    presetRow.querySelector('.ai-preset-openai').addEventListener('click', () => applyAiProviderPresetToPanel(panel, 'openai'))
+
+    if (!api?.listAiProfiles) {
+      continue
+    }
 
     let profiles = []
     try {
@@ -932,8 +966,8 @@ async function enhanceAiSettingsProfiles() {
       <small class="ai-profile-status">测试连接成功后会自动保存到这里。</small>
     `
 
-    const formGrid = panel.querySelector('.form-grid')
-    panel.insertBefore(row, formGrid)
+    panel.insertBefore(row, presetRow)
+
     const select = row.querySelector('select')
     const deleteButton = row.querySelector('.ai-profile-delete')
 
