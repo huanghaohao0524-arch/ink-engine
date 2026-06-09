@@ -1009,11 +1009,14 @@ function getAiSettings() {
   const profiles = getAiConnectionProfiles()
   const activeProfileId = typeof store.get('activeAiProfileId') === 'string' ? store.get('activeAiProfileId') : ''
   const settingsUiMode = normalizeSettingsUiMode(store.get('settingsUiMode'))
+  const normalizedModel = normalizeAiModel(typeof model === 'string' && model.trim() ? model.trim() : 'gpt-4.1')
+  const normalizedBaseUrl = typeof baseUrl === 'string' && baseUrl.trim() ? baseUrl.trim() : 'https://api.openai.com/v1'
 
   return {
-    configured: typeof apiKey === 'string' && apiKey.trim().length > 0,
-    model: normalizeAiModel(typeof model === 'string' && model.trim() ? model.trim() : 'gpt-4.1'),
-    baseUrl: typeof baseUrl === 'string' && baseUrl.trim() ? baseUrl.trim() : 'https://api.openai.com/v1',
+    configured: typeof apiKey === 'string' && apiKey.trim().length > 0
+      || isApiKeyOptionalProvider({ model: normalizedModel, baseUrl: normalizedBaseUrl }),
+    model: normalizedModel,
+    baseUrl: normalizedBaseUrl,
     proxyUrl: typeof proxyUrl === 'string' && proxyUrl.trim() ? proxyUrl.trim() : '',
     profiles,
     activeProfileId: profiles.some((profile) => profile.id === activeProfileId) ? activeProfileId : '',
@@ -1060,7 +1063,7 @@ function sanitizeAiConnectionProfile(profile, { includeSecret = false } = {}) {
     model,
     baseUrl,
     proxyUrl,
-    configured: apiKey.length > 0,
+    configured: apiKey.length > 0 || isApiKeyOptionalProvider({ model, baseUrl }),
     lastTestOk: profile.lastTestOk === true,
     lastTestedAt: typeof profile.lastTestedAt === 'string' ? profile.lastTestedAt : '',
     createdAt: typeof profile.createdAt === 'string' ? profile.createdAt : new Date().toISOString(),
@@ -1123,7 +1126,7 @@ function activateAiConnectionProfile(profileId) {
   if (!profile) {
     throw new Error('未找到这个 AI 配置档案')
   }
-  if (!profile.apiKey) {
+  if (!profile.apiKey && !isApiKeyOptionalProvider(profile)) {
     throw new Error('这个 AI 配置档案缺少 API Key，请重新保存或测试连接')
   }
   persistAiSettings(profile, profile.id)
@@ -1186,10 +1189,41 @@ function normalizeAiBaseUrl(baseUrl) {
     .replace(/\/+$/, '')
 }
 
+function isLocalAiBaseUrl(baseUrl) {
+  try {
+    const url = new URL(String(baseUrl || ''))
+    const host = url.hostname.toLowerCase()
+    if (['localhost', '127.0.0.1', '0.0.0.0', '::1'].includes(host)) {
+      return true
+    }
+    if (host.endsWith('.local') || !host.includes('.')) {
+      return true
+    }
+    if (/^127\./.test(host) || /^10\./.test(host) || /^192\.168\./.test(host)) {
+      return true
+    }
+    const private172 = host.match(/^172\.(\d{1,2})\./)
+    return Boolean(private172 && Number(private172[1]) >= 16 && Number(private172[1]) <= 31)
+  } catch {
+    return false
+  }
+}
+
+function isApiKeyOptionalProvider(settings = {}) {
+  return isLocalAiBaseUrl(settings.baseUrl)
+}
+
 function isChatCompletionsOnlyProvider(settings = {}) {
   const model = normalizeAiModel(settings.model).toLowerCase()
   const baseUrl = String(settings.baseUrl || '').toLowerCase()
-  return model.startsWith('deepseek') || baseUrl.includes('deepseek.')
+  return model.startsWith('deepseek') || baseUrl.includes('deepseek.') || isLocalAiBaseUrl(baseUrl)
+}
+
+function createAiRequestHeaders(apiKey) {
+  return {
+    ...(typeof apiKey === 'string' && apiKey.trim() ? { Authorization: `Bearer ${apiKey.trim()}` } : {}),
+    'Content-Type': 'application/json',
+  }
 }
 
 function assertAiSettings(input) {
@@ -1207,14 +1241,16 @@ function assertAiSettings(input) {
     }
   }
 
-  const existingApiKey = store.get('openaiApiKey')
-  const inputApiKey = typeof input?.apiKey === 'string' ? input.apiKey.trim() : ''
-  const apiKey = inputApiKey || (typeof existingApiKey === 'string' ? existingApiKey.trim() : '')
   const model = normalizeAiModel(typeof input?.model === 'string' && input.model.trim() ? input.model.trim() : 'gpt-4.1')
   const baseUrl = normalizeAiBaseUrl(input?.baseUrl)
   const proxyUrl = normalizeProxyUrl(typeof input?.proxyUrl === 'string' ? input.proxyUrl.trim() : '')
+  const existingApiKey = store.get('openaiApiKey')
+  const inputApiKey = typeof input?.apiKey === 'string' ? input.apiKey.trim() : ''
+  const keyOptional = isApiKeyOptionalProvider({ model, baseUrl })
+  const inputOwnsApiKey = Object.prototype.hasOwnProperty.call(input || {}, 'apiKey')
+  const apiKey = inputApiKey || (keyOptional && inputOwnsApiKey ? '' : (typeof existingApiKey === 'string' ? existingApiKey.trim() : ''))
 
-  if (!apiKey) {
+  if (!apiKey && !keyOptional) {
     throw new Error('\u8bf7\u8f93\u5165 OpenAI API Key')
   }
 
@@ -1993,12 +2029,12 @@ async function callOpenAiChatText({ input, temperature = 0.2, maxOutputTokens, s
   const baseUrl = settings.baseUrl.replace(/\/+$/, '')
   const proxyUrl = settings.proxyUrl ?? ''
 
-  if (typeof apiKey !== 'string' || !apiKey.trim()) {
+  if ((typeof apiKey !== 'string' || !apiKey.trim()) && !isApiKeyOptionalProvider({ model, baseUrl })) {
     throw new Error('\u8bf7\u5148\u5728 AI \u8bbe\u7f6e\u4e2d\u586b\u5199 OpenAI API Key')
   }
 
   return callOpenAiChatCompletions({
-    apiKey: apiKey.trim(),
+    apiKey: typeof apiKey === 'string' ? apiKey.trim() : '',
     baseUrl,
     model,
     input,
@@ -2015,10 +2051,7 @@ async function callOpenAiChatCompletions({ apiKey, baseUrl, model, input, temper
   try {
     response = await aiFetch(`${baseUrl}/chat/completions`, {
       method: 'POST',
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
+      headers: createAiRequestHeaders(apiKey),
       signal,
       body: JSON.stringify({
         model,
@@ -2100,10 +2133,7 @@ async function callOpenAiChatCompletionsStream({
   try {
     response = await aiFetch(baseUrl + '/chat/completions', {
       method: 'POST',
-      headers: {
-        Authorization: 'Bearer ' + apiKey,
-        'Content-Type': 'application/json',
-      },
+      headers: createAiRequestHeaders(apiKey),
       signal,
       body: JSON.stringify({
         model,

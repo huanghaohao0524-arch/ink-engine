@@ -905,11 +905,82 @@ function applyAiProviderPresetToPanel(panel, provider) {
     return
   }
 
+  if (provider === 'ollama') {
+    setReactInputValue(inputs.apiKey, '')
+    setReactInputValue(inputs.baseUrl, 'http://127.0.0.1:11434/v1')
+    setReactInputValue(inputs.model, 'qwen2.5:7b')
+    if (status) {
+      status.textContent = '已填入 Ollama 本地地址；API Key 可留空，请确认 Ollama 已启动并已拉取模型。'
+    }
+    scheduleAiSettingsLocalSubmitSync(panel)
+    return
+  }
+
+  if (provider === 'lmstudio') {
+    setReactInputValue(inputs.apiKey, '')
+    setReactInputValue(inputs.baseUrl, 'http://127.0.0.1:1234/v1')
+    setReactInputValue(inputs.model, 'local-model')
+    if (status) {
+      status.textContent = '已填入 LM Studio 本地地址；API Key 可留空，请把模型名改成当前加载的模型。'
+    }
+    scheduleAiSettingsLocalSubmitSync(panel)
+    return
+  }
+
   setReactInputValue(inputs.baseUrl, 'https://api.openai.com/v1')
   setReactInputValue(inputs.model, 'gpt-4.1')
   if (status) {
     status.textContent = '已切换为 OpenAI 默认地址和模型。'
   }
+  scheduleAiSettingsLocalSubmitSync(panel)
+}
+
+function isLocalAiSettingsBaseUrl(baseUrl) {
+  try {
+    const host = new URL(String(baseUrl || '')).hostname.toLowerCase()
+    if (['localhost', '127.0.0.1', '0.0.0.0', '::1'].includes(host)) {
+      return true
+    }
+    if (host.endsWith('.local') || !host.includes('.')) {
+      return true
+    }
+    if (/^127\./.test(host) || /^10\./.test(host) || /^192\.168\./.test(host)) {
+      return true
+    }
+    const private172 = host.match(/^172\.(\d{1,2})\./)
+    return Boolean(private172 && Number(private172[1]) >= 16 && Number(private172[1]) <= 31)
+  } catch {
+    return false
+  }
+}
+
+function syncAiSettingsLocalSubmitState(panel) {
+  if (!panel) {
+    return
+  }
+  const inputs = findAiSettingsInputs(panel)
+  const localReady = isLocalAiSettingsBaseUrl(inputs.baseUrl?.value) && Boolean(inputs.model?.value?.trim())
+  if (!localReady) {
+    return
+  }
+  const actionButtons = Array.from(panel.querySelectorAll('.panel-actions button'))
+  actionButtons.forEach((button) => {
+    const label = button.textContent || ''
+    if (label.includes('测试') || label.includes('保存')) {
+      button.disabled = false
+      button.removeAttribute('disabled')
+    }
+  })
+  const status = panel.querySelector('.ai-provider-preset-status')
+  if (status && !inputs.apiKey?.value?.trim()) {
+    status.textContent = '检测到本地模型地址，API Key 可留空；保存后即可用当前本地接口生成。'
+  }
+}
+
+function scheduleAiSettingsLocalSubmitSync(panel) {
+  syncAiSettingsLocalSubmitState(panel)
+  window.requestAnimationFrame(() => syncAiSettingsLocalSubmitState(panel))
+  window.setTimeout(() => syncAiSettingsLocalSubmitState(panel), 80)
 }
 
 function maybeAutoFillDeepSeekPreset(panel) {
@@ -986,6 +1057,15 @@ function handleAiSettingsControlFocus(event) {
     return
   }
   focusAiSettingsControl(control)
+  scheduleAiSettingsLocalSubmitSync(control.closest('.ai-settings-panel'))
+}
+
+function handleAiSettingsInputForLocalSubmit(event) {
+  const control = event.target?.closest?.('.ai-settings-panel input, .ai-settings-panel textarea, .ai-settings-panel select')
+  if (!control) {
+    return
+  }
+  scheduleAiSettingsLocalSubmitSync(control.closest('.ai-settings-panel'))
 }
 
 function bindAiSettingsControlFocusGuard() {
@@ -995,6 +1075,8 @@ function bindAiSettingsControlFocusGuard() {
   window.__inkEngineAiSettingsControlFocusGuardBound = true
   document.addEventListener('pointerup', handleAiSettingsControlFocus, true)
   document.addEventListener('click', handleAiSettingsControlFocus, true)
+  document.addEventListener('input', handleAiSettingsInputForLocalSubmit, true)
+  document.addEventListener('change', handleAiSettingsInputForLocalSubmit, true)
 }
 
 function removeAiProfileRows(panel) {
@@ -1028,7 +1110,9 @@ async function enhanceAiSettingsProfiles() {
         <strong>快速填入</strong>
         <button type="button" class="secondary-button ai-preset-deepseek" data-ai-provider-preset="deepseek" onpointerdown="return window.__inkEngineApplyAiPreset?.(this, 'deepseek')" onclick="return window.__inkEngineApplyAiPreset?.(this, 'deepseek')">DeepSeek</button>
         <button type="button" class="secondary-button ai-preset-openai" data-ai-provider-preset="openai" onpointerdown="return window.__inkEngineApplyAiPreset?.(this, 'openai')" onclick="return window.__inkEngineApplyAiPreset?.(this, 'openai')">OpenAI</button>
-        <small class="ai-provider-preset-status">点 DeepSeek 会自动填写 Base URL 和模型，API Key 仍需手动粘贴。</small>
+        <button type="button" class="secondary-button ai-preset-ollama" data-ai-provider-preset="ollama" onpointerdown="return window.__inkEngineApplyAiPreset?.(this, 'ollama')" onclick="return window.__inkEngineApplyAiPreset?.(this, 'ollama')">Ollama</button>
+        <button type="button" class="secondary-button ai-preset-lmstudio" data-ai-provider-preset="lmstudio" onpointerdown="return window.__inkEngineApplyAiPreset?.(this, 'lmstudio')" onclick="return window.__inkEngineApplyAiPreset?.(this, 'lmstudio')">LM Studio</button>
+        <small class="ai-provider-preset-status">云端模型需 API Key；Ollama / LM Studio 本地接口可留空。</small>
       `
       panel.insertBefore(presetRow, formGrid)
     }
@@ -1036,6 +1120,7 @@ async function enhanceAiSettingsProfiles() {
       presetRow.querySelector('.ai-provider-preset-status').textContent = '已默认填入 DeepSeek 地址和模型，请直接粘贴 API Key。'
     }
     maybeAutoFillDeepSeekPreset(panel)
+    scheduleAiSettingsLocalSubmitSync(panel)
 
     if (!api?.listAiProfiles) {
       continue

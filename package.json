@@ -30,6 +30,7 @@
     "smoke:bookshelf-genre-filter": "node scripts/smoke-bookshelf-genre-filter-active.mjs",
     "smoke:ai-settings-profiles": "node scripts/smoke-ai-settings-profiles.mjs",
     "smoke:deepseek-chat-provider": "node scripts/smoke-deepseek-chat-provider.mjs",
+    "smoke:local-llm-provider": "node scripts/smoke-local-llm-provider.mjs",
     "smoke:chapter-sanitizer": "node scripts/smoke-chapter-draft-sanitizer.mjs",
     "smoke:word-policy": "node scripts/smoke-platform-word-policy.mjs",
     "smoke:next-chapter-flow": "node scripts/smoke-next-chapter-flow.mjs",

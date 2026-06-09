@@ -223,14 +223,16 @@ const text = {
   generatingSelfCheck: '姝ｅ湪鑷鍒濈',
   checkAndSync: '\u68c0\u67e5\u5e76\u540c\u6b65',
   aiSettings: '\u0041\u0049 \u8bbe\u7f6e',
-  apiKey: 'API Key',
+  apiKey: 'API Key\uff08\u672c\u5730\u6a21\u578b\u53ef\u4e0d\u586b\uff09',
   baseUrl: 'Base URL',
   proxyUrl: '\u4ee3\u7406\u5730\u5740',
   model: '\u6a21\u578b',
   providerPreset: '\u5feb\u901f\u586b\u5165',
   deepSeekPreset: 'DeepSeek',
   openAiPreset: 'OpenAI',
-  aiSettingsHint: '\u5148\u586b API Key\uff0c\u518d\u4fdd\u5b58\u6216\u6d4b\u8bd5\u8fde\u63a5\u3002DeepSeek \u8bf7\u7528 https://api.deepseek.com \u548c deepseek-v4-flash\u3002',
+  ollamaPreset: 'Ollama',
+  lmStudioPreset: 'LM Studio',
+  aiSettingsHint: '\u4e91\u7aef\u6a21\u578b\u9700 API Key\uff1bOllama / LM Studio \u8fd9\u7c7b\u672c\u5730 OpenAI \u517c\u5bb9\u63a5\u53e3\u53ef\u7559\u7a7a\u3002',
   configured: '\u5df2\u914d\u7f6e',
   notConfigured: '\u672a\u914d\u7f6e',
   saveSettings: '\u4fdd\u5b58\u8bbe\u7f6e',
@@ -239,8 +241,8 @@ const text = {
   aiSettingsFailed: '\u0041\u0049 \u8bbe\u7f6e\u64cd\u4f5c\u5931\u8d25',
   generating: '\u751f\u6210\u4e2d...',
   generatingOutline: '姝ｅ湪鐢熸垚澶х翰鍊欓€?..',
-  configureAiFirst: '\u8bf7\u5148\u5728 AI \u8bbe\u7f6e\u4e2d\u586b\u5199 OpenAI API Key\u3002',
-  apiKeyPlaceholder: '\u53ea\u4fdd\u5b58\u5728\u672c\u673a Electron \u914d\u7f6e\u4e2d',
+  configureAiFirst: '\u8bf7\u5148\u5728 AI \u8bbe\u7f6e\u4e2d\u914d\u7f6e\u4e91\u7aef\u6216\u672c\u5730\u6a21\u578b\u8fde\u63a5\u3002',
+  apiKeyPlaceholder: '\u4e91\u7aef\u9700\u586b\uff0c\u672c\u5730 Ollama / LM Studio \u53ef\u7559\u7a7a',
   baseUrlPlaceholder: 'https://api.openai.com/v1',
   proxyUrlPlaceholder: '\u53ef\u9009\uff1ahttp://127.0.0.1:18081',
 }
@@ -263,6 +265,25 @@ const fallbackState: WorkspaceState = {
 }
 
 const maxProjectChatMessages = 40
+
+function isLocalAiBaseUrlValue(baseUrl: string) {
+  try {
+    const host = new URL(baseUrl).hostname.toLowerCase()
+    if (['localhost', '127.0.0.1', '0.0.0.0', '::1'].includes(host)) {
+      return true
+    }
+    if (host.endsWith('.local') || !host.includes('.')) {
+      return true
+    }
+    if (/^127\./.test(host) || /^10\./.test(host) || /^192\.168\./.test(host)) {
+      return true
+    }
+    const private172 = host.match(/^172\.(\d{1,2})\./)
+    return Boolean(private172 && Number(private172[1]) >= 16 && Number(private172[1]) <= 31)
+  } catch {
+    return false
+  }
+}
 
 type AppView = 'dashboard' | 'create'
 type BookMode = 'prep' | 'write'
@@ -1074,18 +1095,39 @@ function App() {
 
   const api = window.writingWorkbench
 
-  const isAiSettingsSubmitDisabled = isAiBusy || (!aiSettings.configured && !aiForm.apiKey.trim())
+  const isAiSettingsSubmitDisabled = isAiBusy
+    || !aiForm.baseUrl.trim()
+    || !aiForm.model.trim()
+    || (!aiSettings.configured && !aiForm.apiKey.trim() && !isLocalAiBaseUrlValue(aiForm.baseUrl))
 
   function updateAiForm(patch: Partial<SaveAiSettingsInput>) {
     setAiForm((current) => ({ ...current, ...patch }))
     setAiMessage(null)
   }
 
-  function applyAiProviderPreset(provider: 'deepseek' | 'openai') {
+  function applyAiProviderPreset(provider: 'deepseek' | 'openai' | 'ollama' | 'lmstudio') {
     if (provider === 'deepseek') {
       updateAiForm({
         baseUrl: 'https://api.deepseek.com',
         model: 'deepseek-v4-flash',
+      })
+      return
+    }
+
+    if (provider === 'ollama') {
+      updateAiForm({
+        apiKey: '',
+        baseUrl: 'http://127.0.0.1:11434/v1',
+        model: 'qwen2.5:7b',
+      })
+      return
+    }
+
+    if (provider === 'lmstudio') {
+      updateAiForm({
+        apiKey: '',
+        baseUrl: 'http://127.0.0.1:1234/v1',
+        model: 'local-model',
       })
       return
     }
@@ -3170,6 +3212,12 @@ function App() {
               <button className="secondary-button" type="button" onClick={() => applyAiProviderPreset('openai')}>
                 {text.openAiPreset}
               </button>
+              <button className="secondary-button" type="button" onClick={() => applyAiProviderPreset('ollama')}>
+                {text.ollamaPreset}
+              </button>
+              <button className="secondary-button" type="button" onClick={() => applyAiProviderPreset('lmstudio')}>
+                {text.lmStudioPreset}
+              </button>
               <small>{text.aiSettingsHint}</small>
             </div>
             <div className="form-grid">
@@ -4088,6 +4136,12 @@ function App() {
               <button className="secondary-button" type="button" onClick={() => applyAiProviderPreset('openai')}>
                 {text.openAiPreset}
               </button>
+              <button className="secondary-button" type="button" onClick={() => applyAiProviderPreset('ollama')}>
+                {text.ollamaPreset}
+              </button>
+              <button className="secondary-button" type="button" onClick={() => applyAiProviderPreset('lmstudio')}>
+                {text.lmStudioPreset}
+              </button>
               <small>{text.aiSettingsHint}</small>
             </div>
             <div className="form-grid">
@@ -4302,6 +4356,12 @@ function App() {
             </button>
             <button className="secondary-button" type="button" onClick={() => applyAiProviderPreset('openai')}>
               {text.openAiPreset}
+            </button>
+            <button className="secondary-button" type="button" onClick={() => applyAiProviderPreset('ollama')}>
+              {text.ollamaPreset}
+            </button>
+            <button className="secondary-button" type="button" onClick={() => applyAiProviderPreset('lmstudio')}>
+              {text.lmStudioPreset}
             </button>
             <small>{text.aiSettingsHint}</small>
           </div>
